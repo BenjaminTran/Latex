@@ -1,0 +1,615 @@
+% !TeX root = BioChemChap4.tex
+\documentclass[../Bio_chemistryReview.tex]{subfiles}
+
+\begin{document}
+\chapter{Biochemistry}
+
+\section{Thermodynamics}
+
+Two forms of energy in chem: heat and potential (bond) energy. Laws of
+thermodynamics:\\ 
+\vocab{First law}: conservation of energy\\
+\vocab{Second law}: \vocab{Entropy}, S, always increases\\
+Gibbs free energy:
+\begin{equation}
+  \boxed{\Delta G = \Delta H - T\Delta S}
+\end{equation}
+Where H is enthalpy defined by:
+\begin{equation}
+  \boxed{\Delta H = \Delta E - P\Delta V}
+\end{equation}
+$ \Delta H <(>) 0 $ is called \vocab{exothermic(endothermic)}. Former releases
+energy, latter requires input of energy.\\
+$ \Delta G <(>) 0 $ is called \vocab{exergonic(endergonic)}. Former energy exits
+system. In physiology, reactions driven by coupling to exergonic reactions.\\
+Note: Signs are assigned from point of view of system.  From (4.1) and the
+second law if $ \Delta G <(>) 0$ a reaction is spontaneous(nonspontaneous).\\
+$ \Delta G $ depends on concentrations of reactants and products. To compare
+reactions a standard free energy at pH 7 is determined with relation to the
+equilibrium constant of the reaction: 
+\begin{equation}
+  \boxed{\Delta G^{o\prime} = -RT\ln K_{eq}^{\prime}}
+\end{equation}
+Where $ K_{eq}^{\prime} $ is given by:
+\begin{equation}
+  K_{eq}^{\prime} = \dfrac{[C]_{eq}[D]_{eq}}{[A]_{eq}[B]_{eq}}
+\end{equation}
+Note: when $ K_{eq}^{\prime} = 1, \Delta G^{o'} = 0$\\
+For nonstandard conditions\\
+\begin{equation}
+  \boxed{\Delta G = \Delta G^{o\prime} + RT \ln Q}
+\end{equation}
+
+Where Q has same form as $ K_{eq}^{'} $ but at arbitrary concentration. Can also
+be rewritten as 
+\begin{equation}
+  \boxed{\Delta G = \Delta G^{o\prime} + RT\ln \dfrac{Q}{K_{eq}^{\prime}}}
+\end{equation}
+
+Recall \vocab{Le Chatlier's Principle} can be used to shift reactions in
+different directions.\\ Thermodynamics says nothing about reaction rates.
+
+\section{Kinetics and Activation Energy [$ E_{A} $]}
+
+All reactions proceed through an intermediate that is unstable and requires
+energy to produce. The amount of energy is called the \vocab{activation energy}
+$ E_{a} $. A \vocab{catalyst} lowers $ E_{a} $ without changing $ \Delta G $
+(\emph{thus it cannot make a nonspontaneous reaction spontaneous}) by
+stabilizing the transition state. Enzymes are catalysts: some common ones are
+given below:
+
+\begin{tabular}{|c|p{15cm}|}\hline
+  Enzyme Class & Reaction \\ \hline 
+  Hydrolase & Hydrolyzes chemical bonds usu. named only for their substrate (includes ATPases, proteases, and others) \\ \hline
+  Isomerase & rearranges bonds within a molecule to form an isomer. Catalyzes reactions between stereoisomers and constitutional isomers. Some can also be classified as oxidoreducatases, transferases, or lyases. \\ \hline
+  Ligase & forms a chemical bond (addition or synthesis) usu. between large similar molecules and often requires ATP (e.g., DNA ligases) \\ \hline
+  Lyase & Cleaves one molecule into two by means other than oxidation or hydrolysis (e.g. pyruvate decarboxylase) Reverse direction builds up and is then called a \emph{synthase.} \\ \hline
+  Kinase & transfers a phosphate group to a molecule from a high energy carrier, such as ATP \\ & (e.g., phosphofructokinase PFK) \\ \hline
+  Oxidoreductase & runs redox reactions, transfer of electrons between biological molecules (includes oxidases, reductases, \emph{dehydrogenases}, and others) \\ \hline
+  Polymerase & polymerization (e.g. addition of nucleotides to the leading strand of DNA by DNA polmerase III) \\ \hline
+  Phosphatase & remoces a phosphate group from a molecule \\ \hline
+  Phosphorylase & transfers a phosphate group to a molecule from inorganic phosphate (e.g. glycogen phosphorylase) \\ \hline
+  Protease & hydrolyzes peptide bonds (e.g. trypsin, chymotrypsin, pepsin, etc.)\\ \hline
+  Transferase\supdag & Catalyze movement of a functional group from one molecule to another. E.g. \emph{aminotransferase} \\ \hline
+\end{tabular} 
+
+\subsection{ATP as an Energy Source: Reaction Coupling}
+
+ATP hydrolysis is the usual reaction coupled to nonspontaneous reactions in the
+body with $ \Delta G $ = -12 kcal/mol in cellular conditions. Several ways ATP
+hydrolysis may drive unfavorable reactions is by \emph{conformational changes in
+protein} or \emph{phosphorylation of a substrate}. Recall that free energy
+changes are additive thus coupling multiple negative $ \Delta G $ reactions with
+positive ones can make it overall negative. 
+
+\section{Enzyme Structure and Function}
+
+Protein folding is important for enzymes for proper formation of the
+\vocab{active site} implying most enzymes fold into a globular shape as opposed
+to fibrous. \vocab{Substrates} are the reactants. Two models exist and are
+accepted but ultimately, the purpose is to stabilize the transition state
+intermediate.  Active sites are stereospecific (\emph{note: in animals the more
+common configurations are L aa and D sugars.})\\
+\vocab{Proteases} have an active site with a serine residue whose OH group acts
+as a nucleophile and attacks the carbonyl carbon of an aa residue in a
+polypeptide. Will also have a \vocab{recognition pocket} to attract certain
+residues on substrate.\\
+Enzymes are sensitive to temperature and pH. Extremes can lead to
+\vocab{denaturing} which renders it useless.\\
+Enzyme function may also require or depend on \vocab{cofactors} - small metal
+ions or molecules. If organic it is called a \vocab{coenzyme}.
+
+\section{[K2.2] Enzyme-Substrate Binding\supdag}
+
+Of the two theories, \emph{Lock and Key Theory} and \emph{Induced Fit}, induced
+fit is the more acceptable and MCAT tested theory.
+
+\subsection{Lock and Key Theory\supdag}
+
+This theory states that the enzyme has an active site with the perfect shape to
+fit the substrate.
+
+\subsection{Induced Fit Model\supdag}
+
+The enzyme and substrate do not necessarily look like they fit together
+initially. Once the substrate and enzyme begin to bind they undergo
+conformational changes to fit each other.
+
+\subsection{Cofactors and Coenzymes\supdag}
+
+Cofactors and coenzymes tend to be small in size so that they can bind to the
+active site and participate in the catalysis of the reaction. Enzymes without
+their cofactors are called \vocab{apoenzymes} and with their enzymes are called
+\vocab{holoenzymes}. Recall that vast majority of enzymes are vitamins. The
+\emph{water-soluble} vitamins are B complex vitamins and absorbic acid (vitamin
+C). Must be regularly replenished since easily excreted. The \emph{fat-soluble}
+vitamins are A, D, E, and K. Some B vitamins are listed below and DO NOT NEED TO
+BE MEMORIZED, but are mentioned in passages:
+
+\begin{enumerate}
+  \item \chemfig{B_{1}} : thiamine
+  \item \chemfig{B_{2}} : riboflavin
+  \item \chemfig{B_{3}} : niacin
+  \item \chemfig{B_{5}} : pantothenic acid
+  \item \chemfig{B_{6}} : pyridoxal phosphate
+  \item \chemfig{B_{7}} : biotin 
+  \item \chemfig{B_{9}} : folic acid
+  \item \chemfig{B_{12}} : cyanocobalamin
+\end{enumerate}
+
+\section{Regulation of Enzyme Activity}
+
+Activity of enzymes in metabolic pathways is usually regulated in the following
+ways.
+
+\subsection{Covalent Modification\supddag}
+
+Different groups attached to proteins can \emph{regulate activity, lifespan,
+and/or location.} E.g. phosphorylation of the hydroxyl of serine, threonine, or
+tyrosine residues via kinases can regulate activity. \vocab{Phosphorylases} do
+same thing but with $ P_{i} $ not from ATP. \vocab{Phosphatases}
+unphosphorylate. \vocab{Glycosylation} is the addition of sugar moities to
+molecules and can be used to tag an enzyme for transport.
+
+\subsection{Proteolytic Cleavage\supddag}
+
+Enzymes synthesized in inactive forms, called \emph{zymogens}, are activated by
+cleavage. Zymogens have catalytic (active) domain and regulatory domain which is
+the part that must be cleaved. 
+
+\subsection{Association Polypeptides}
+
+When catalytic activity is regulated by association with a separate subunit.
+E.g. protein may exhibit continuous rapid catalysis if regulatory subunit is
+removed. This protein thus exhibits \vocab{constitutive activity}.
+
+\subsection{Allosteric Regulation\supddag}
+
+Modification of active site through interactions of molecules with other
+specific sites on the enzyme not including active site. Needed to turn on or off
+an enzyme and can alter the activity for better or worse. Generally non-covalent
+and reversible. Leads to sigmoidal shape on Michaelis-Menten plots.
+
+\subsection{Feedback Inhibition\supddag}
+
+\vocab{Negative feedback (feedback inhibition)} when a product shuts off an
+enzyme used to produce it. \vocab{Feedforward stimulation} is when an enzyme is
+stimulated by its substrate or by a molecule produced earlier in the synthesis;
+this may include regulation as well. 
+
+\section{Basic Enzyme Kinetics\supddag}
+
+\vocab{Enzyme Kinetics} study of the rate of formation of products from
+substrates in the presence of an enzyme. \vocab{Reaction rate} is the amount of
+product formed per unit time, in moles per second. Enzymes have limited active
+sites thus they can be saturated by high concentrations of substrate. Rxn rate
+at this point is $ V_{max} $. The \vocab{Michaelis constant} denoted $ K_{m} $
+is the substrate concentration at which enzyme is $ \tfrac{V_{max}}{2} $.
+\underline{Substrate affinity inversely proportional to $ K_{m} $.} These ideas
+are demonstrated in the picture below and in the following equation:
+
+\begin{align}
+  \boxed{v = \dfrac{v_{max}[S]}{K_{m} + [S]}} \label{Michaelis-Menten} \\
+  \eqname{Michaelis-Menten Equation} 
+\end{align}
+
+\begin{center}
+  \includegraphics[scale=0.1]{Mic-men.jpg}
+\end{center}
+
+\subsection{Lineweaver-Burk Plots\supdag}
+
+Since Eqn. \eqref{Michaelis-Menten} is hyperbolic it is easier to rewrite the
+equation as: 
+\[ \dfrac{1}{v} = \dfrac{K_{m}}{V_{max}}\dfrac{1}{[S]} +
+\dfrac{1}{v_{max}} \]
+This is linear in the variables 1/v  and  1/[S] and allows for easy
+determination of $ v_{max} \text{ and } K_{m} $. A plot is given below.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.1]{Line.jpg}
+\end{figure}
+
+\subsection{Cooperativity\supddag}
+
+When binding of a substrate increases enzyme affinity for more substrate. Enzyme
+needs to have more than one active site, and generally are composed of more than
+one protein chain (multisubunit complexes). \emph{Leads to sigmoidal curve.} Can
+also apply to non-enzymes as well such as hemoglobin.\par May exist in a
+low-affinity tense state (T) or a high-affinity relaxed state (R).
+
+\subsection{Effects of Local Conditions on Enzyme Activity\supdag} 
+
+Note that the terms \vocab{enzyme activity, enzyme velocity,} and \vocab{enzyme
+rate}.
+
+\subsubsection{Temperature\supdag}
+
+As a rule of thumb enzyme velocity tends to double for every increase in 10$
+^{\circ} $C increase until optimal activity is reached. After optimal
+temperatures, activity drops quickly.
+
+\subsubsection{pH\supdag}
+
+pH can also denature enzymes. Optimal for humans is 7.4 (except the digestive
+tract) and below 7.35 is deemed acidemia. 
+
+\subsubsection{Salinity\supdag}
+
+Large concentrations of salts can affect hydrogen bonds and ionic bonds.
+
+\subsection{Inhibition of Enzyme Activity}
+
+Four types: \vocab{\emph{Competitive inhibition}},  \vocab{\emph{noncompetitive
+inhibition}},  \vocab{uncompetitive inhibitor}, and \vocab{mixed-type
+inhibition}. In this study, determine the effects of each on the Lineweaver-Burk
+Plot.
+
+\subsubsection{Competitive Inhibition\supddag}
+
+Molecules that compete with substrate for binding at active site. Thus, have
+similar structure to substrate; best if similar structure to the transition
+state which normally stabilizes active site. Can overcome competitors by
+increasing substrate. Thus $ V_{max} $ is not affected but requires higher
+concentration. However, $ K_{m} $ is increased.
+
+\begin{center}
+  \includegraphics[scale=0.1,frame]{CompInhib.jpg}
+\end{center}
+
+\subsubsection{Noncompetitive Inhibition}
+
+Bind at an allosteric site but not active site, thus cannot overcome by adding
+more substrate. Thus $ V_{max} \text{ and } \tfrac{V_{max}}{2}$ decreases,
+however, $ K_{m} $ is not affected.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.1,frame]{NoncompInhib.jpg}
+\end{figure}
+
+\subsubsection{Uncompetitive Inhibition}
+
+Can only bind to the \emph{enzyme-substrate} complex. Decreases $ V_{max} $ and
+increases apparent affinity (decrease $ K_{m} $). Must bind to an allosteric
+site which is formed when enzyme and substrate bind. Lines on Lineweaver-Burk
+Plot. 
+
+\subsubsection{Mixed-type Inhibition\supddag}
+
+Can bind to both enzyme and enzyme-substrate complexes but have different
+affinity for each. Bind to allosteric sites. Three cases: 
+\begin{infobox}
+  \underline{Case I}: \emph{enzyme greater affinity} for inhibitor in free
+  form\\
+  Lower affinity for substrate $ \boxed{ \sim  competitive}$ inhibition
+  ($ K_{m} $) increases.\\
+  \underline{Case II}: \emph{enzyme-substrate greater affinity} for inhibitor\\
+  Greater affinity for substrate  $\boxed{\sim  uncompetitive}$ inhibition ($
+  K_{m} $) decreases\\
+  \underline{Case III}: (rare) \emph{equal affinity} for both\\
+  $ \boxed{Noncompetitive} $ inhibitor.
+\end{infobox}
+
+\subsection{Summary of Inhibition}
+
+\begin{center}
+  \includegraphics[scale=0.15,frame]{InhibitionSum.jpg}
+\end{center}
+
+\section{Cellular Respiration}
+
+\subsection{Energy Metabolism and the Definitions of Oxidation and Reduction}
+
+Plants and animals store chemical energy in carbohydrates and fats that are
+oxidized to produce $ CO_{2} $ and ATP. All reactions boil down to
+\vocab{oxidation} (uptake of oxygen) and \vocab{reduction} (removal of
+oxygen).\\
+Three meanings of oxidize:
+\begin{enumerate}
+  \item attach oxygen (or increase the number of bonds to oxygen)
+  \item remove hydrogen
+  \item remove electrons
+\end{enumerate}
+To reduce is to do the opposite of the above.\\
+
+Note: E.g. $ O_{2} \rightarrow H_{2}O $ is a reduction because bonds to oxygen
+are decreased.\\
+When something is oxidized something is also reduced hence \vocab{redox pair}.\\
+\vocab{Catabolism(anabolism)} is the process of breaking down(building)
+molecules. So energy is obtained from glucose by \vocab{oxidative catabolism} in
+four steps.  
+\begin{enumerate}
+  \item glycolysis
+  \item pyruvate dehydrogenase complex (PDC)
+  \item Krebs cycle
+  \item electron transport/oxidative phosphorylation
+\end{enumerate} 
+
+\emph{We make the unfavorable synthesis of ATP by coupling it to the favorable
+oxidation of glucose.}
+
+\subsection{Introduction to Cellular Respiration}
+
+Oxidation of glucose does not generate a lot of ATP. Reduction of high-energy
+electron carriers, (nicotinamide adenine dinucleotide) $ \boldsymbol{NAD^{+} }$
+and (flavin adenine dinucleotide) \textbf{FAD} is the trick. Reduced to
+\textbf{NADH} and $\boldsymbol{FADH_{2}}$ and later oxidized when delivering $
+e^{-} $ to $ e^{-} $ transport chain generating proton gradient to generate ATP.
+These two also have other roles as cofactors e.g. FAD can associate with a
+protein to become a \vocab{flavoprotein}.\\ Some highlights of the four-step
+process:
+\begin{infobox}
+  \begin{enumerate}
+    \item \vocab{Glycolysis} splits glucose into two three carbon pyruvic acid
+      molecules producing small amount of ATP and NADH. Occurs in cytoplasm and
+      requires no oxygen.  
+    \item \vocab{Pyruvate Dehydrogenase Complex}
+      decarboxylates pyruvate to form acetyl group and attached to Coenzyme A
+      transferring it to the Krebs cycle. Small NADH is produced.  
+    \item \vocab{Krebs(TCA) Cycle} - acetyl group attached to oxaloacetate $
+      \rightarrow $ citric acid $ \rightarrow $ decarboxylated and isomerized to
+      regenerate oxaloacetate. Large(small) amounts of ATP/NADH($ FADH_{2} $)
+      are produced.  
+    \item \vocab{Electron transport} - Only stage that requires
+      oxygen. $ NADH \text{ and } FADH_{2} $ dump electrons at beginning which
+      cascade down to reduce $ O_{2} \text{ to } H_{2}O $. Energy generated
+      along the cascade used to pump protons out of matrix $ \rightarrow $
+      proton gradient. Protons flow back in via ATP synthase to generate ATP. 
+  \end{enumerate}
+\end{infobox}
+
+(2) and (3) occur in the matrix of mitochondrium. (4) on the membrane separating
+matrix from outer compartment.
+
+\subsection{Glycolysis}	
+
+Summarizing equation:
+\[ \text{Glucose } + 2 \text{ADP }+ 2 P_{i} + 2\text{NAD}^{+} \rightarrow 2 \text{ pyruvate} + 2\text{ATP } + 2 \text{NADH} + 2 H_{2}O + 2H^{+} \]
+
+Just memorize what goes in and what comes out. Some highlights:
+\begin{enumerate}
+  \item \vocab{Hexokinase} catalyzes first step of glycolysis; glucose $
+    \rightarrow $ G6P.  
+  \item \vocab{Phosphofructokinase (PFK)} catalyzes transfer of phosphate from ATP
+    to fructose-6-phosphate to form fructose-1,6-bisphosphate (F1,6bP). $ \Delta G
+    << 0$ for this reaction so it is not reversible. This is the step that is
+    subject to allosteric regulation by ATP and thus the regulation point of
+    glycolysis.
+\end{enumerate}
+
+\subsection{Fermentation}
+
+Anaerobic process evolved to regenerate NAD$^{+}$ to continue glycolysis. Note:
+without oxygen electron transport does not work. Fermentation uses pyruvate as
+the acceptor of high energy electrons from NADH. Two options 
+\begin{enumerate}
+  \item reduction of pyruvate to ethanol
+  \item reduction of pyruvate to lactate
+\end{enumerate}
+\begin{figure}[!ht]
+  \centering
+  \schemedebug{false}
+  \schemestart
+  \chemname{\chemfig{C(-[6]CH_{3})(=O)-[2]C(=[3]O)-[1]O^{-}}}{pyruvate}\arrow(.mid east--.mid west){-U>[\tiny \chemfig{ H^{+} }][\tiny \chemfig{CO_{2}}]}\chemname{\chemfig{C(=O)(-[2]H)-[6]CH_{3}}}{acetylaldehyde}\arrow(.mid east--.mid west){-U>[\tiny \chemfig{NADH + H^{+}}][\tiny NAD][][0.3][100]} \chemname{\chemfig{C(-[2]OH)(-[4]H)(-[6]CH_{3})-H}}{ethanol}
+  \schemestop
+
+  \vspace{1cm}
+
+  \schemestart
+  \chemname{\chemfig{C(-[6]CH_{3})(=O)-[2]C(=[3]O)-[1]O^{-}}}{pyruvate}\arrow(.mid east--.mid west){-U>[\tiny\chemfig{NADH + H^{+}}][\tiny\chemfig{NAD^{+}}]}\chemname{\chemfig{C(-[4]H)(-[6]CH_{3})(-OH)-[2]C(=[3]O)-[1]O^{-}}}{lactate}
+  \schemestop
+
+\end{figure}
+
+\subsection{The Pyruvate Dehydrogenase Complex}
+
+Pyruvate is oxidatively decarboxylated by PDC before entering the Krebs cycle
+\emph{releasing \chemfig{CO_{2}} and NADH} and becoming an activated acetyl unit
+attached to CoA. AMP is an inhibitor of PDC.
+
+\begin{figure}[h]
+  \centering
+  \schemestart
+  \chemname{\chemfig{C(-[6]CH_{3})(=O)-[2]C(=[3]O)-[1]O^{-}}}{pyruvate} + \chemfig{CoA-SH}\arrow(.mid east--.mid west){-U>[\tiny \chemfig{NAD^{+}}][\tiny \chemfig{NADH + H^{+}+CO_{2}}][][0.5]}\chemname{\chemfig{CoA-S-C(=[2]O)-CH_{3}}}{acetyl-CoA}
+  \schemestop	
+\end{figure} 
+
+A \vocab{prosthetic group} is a nonprotein molecule (cofactor) tightly
+covalently bound to an enzyme as part of the enzyme's active site and is
+necessary for proper function. PDC and $ \alpha\text{-ketoglutarate
+dehydrogenase complex} $ contains thiamine pyrophosphate (TPP) prosthetic group.
+
+\subsection{Krebs Cycle}
+
+\emph{Produces total of 6 \chemfig{NADH}, 2 \chemfig{FADH_{2}}, and 2 GTP per
+glucose (will transfer P to ADP later on).}\\
+
+\subsubsection*{Stage 1}
+
+The 2 carbons in acetate of acetyl-CoA are condensed with the four carbon
+compound \vocab{oxaloacetate} (OAA) to make \vocab{citrate}. 
+
+\subsubsection*{Stage 2}
+
+Each oxidative decarboxylation produces NADH and \chemfig{CO_{2}}. The carbons
+that entered via acetate are not lost in their first cycle but in later cycles.
+
+\subsubsection*{Stage 3}
+
+OAA is regenerated and produces 1 \chemfig{NADH}, 1 \chemfig{FADH_{2}}, and 1
+\chemfig{GTP} in the process.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.1,frame]{KrebSum.jpg}
+  \caption{Cellular Respiration}
+\end{figure}
+
+\subsection{Compartmentalization of Glucose Catabolism in Eukaryotes: The
+Mitochondria}
+
+Components of mitochondria:
+\begin{enumerate}
+  \item outer membrane - smooth and contains large pores formed by \vocab{porin}
+  \item inner membrane - impermeable and densely folded into \vocab{cristae}.
+    (electron transport) 
+  \item matrix - innermost space of mitochondrion (Krebs
+    cycle)
+  \item intermembrane space - continuous with cytoplasm
+\end{enumerate}
+
+2 NADH comes from glycolysis in the cell membrane and the rest occur in Krebs in
+the matrix. In prokaryotes since no membrane bound organelle, just use cell
+membrane.
+
+\subsection{Electron Transport and Oxidative Phosphorylation}
+
+\vocab{Oxidative phosphorylation} is the oxidation of the high-energy electron
+carriers NADH and \chemfig{FADH_{2}} coupled to the phosphorylation of ADP.
+Electron transport chain is composed of 5 electron carriers three of which are
+large complexes classified as \vocab{cytochromes}. In order electrons flow
+through: 
+\begin{infobox}
+  \begin{enumerate}
+    \item NADH dehydrogenase (MB)
+    \item ubiquinone (Coenzyme Q) - \chemfig{FADH_{2}} enters here
+    \item Cytochrome C reductase (MB)
+    \item Cytochrome C
+    \item Cytochrome C oxidase (MB)
+  \end{enumerate}
+\end{infobox}
+
+The three (MB) complexes pump protons into intermembrane space generating proton
+gradient. Protons fall down gradient through ATP synthase to produce ATP.
+
+\subsection{Energetics of Glucose Catabolism}
+
+10 protons pumped per NADH, in sequence of complexes it is 4,3,3. Since
+\chemfig{FADH_{2}} (and NADH from glycolysis) enters at CoQ only 6 protons are
+pumped. ATP production requires 4 protons. Refer to the figure below for
+counting of protons.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.1,frame]{ATPtotal.jpg}
+\end{figure}
+
+\subsection{Other Metabolic Pathways}
+
+\subsubsection{Glycogenolysis}
+
+Breakdown of glycogen, a polymer of glucose, the main form of carbohydrate
+storage in animals. Glycogenolysis occurs in response to hormone glucagon, when
+blood sugar levels are low. Similarly, in plants except they use starch.
+Glycogen and starch are $\alpha-1,4$ and $ \alpha-1,6 $ glycosidic bonds
+respectively.
+
+\subsubsection{Gluconeogenesis}
+
+Production of glucose primarily in the liver. Uses intermediates of Krebs cycle,
+pyruvate, lactate, and carbon skeleton of amino acids to essentially run
+glycolysis-in-reverse.
+
+\subsubsection{Amino Acid Catabolism}
+
+Manufactured proteins are eventually broken down back into aa. From diet, the
+carbon skeleton of aa ($ \alpha-keto $ acid) can be broken into water and
+\chemfig{CO_{2}} or converted to glucose or acetyl-CoA.
+
+\subsubsection{Pentose Phosphate Pathway (PPP)}
+
+Diverts glucose-6-phosphate to form ribose-5-phosphate which can be used to
+synthesize other nucleotides. Generates NADPH via \vocab{glucose-6-phosphate
+dehydrogenase} (G6PDH), commonly involved in anabolic processes and removal of
+reactive oxygen species. A deficiency of G6PDH can lead to cell death.
+
+\subsection{Metabolic Summary}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.1,frame]{MetaSum.jpg}
+\end{figure}
+
+\section{Metabolic Regulation}
+
+Important to prevent antagonist processes from occurring at the same time.
+
+\subsection{Regulation of Glycolysis and Gluconeogenesis}
+
+Regulation focused on enzymes catalyzing irreversible reactions. Two
+allosterically regulated opposing enzymes are PFK and
+\vocab{fructose-1,6-bisphosphatase} (F-1,6-BPase). Recall AMP activates PFK and
+therefore deactivates F-1,6-BPase. Another regulatory intermediate is
+\vocab{fructose-2,6-bisphosphate} (F-2,6-BP) whose intracellular concentration
+is controlled by PFK-2 (synthesizes) and F-2,6-BPase (breaksdown).
+\emph{Insulin} and \emph{glucagon}.\\
+Blood glucose falls, glucagon released
+binds to liver cells, production of cAMP and activation of \vocab{protein kinase
+A} leading to deactivation of PFK-2 and activation of F-2,6-BPase (via
+phosphorylation). Leads to increased consumption of F-2,6-Bp enhancing activity
+of F-1,6-BPase and decreasing PFK. Net result in gluconeogenesis and an
+inhibition of glycolysis.\\
+Summary in the figure below
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.1,frame]{Gly_Glu_reg.jpg}
+\end{figure}
+
+\subsection{Regulation of the Krebs Cycle}
+
+Conversion of pyruvate to acetyl-CoA is highly regulated since acetyl-CoA cannot
+be used in gluconeogenesis. Enzymes that produce exergonic steps in Krebs are
+also regulated e.g. \vocab{isocitrate dehydrogenase}.
+
+\subsection{Regulation of Glycogen Synthesis and Glycogenolysis}
+
+\vocab{Glycogen synthase} and \vocab{Glycogen phosphorylase} (catabolism of
+glycogen) are reciprocally controlled.
+
+\subsection{Overview} Some guidelines: 
+\begin{enumerate} 
+  \item Enzymes that catalyze irreversible steps are frequently sites of
+    regulation 
+  \item Increased concentrations of intermediates in a pathway generally serve
+    to decrease the activity of that pathway 
+  \item Each pathway responds to the
+    energy state of the cell 
+\end{enumerate}
+
+\begin{figure}[h] \centering \includegraphics[scale=0.1,frame]{MetaReg.jpg}
+\end{figure}
+
+\section{Fatty Acid Metabolism}
+
+\subsection{Fatty Acid Oxidation}
+
+Following initial steps of digestion, \vocab{chylomicrons} composed of fat and
+lipoprotein go to liver, heart, lungs, and other organs. The triacylglycerol is
+then hydrolyzed to liberate free fatty acids which can then undergo several
+rounds of $ \boldsymbol{\beta}- $\textbf{oxidation} each round producing an
+acetyl-CoA until the last producing four-carbon acyl-CoA to generate two
+acetyl-CoA. Process begins at outer mitochondrial membrane, catalyzed by
+\vocab{acyl-CoA synthetase}, moves into matrix and cleaved to form acetyl-CoA.
+Other products include $ - $2 ATP, +1 \chemfig{FADH_{2}} and +1 NADH. \\
+For unsaturated double bond fatty acids an isomerase is neeed to move the double
+bond. If more than one double bond then need isomerase and reductase.
+
+\subsection{Ketogenesis}
+
+During times of starvation, body produces \vocab{ketone bodies} including
+acetone, acetoacetate, and $ \beta $-hydroxybutyrate which can be converted back
+to acetyl-CoA upon arrival at the target organ and enter Krebs cycle. 
+
+\subsection{Fatty Acid Synthesis}
+
+Similar to $ \beta $-oxidation with several exceptions. Takes place in
+cytoplasm. Repeated addition of two-carbon units. Acetyl-CoA is first activated
+in a carboxylation reaction (initial committed step) and facilitated by
+\vocab{acetyl-CoA carboxylase} to generate \vocab{malonyl-CoA}.\\
+\vocab{Fatty acid synthase} catalyzes a decarboxylation reaction where
+malonyl-CoA provides two carbons to the growing fatty acid. Synthesis requires
+NADPH obtained from pentose phosphate pathway (PPP).  
+\end{document}

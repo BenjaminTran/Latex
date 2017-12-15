@@ -1,0 +1,124 @@
+% !TeX root = OChemChap1.tex
+\documentclass[../OChemReview.tex]{subfiles}
+
+\begin{document}
+	\chapter{Nomenclature\supdag}
+	\begin{enumerate}
+		\item \textbf{Identify the longest carbon chain containing the highest-order functional group}\\
+		Double and triple bonds must be considered when identifying the highest-order functional groups. The highest-priority functional group (the more oxidized the carbon, the higher the priority) provides the suffix.
+		\item \textbf{Number the chain}\\
+		Carbon number 1 will be closest to the highest-priority functional group. If all same priority then number such that the numbers of the substituted carbons are as low as possible. If there is a tie in priorities in a ring then double bonds take precedence over triple bonds
+		\item \textbf{Name the substituents}\\
+		Names at the beginning. Carbon chain substituents, replace -ane with -yl. For multiple substituents of the same type add di-,tri-,tetra- prefix e.g. dimethyl.
+		\item \textbf{Assign a number to each substituent}\\
+		Always list the carbon number substituent is attached to even if you have the di-, tri-, etc. prefix e.g. 3,3-dimethyl
+		\item \textbf{Complete the name}\\
+		List substituents in alphabetical order ignoring hyphenated prefixes such as n-, tert-, t-, and di-,tri-,tetra-, etc. DO NOT IGNORE nonhyphenated roots; iso-, neo-, cyclo-, and remember that the highest priority functional group determines the suffix.
+	\end{enumerate}
+	
+	\begin{figure}[h]
+		\centering
+		\setatomsep{2em}
+		\chemname{\chemfig{-[7]-[1](-[1])(-[3])-[7](-[6]-[7])-[1](-[7]-[1]-[7])-[2](-[1])-[3]}}{4-ethyl-5-isopropyl-3,3-dimethyloctane}
+	\end{figure}
+	
+	\section{Hydrocarbons and Alcohols\supdag}
+	
+	Alkyl halides are indicated by the prefix: \textbf{fluoro-, chloro-, bromo-, iodo-}.
+	
+	\subsection{Alkenes and Alkynes\supdag}
+	
+	Numbering can occur in two ways: 2-butene and but-2-ene are both correct. For several multiple bonds then the numbering is outside e.g: 1.3-butadiene.
+	
+	\subsection{Alcohols\supdag}
+	
+	Replace -e with -ol e.g. ethanol. \emph{The hydroxyl group takes precedence over multiple bonds because of the higher oxidation state of the carbon}. As a substituent it has the prefix \textbf{hydroxy-}.
+	\newpage`
+	\begin{figure}[h]
+		\centering
+		\chemname{\chemfig{=[1]-[7]-[1]-[7]-[1]-[7]-[1]OH}}{hept-6-en-1-ol}
+	\end{figure}
+	
+	The common names of alcohols are constructed like isopropyl alcohol instead of 2-propanol. Alcohols with two hydroxyl groups are called \textbf{diols} or \textbf{glycols} with the suffix -diol added e.g. ethane-1,2-diol. Diols with hydroxyl groups on the same carbon are called \textbf{geminal diols} and on adjacent carbons \textbf{vicinal diols}. Note gem diols spontaneously dehydrate to form carbonyls.
+	
+	\subsection{Aldehydes and Ketones\supdag}
+	
+	Aldehydes are \emph{chain-terminating} and ketones are found in the middle. Aldehydes and ketones do not have leaving groups attached to the carbonyl carbon. Carboxylic acids and derivatives do.
+	
+	\subsubsection{Aldehydes\supdag}
+	
+	Take precedence over many things thus it is usually on carbon 1. The suffix is \textbf{-al} e.g. butanal. Methanal, ethanal, and propanal are almost always referred to by their common names:
+	
+	\begin{figure}[h]
+		\centering
+		\schemestart
+		\chemname{\chemfig{(-[7]H)(-[5]H)=[2]O}}{formaldehyde}
+		\qquad
+		\chemname{\chemfig{(-[5])(-[7]H)=[2]O}}{acetaldehyde} \qquad
+		\chemname{\chemfig{(-[7]H)(=[2]O)-[5]-[3]}}{propionaldehyde}
+		\schemestop
+	\end{figure}
+	
+	\subsubsection{Ketones\supdag}
+	
+	Replace -e with \textbf{-one}. Ketones are commonly named by listing alkyl groups in alphabetical order followed by \emph{ketone} e.g. ethylmethylketone.
+	\begin{figure}[h]
+		\centering
+		\setatomsep{2em}
+		\chemname{\chemfig{-[1](=[2]O)-[7]-[1]-[7]-[1]-[7]*6(--(=[6]O)----)}}{3-(5-oxohexyl)cyclohexanone}
+	\end{figure}
+	For aldehyde or ketone substituent use prefix \textbf{-oxo}. Ketones may also use the prefix \textbf{keto-}. Note that the sugar classifications aldoses have aldehydes and ketoses have ketones. Carbons adjacent to carbonyl carbon are denoted by greek letters.
+	
+	\section{Carboxylic Acids and Derivatives\supdag}
+	\subsection{Carboxylic Acids\supdag}
+	Carboxylic acids are chain terminating groups and have the suffix \textbf{-oic acid}. They are the highest-priority functional group on the MCAT. Once again, methanoic, ethanoic, and propanoic acids are usu. referred to by their common names:
+	
+	\begin{figure}[h]
+		\centering
+		\chemname{\chemfig{(-[7]OH)(-[5]H)=[2]O}}{methanoic acid \\ (formic acid)} \qquad \chemname{\chemfig{(-[5])(-[7]OH)=[2]O}}{ethanoic acid \\ (acetic acid)} \qquad 
+		\chemname{\chemfig{(-[7]OH)(=[2]O)-[5]-[3]}}{propanoic acid \\ (propionic acid)}
+	\end{figure}
+	
+	Know both names on Test Day.
+	
+	\subsection{Esters\supdag}
+	
+	The hydroxy group is replaced with an alkoxy group (-OR where R is a hydrocarbon chain). The first term refers to the esterifying group and the second term refers to the parent acid with \textbf{-oate} replacing \textbf{-oic acid} e.g.
+	
+	\begin{figure}[h]
+		\centering
+		\schemestart
+		\chemname{\chemfig{CH_{3}CH_{2}-C(=[1]O)-[7]O-{\color{red}CH_{2}CH_{3}}}}{\textcolor{red}{ethyl} propanoate}
+		\schemestop
+	\end{figure}
+	
+	\subsection{Amides\supdag}
+	
+	The hydroxyl group is replaced by an amino group (nitrogen containing group). They are named similarly to esters but have the suffix \textbf{-amide} and the substituents of the nitrogen are labeled with a capital \textbf{N-} indicating that it is bonded to the parent chain via a nitrogen. 
+	
+	\begin{figure}[h]
+		\centering
+		\chemname{\chemfig{-[1]-[7]-[1](=[2]O)-[7]N(-[6])-[1]-[7]}}{N-ethyl-N-methylbutanamide}
+	\end{figure}
+	
+	\newpage
+	\subsection{Anhydrides\supdag}
+	
+	In formation from two carboxylic acids, one water molecule is removed. Usu. cyclic from intramolecular dehydration of a dicarboxylic acid. In naming replace acid with \textbf{anhydride} if anhydride is symmetrical. If not symmetrical then name both carboxylic acids before anhydride.
+	
+	\begin{figure}[h]
+		\centering
+		\schemestart
+		\chemname{\chemfig{-[7]-[1](=[2]O)-[7]O-[1](=[2]O)-[7]}}{ethanoic propanoic \\ anhydride} \qquad
+		\chemname{\chemfig{(=[2]O)(-[5])-[7]O-[1](=[2]O)-[7]}}{ethanoic anhydride}
+		\schemestop
+	\end{figure}
+	
+	\section{Summary of Functional Groups\supdag}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.1]{FuncGroup.jpg}
+	\end{figure}
+	
+\end{document}

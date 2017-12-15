@@ -1,0 +1,110 @@
+% !TeX root = GChemChap8.tex
+\documentclass[../GChemReview.tex]{subfiles}
+
+\begin{document}
+	\chapter{Gases}
+	
+	\section{Gases and the Kinetic-Molecular Theory}
+	
+	The most important properties of a gas are its pressure, volume, and temperature. Kinetic-Molecular Theory is based on the following assumptions:
+	\begin{enumerate}
+		\item Molecules of a gas are so small compared to the average spacing between them that they take up negligible volume
+		\item Gas particle motion is in a straight line and directionality is random after collisions, which are assumed to be elastic.
+		\item No intermolecular forces
+		\item The average kinetic energy of the molecules is directly proportional to the absolute temperature. 
+	\end{enumerate}
+	
+	\subsection{Units}
+	
+	\subsubsection{Volume}
+	
+	Use cubic centimeters instead of cubic meters. Note that 
+	\[ \boxed{1 \; \text{cm}^{3} = 1 \text{ mL} \qquad \text{and} \qquad 1 \text{ m}^{3} = 1000 \text{ L}} \]
+	
+	\subsubsection{Temperature}
+	
+	Use Kelvins. Conversion is to just add 273.15 to $ ^{\circ} $C to get K.
+	
+	\subsubsection{Pressure}
+	
+	Use atmospheres. Conversions are:
+	\[ 1 \text{ atm} = 760 \text{ torr} = 760 \text{ mm Hg (at 0C)} = 101.3 \text{ kPa} \]
+	
+	\subsection{Standard Temperature and Pressure}
+	
+	This is $ 0^{\circ} $C and 1 atm.
+	
+	\section{The Ideal Gas Law}
+	
+	The key relation is:
+	\begin{equation}
+	\boxed{	PV = nRT}
+	\end{equation}
+	
+	Where R has the value 0.0821 $ \tfrac{L\cdot atm}{K\cdot mol} $. As a corollary if n does not change then we have the relation
+	\begin{equation}
+		\dfrac{P_{1}V_{1}}{T_{1}}=\dfrac{P_{2}V_{2}}{T_{2}}
+	\end{equation}	
+	where 1 and 2 denote the before and after state. For instance consider the following:
+	\begin{problem*}
+		Argon, at a pressure of 2 atm, fills a 100 mL vial at a temperature of $ 0^{\circ} $C. What would the pressure of the argon be if we increase the volume to 500 mL, and the temperature is $ 100^{\circ} $C?
+	\end{problem*}
+	Solution is the direct application of (8.2). Holding any of the three variables constant gives us other relations derived from (8.2):
+	\begin{align}
+		\text{Constant P (Charles Law): } &\dfrac{V_{1}}{T_{1}} = \dfrac{V_{2}}{T_{2}}\\
+		\text{Constant T (Boyle's Law) : } &P_{1}V_{1}=P_{2}V_{2}\\
+		\text{Constant V (Gay-Lussac's Law): } &\dfrac{P_{1}}{T_{1}} = \dfrac{P_{2}}{T_{2}}
+	\end{align}
+	
+	Holding all three variables constant gives us \textbf{Avagadro's Law} which states that\\
+	\hfil \\
+	\fbox{\parbox{\textwidth}{If two equal-volume containers hold gas at the same pressure and temperature, then they contain the same number of particles (regardless of the identity of the gas)}}
+	\hfil\\
+	
+	\emph{At STP any mol of gas fills up a volume of 22.4 L}. This can be used to directly calculate the moles of a gas at STP by taking the ratio of the gas present to 22.4 L.
+	
+	\section{Deviations from Ideal-Gas Behavior}
+	
+	For real gases with intermolecular forces, the pressure is decreased that is:
+	\[ P_{real} < P_{ideal} \]
+	If the particles are not volumeless then the volume is decreased:
+	\[ V_{real} < V_{ideal} \]
+	The \textbf{van der Waal's equation} accounts for the observed behavior of real gases.
+	\begin{align}
+		\boxed{\del[2]{P + \dfrac{an^{2}}{V^{2}}}(V - nb) = nRT} \label{van} \\ \eqname{van der Waal's Equation} 
+	\end{align}
+	
+	The constant $ a $ is larger for gases that experience greater intermolecular forces and $ b $ is larger for larger molecular weights and therefore volumes. Solving for pressure we get that
+	\[ P_{real} = \del[2]{\dfrac{nRT}{V-nb}} - \del[2]{\dfrac{an^{2}}{V^{2}}} \]
+	Thus, by increasing T, $ P_{real} $ approaches $ P_{ideal} $. So conceptually, higher pressures and lower temperatures leads to deviations from the ideal since this forces gas molecules closer together and increases intermolecular forces and lower temperatures decrease the speed of molecules so they experience the forces for longer periods of time.
+	
+	\section{Dalton's Law of Partial Pressures}
+	
+	For a container with $ i $ different gases, the partial pressures $ p_{i} $ are proportional to the total pressure given by:
+	\begin{equation}
+	p_{i} = X_{i}P_{tot}
+	\end{equation}
+	where $ X_{i} $ is the mole fraction of gas type $ i $. Then the total pressure is given by:
+	\begin{align}
+		\boxed{P_{tot} = \sum_{i}p_{i}} \\ \eqname{Dalton's Law}
+	\end{align}
+	
+	\section{Graham's Law of Effusion}
+	
+	If two gases are in a container at thermal equilibrium then by the equipartition theorem they have the same kinetic energy thus we obtain:
+	\begin{align*}
+		\dfrac{1}{2}m_{1}(v_{1}^{2})_{avg} = \dfrac{1}{2}m_{2}(v_{2}^{2})_{avg}\\
+		\implies \dfrac{v_{1,rms}}{v_{2,rms}}= \sqrt{\dfrac{m_{2}}{m_{1}}}
+	\end{align*}
+	
+	which gives us Graham's Law of Effusion directly:
+	\begin{align}
+		\begin{aligned}
+		\boxed{\dfrac{\text{rate of effusion of Gas A}}{\text{rate of effusion of Gas B}} = \sqrt{\dfrac{\text{molar mass of Gas  B}}{\text{molar mass of Gas A}}}}
+		\end{aligned}
+		\\ \eqname{Graham's Law of Effusion}
+	\end{align}
+	
+	Since the kinetic energy is proportional to T then $ v_{rms} \propto \sqrt{T} $ (Remember here that T is in K).
+	
+\end{document}

@@ -1,0 +1,152 @@
+\documentclass[../GChemReview.tex]{subfiles}
+
+\begin{document}
+\chapter{Acids and Bases}
+
+\section{Definitions}
+Three definitions of acids and bases
+
+\subsection{Arrhenius Acids and Bases}
+
+Oldest and least commonly used definition:
+
+\centering
+\hfil \\
+\begin{varwidth}{\textwidth}
+  \begin{enumerate}
+    \item[] \emph{Acids ionize in water to produce hydrogen ions}
+    \item[] \emph{Bases ionize in water to produce hydroxide ions}
+  \end{enumerate}
+\end{varwidth}
+\\
+\flushleft
+Remember that \chemfig{H^{+}} does not exist by itself but rather denotes
+\chemfig{H_{3}O^{+}}.
+
+\subsection{Bronsted-Lowry Acids and Bases}
+The definitions are:
+
+\centering
+\hfil \\
+\begin{varwidth}{\textwidth}
+  \begin{enumerate}
+    \item[] \emph{Acids are proton donors}
+    \item[] \emph{Bases are proton acceptors}
+  \end{enumerate}
+\end{varwidth}
+\\
+\flushleft
+Then in the following reaction
+
+\begin{center}
+  \schemestart
+  \chemfig{H_{2}CO_{3} \+ H_{2}O}\arrow{<=>}\chemfig{H_{3}O^{+} \+ HCO_{3}^{-}}
+  \schemestop
+\end{center}
+The acids are \chem{H_{2}CO_{3}} and \chem{H_{3}O^{+}} and the bases are the rest.
+
+\subsection{Lewis Acids and Bases}
+
+The definitions are:
+
+\centering
+\hfil \\
+\begin{varwidth}{\textwidth}
+  \begin{enumerate}
+    \item[] \emph{Lewis acids are electron pair acceptors}
+    \item[] \emph{Lewis bases are electron pair donors}
+  \end{enumerate}
+\end{varwidth}
+\\
+\flushleft
+
+Then in the following reaction:
+
+\begin{center}
+  \schemestart
+  \chemfig{AlCl_{3} \+ H_{2}O}\arrow{<=>}\chem{(AlCl_{3}OH)^{-}}\chemfig{\+ H^{+}}
+  \schemestop
+\end{center}
+Thus, \chem{AlCl_{3} \text{and} H^{+}} are acids since they are electron acceptors.
+
+\section{Conjugate Acids and Bases}
+
+When a Bronsted-Lowry acid donates an \chem{H^{+}} the remaining is called a
+\vocab{conjugate base}. In the reverse situation it is called a \vocab{conjugate
+acid}.
+
+\section{The Strengths of Acids and Bases}
+
+From the general chemical equation:
+\begin{center}
+  \schemestart
+  \chemfig{HA \+ H_{2}O}\arrow{<=>}\chemfig{H_{3}O^{+} \+ + A^{-}}
+  \schemestop
+\end{center}
+We can quantify the strength of an acid or base with the \vocab{acid-dissociation constant}:
+\begin{equation}
+  \boxed{K_{a} = \dfrac{[\chem{H_{3}O^{+}}][\chem{A^{-}}]}{[\chem{HA}]}}
+\end{equation}
+If $ K_{a} > 1 $ then we say that it is a \vocab{strong acid} and if $ K_{a} < 1
+$ it is a \vocab{weak acid}. When comparing acids \textcolor{red}{The larger the
+  $ K_{a} $ value the stronger the acid; the smaller it is the weaker the acid}.
+  The following table gives the strong acids:
+
+\begin{center}
+  \begin{tabularx}{0.4\textwidth}{Xc}
+    \toprule
+    Hydroiodic acid & HI \\ 
+    Hydrobromic acid & HBr \\ 
+    Hydrochloric acid & HCl \\ 
+    Perchloric acid & HClO$_{4}$ \\ 
+    Sulfuric acid & \chem{H_{2}SO_{4}} \\ 
+    Nitric acid & \chem{HNO_{3}} \\ 
+    \bottomrule
+  \end{tabularx}
+\end{center}
+
+If an acid is not on this list then it may be treated as weak on the MCAT. Note
+that HF is not a strong acid. This is due to the fact that \chem{F^{-}} has a
+very small radius and is therefore not considered stable as a conjugate base.
+
+Equivalently, for bases we have the \vocab{base-dissociation constant}:
+\begin{equation}
+  \boxed{K_{b} = \dfrac{[\chem{HB^{+}}][\chem{OH^{-}}]}{[\chem{B}]}}
+\end{equation}
+\textcolor{Blue1}{The larger the $ K_{b} $ value, the stronger the base, the
+smaller it is the weaker the base.} On the MCAT the common strong bases are
+listed below: 
+\begin{table}[H]
+  \centering
+  \setlength{\aboverulesep}{0pt}
+  \setlength{\belowrulesep}{0pt}
+  \begin{tabularx}{0.8\textwidth}{Xp{15em}}
+    \toprule
+    \rowcolor{fu-blue!20} \textbf{Common Strong Bases} & \textbf{Examples}\\
+    \midrule
+    Group 1 hydroxides & \chem{NaOH} \\
+    Group 1 oxides & \chem{Li_{2}O} \\
+    Some group 2 hydroxides & \chem{Ba(OH)_{2}}, \chem{Sr(OH)_{2}},
+    \chem{Ca(OH)_{2}} \\ 
+    Metal amides & \chem{NaNH_{2}} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\subsection{The Relative Strengths of Conjugate Acid-Base Pairs}
+The strength of a conjugate species is inversely proportional to the strength of
+its parent e.g. the conjugate acid of a strong base is a weak acid and the
+conjugate base of a strong acid is a weak base. For a weak acid or base the
+conjugate species is also, in general, weak but keep in mind the inverse
+proportionality.
+
+\subsection{Amphoteric Substances}
+When a substance can act as either an acid or base, it is called
+\vocab[]{amphoteric}. The conjugate base of a weak polyprotic acid is always
+amphoteric. Polyprotic acids become weaker the more you deprotonate.
+
+\section{The Ion-Product Constant of Water} 
+
+
+
+\end{document}

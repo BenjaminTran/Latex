@@ -1,0 +1,5 @@
+To change the default search directory for personal packages change the following file:
+/usr/local/texlive/2016/texmf.cnf
+In the TEXMFHOME variable set it to the desired path. Note that the default path was:
+~\texmf\tex
+Note further that there is a hierarchy structure for further stuff that can be found in one of the websites that is bookmarked in Chrome.

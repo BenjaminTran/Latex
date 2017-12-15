@@ -1,0 +1,50 @@
+\documentclass[10pt,a4paper]{report}
+
+\usepackage{subfiles}
+\usepackage{MCATstyle}
+\graphicspath{{images/}}
+\makeatletter
+\let\org@subfile\subfile
+\renewcommand*{\subfile}[1]{%
+  \filename@parse{#1}% LaTeX's file name parser
+  \expandafter
+  \graphicspath\expandafter{\expandafter{\filename@area/images/}}%
+  \org@subfile{#1}%
+}
+\makeatother
+\makeindex
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		\line(1,0){400}\\
+		[0.25in]
+		\huge{\bfseries \textsc{MCAT Organic Chemistry Review}}\\
+		[0.10in]
+		\line(1,0){400}\\
+		\textsc{Princeton Review}\\
+		\& \\
+		\textsc{Kaplan\supdag}\\
+		[10cm]
+	\end{center}
+	
+	\begin{flushright}
+		\textsc{Benjamin Tran}
+	\end{flushright}
+\end{titlepage}
+	
+	
+	\tableofcontents
+	\thispagestyle{empty}
+	\cleardoublepage
+	
+	\setcounter{page}{1}
+
+	\subfile{OChemChap1/OChemChap1.tex}
+	\subfile{OChemChap2/OChemChap2.tex}
+	\subfile{OChemChap3/OChemChap3.tex}
+	\subfile{OChemChap4/OChemChap4.tex}
+%	\subfile{OChemChap5/OChemChap5.tex}
+	
+\end{document}

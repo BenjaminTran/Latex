@@ -1,0 +1,263 @@
+% !TeX root = OChemChap4.tex
+\documentclass[../OChemReview.tex]{subfiles}
+
+\begin{document}
+		\chapter{Carbonyl Chemistry}
+		
+		Common ways to form carbonyls from alchohols are shown below:
+		
+		\begin{figure}[h]
+			\centering
+			\schemestart
+			\chemname{\chemfig{(-[5]R)(-[7]OH)}}{primary alcohol}\arrow(.mid east--.mid west){->[PCC][]}\chemname{\chemfig{(=[2]O)(-[7]H)-[5]R}}{aldehyde}
+			\schemestop
+			\bigskip
+			\bigskip
+			
+			\schemestart
+			\chemname{\chemfig{(-[5]R)(-[7]R')(-[:120]H)-[:60]OH}}{secondary alcohol}\arrow(.mid east--.mid west){->[\chemfig{CrO_{3}}]}\chemname{\chemfig{(=[2]O)(-[7]R')-[5]R}}{ketone}
+			\schemestop
+			\bigskip
+			\bigskip
+			
+			\schemestart
+			\chemname{\chemfig{(-[5]R)(-[7]R')(-[:120]R'')-[:60]OH}}{tertiary alcohol}\arrow{->[O]}no reaction
+			\schemestop
+		\end{figure}
+		
+		\emph{Note: Since the oxidizing agent removes a hydrogen from the carbon, tertiary alcohols are not able to react to form carbonyls.}\\
+		\bigskip
+		
+		Recall oxidizing agents absorb electrons (and be reduced). Below are some common oxidizing agents. Note that only PCC will NOT overoxidize a primary alcohol to a carboxylic acid.\par
+		The C=O bond is very polarized (O pulling the $ \pi $ electrons towards itself) giving aldehydes or ketones a resonance structure where the oxygen pulls the lone pair off the double bond onto itself. This has two effects:
+		\begin{enumerate}
+			\item $ \alpha $ protons are acidic since the electrons from the hydrogen bond can delocalize into the $ \pi $ system of the carbonyl.
+			\item The carbon of the carbonyl group becomes electrophilic and thus \emph{susceptible to nucleophilic attack}
+		\end{enumerate}
+		
+		\section{Acidity and Enolization}
+		
+		A strong base such as \chemfig{OH^{-}} can pull off the $ \alpha $ proton mentioned above yielding a carbanion. This resonance stabilized carbanion is referred to as an \textbf{enolate ion} - negatively charged and nucleophilic. 
+		
+		\subsection{Keto-Enol Tautomerism}
+		
+		A ketone is converted into an enol by deprotonation of the $ \alpha $ carbon atom and subsequent protonation of the carbonyl oxygen. This is called \textbf{keto-enol tautomerism}. Two molecules are \textbf{tautomers} if they are readily interconvertible constitutional isomers in equilibrium with one another.
+		
+		\begin{figure}[h]
+			\centering
+			\schemestart
+			\chemfig{(-[5]CH_{3})(-[7]CH_{3})=[2]O}\arrow{<<->}\chemname{\chemfig{(-[5]CH_{3})(-[2]
+					OH)=[7]CH_{2}}}{enol}
+			\schemestop
+		\end{figure}
+		If there is a chiral $ \alpha $ carbon, then tautomerization can lead to a racemic mixture since the enol will force the $ \alpha $ carbon into a planar configuration where protonation can occur from top or bottom of the plane leading to a mixture of R and S configurations.
+		
+		\subsection{Nucleophilic Addition Reactions to Aldehydes and Ketones}
+		
+		The double bond of the carbonyl makes the carbon very electrophilic (since a resonance form exists where the carbon is partial positive). This leads to nucleophilic attack allowing for the conversion of aldehydes or ketones into different functional groups such as alcohol via hydride reduction:
+		
+		\begin{figure}[h]
+			\centering
+			\setatomsep{2em}
+			\schemestart
+			\chemfig{(-[5]R)(-[7]H)=[2]O}\arrow{->[\chemfig{NaBH_{4}}][\chemfig{ErOH}]}\chemfig{(-[5]R)(-[7]OH)(-[:60]H)-[:120]H}
+			\schemestop
+			\bigskip
+			
+			\schemestart
+			\chemfig{(-[5]R)(-[7]R')=[2]O}\arrow{->[\chemfig{LiAlH_{4}}][ether]}\chemfig{(-[5]R)(-[7]R')(-[:60]OAlH_{3})-[:120]H}\arrow{->[\chemfig{H_{3}O^{+}}][]}\chemfig{(-[5]R)(-[7]R')(-[:60]OH)-[:120]H} + Al(OH)$ _{3} $
+			\schemestop
+		\end{figure}
+		
+		\centering
+		\fbox{\parbox{\textwidth}{
+		{Note: Sodium borohydride and lithium aluminum hydride are common reducing agents on MCAT.}
+		}} 
+		\flushleft
+		In general, strong reducing agents easily lose electrons by adding hydride (a hydrogen atom and a pair of electrons) to the carbonyl. Reducing agents often have many hydrogens attached to other elements with low electronegativity.
+		
+		\subsection{Organometallic Reagents}
+		
+		Commonly used to perform nucleophilic addition of almost whatever you want to a carbonyl carbon and has a basic structure of \chemfig{R^{-}M^{+}}. The most common are \textbf{grignard reagents} and lithium reagents. Grignard reagents are made as follows:
+		
+		\begin{figure}[h]
+			\centering
+			\setatomsep{3em}
+			\schemestart
+			\chemfig{-[1]-[7]Br} + \chemfig{Mg}\arrow{->[][\chemfig{Et_{2}O}]}\chemfig{-[1]-[7]MgBr}
+			\schemestop
+		\end{figure}
+		
+		In a reaction, the MgBr will kick off and the electrons will fall onto the carbon forming a carbanion making it a strong base and nucleophile. \emph{Since it is a strong base to avoid unwanted protonation it is carried out in an aprotic solvent such as diethyl ether.} An example is given below
+		\bigskip
+		
+			\centering
+			\setatomsep{3em}
+			%\setbondoffset{0.1em}
+			%\setarrowoffset{pt}
+%			\setchemrel{}{2em}{}
+			\schemestart
+			\chemfig{(-[7]R')(-[5]R)=[2]O}\arrow{->[1.  \chemfig{CH_{3}CH_{2}MgBr}, ether][2.  \chemfig{H_{3}O^{+}}]}\chemfig{(-[5]R)(-[7]R')(-[6,1.25]CH_{3}CH_{2})-[2]OH} + HOMgBr
+			\schemestop
+
+		\flushleft
+		
+		\subsection{Mesylates and Tosylates}
+		
+		Can be used to protect alcohols or amino groups allowing the molecule to participate in reactions the presence of the hydroxyl may have prevented and are good leaving groups under nucleohilic attack. Original groups may be regenerated afterwards. Use a base (triethylamine or pyridine) leads to attack at the sulfur followed by expulsion of the chloride:
+		
+		\begin{figure}[h]
+			\centering
+			\setatomsep{1.75em}
+			
+			\schemestart
+%			\chemnameinit{\chemfig{O(-[2](-[1])-[3]-[5])-[7]S(=[1]O)(=[5]O)-[7]}}
+			\chemname{\chemfig{-[1]-[7](-[6]OH)-[1]}}{sec-butyl \\ alcohol} \+ \chemname{\chemfig{-S(=[2]O)(=[6]O)-Cl}}{mesyl chloride}\arrow{->[\chemfig{NEt_{3}}]}\chemname{\chemfig{O(-[2](-[1])-[3]-[5])-[7]S(=[1]O)(=[5]O)-[7]}}{sec-butyl mesylate} \+ [\chemfig{NEt_{3}H}][Cl]
+%			\chemnameinit{}
+			\schemestop
+			\bigskip
+			\bigskip
+			
+			\chemnameinit{\chemfig{O=S(-[2]Cl)(=O)-[6]*6(=-=(-[6])-=-)}}
+			\schemestart
+			\chemname{\chemfig{-[1]-[7](-[6]OH)-[1]}}{sec-butyl \\ alcohol} \+
+			\chemname{\chemfig{O=S(-[2]Cl)(=O)-[6]*6(=-=(-[6])-=-)}}{tosyl chloride}\arrow{->[\setatomsep{1.25em}\chemfig{[:60]N*6(=-=-=-)}]}
+			\chemname{\chemfig{O(-[2](-[1])-[3]-[5])-[7]S(=[1]O)(=[5]O)-[7]*6(=-=(-[7])-=-)}}{sec-butyl tosylate} \+ [\chemfig{C_{5}H_{5}NH}][Cl]
+			\schemestop
+			\chemnameinit{}
+		\end{figure}
+		
+		\subsection{Acetals and Hemiacetals}
+		
+		They are of fundamental importance in biochemical reactions that occur in living organisms. Synthesized from nucleophilic addition reactions to aldehydes or ketones. Acetals via 
+		
+		\subsubsection{General Formulas}
+		
+		\begin{figure}[h]
+			\centering
+			\chemname{\chemfig{R-(-[2]OR')(-[6]OR')-R}}{\textcolor{blue}{acetals}} \hspace{90 pt}
+			\chemname{\chemfig{R-(-[2]OH)(-[6]OR')-R}}{\textcolor{blue}{hemiacetals}}
+		\end{figure}
+		
+		Here are two examples:
+		
+		\begin{figure}[h]
+			\centering
+			\setatomsep{2em}
+			\chemname{\chemfig{-[1]-[7]-[1]{\color{red}C}([:90]*5(-O---O-))-[7]H}}{Acetal}\hspace{90 pt}
+			\chemname{\chemfig{[:60]O*6(-{\color{red}C}(-[:30]OH)(-[:330]CH_{3})-----)}}{Hemiacetal}
+		\end{figure}
+		\newpage
+		\subsubsection{Acetal Formation}
+		Cf. pg. 166 for mechanism details. 
+		\begin{figure}[h]
+			\centering
+			\schemestart
+			\chemname{\chemfig{(-[5]R)(-[7]R)=[2]O}}{Ketone}\arrow{<=>[HCl][\chemfig{{{\color{Green3}R'OH}}}]}\chemname{\chemfig{R-(-R)(-[2]OH)-[6]{\color{Green3}O}|{\color{Green3}R'}}}{Hemiacetal}\arrow{<=>[+\chemfig{{{\color{Green3}R'OH}}}][-\chemfig{H_{2}O}]}\chemname{\chemfig{R-(-[2]{\color{Green3}O}|{\color{Green3}R'})(-[6]{\color{Green3}O}|{\color{Green3}R'})-R}}{acetal}
+			\schemestop
+		\end{figure}
+		
+		\subsection{Cyanohydrin Formation}
+		
+		With a ketone or aldehyde, perform a nucleophilic attack with cyanide (\chemfig{^{-}C~N}) to get a cyanohydrin.
+		
+		\begin{figure}[h]
+			\centering
+			\setatomsep{2em}
+			\schemestart
+			\chemfig{(-[5]R_{1})(-[7]R_{2})=[2]O} \+ [\chemfig{Na^{+}}]\chemfig{^{-}C~N}\arrow{->}\chemfig{(-[5]R_{1})(-[7]R_{2})(-[3]O\rlap{$^{-}$})-[1]~[1]N}\arrow{->[\+\chemfig{H^{+}}]}\chemname{\chemfig{(-[5]R_{1})(-[7]R_{2})(-[3]OH)-[1]~[1]N}}{cyanohydrin}
+			\schemestop
+		\end{figure}
+		
+		\section{Amines}
+		
+		\textbf{Amines} have the general structure R-NH$ _{2} $. They can be further classified into \textbf{alkyl amines} or \textbf{aryl amines} where aryl amines refer to compounds in which a nitrogen is bonded to an $ sp^{2} $ hybridized carbon of an aromatic ring. They can be further categorized as primary, secondary, tertiary, and quaternary ammonium ions in reference to the number of non-H R substituents on the N. Since amines have a lone pair they may behave as Bronsted-Lowry bases or as nucleophiles.
+		
+		\subsection{Imine Formation}
+		
+		Reaction of aldehyde or ketone with a primary amine under weakly acidic conditions forms an imine.
+		
+		\begin{figure}[h]
+			\centering
+			\setarrowdefault{,1.5,}
+			\schemestart
+			\chemfig{(-[5]R)(-[7]R)=[2]O}\arrow{<=>[\chemfig{R'-[,.6]NH2}][$ \approx $pH 5]}\chemname{\chemfig{(-[5]R)(-[7]R)=[2]\lewis{4:,N}-[1]R'}}{imine} \+ \chemfig{H_{2}O}
+			\schemestop
+		\end{figure}
+		\newpage
+		\subsection{Enamine Formation}
+		
+		Reaction of aldehyde or ketone with a secondary amine under weakly acidic conditions forms an enamine. Note this is a reversible reaction and thus \emph{an enamine can be hydrolyzed to the carbonyl compound under aqueous acidic conditions}.
+		
+		\begin{figure}[h]
+			\centering
+			\setatomsep{2em}
+			\schemestart
+			\chemfig{[:180]*6(-(=[2]O)-----)} \+ \chemfig{\chembelow{\lewis{2:,N}}{H}(-[3]R_{1})-[1]R_{2}}\arrow{<=>[cat. \chemfig{H_{2}SO_{4}}]}\chemname{\chemfig{\lewis{2:,N}(-[3]R_{1})(-[1]R_{2})-[6]*6(=-----)}}{enamine} \+ \chemfig{H_{2}O} 
+			\schemestop
+		\end{figure}
+		
+		Enamines resemble enols and have similar chemistry. Consider its resonance form the iminium form:
+		\begin{figure}[h]
+			\centering
+			\setatomsep{2em}
+			\definesubmol\nobond{-[,0.15,,,draw=none]}
+			\definesubmol\nobondd{-[:212,0.4,,,draw=none]}
+			\schemestart
+			\chemfig{[:60]*6(--=(-\lewis{2:,N}(-[1]R_{2})-[3]R_{1})---)}\arrow(east--west){<->}
+			\chemnameinit{}
+			\chemname{\chemfig{[:60]*6(--(!\nobond\lewis{1:,}!\nobondd\ominus)-(=\chemabove{N}{\oplus}(-[1]R_{2})-[3]R_{1})---)}}{iminium form}
+			\schemestop
+		\end{figure}
+		
+		Evidently, the $ \alpha $ carbon is nucleophilic and since N is less electronegative than O, it is more nucleophilic than an enol but less nucleophilic than an enolate. An example reaction is given as follows:
+		
+		
+		\begin{figure}[h]
+			\centering
+			\setatomsep{2em}
+			\definesubmol\nobond{-[,1,,,draw=none]}
+			\schemestart
+			\chemfig{*6(---=(-[2]\lewis{2:,N}(-[1]R_{2})-[3]R_{1})--)}\arrow(east--west){->[\chemfig{H_{3}C}-I]}\chemfig{*6(---(-[:30]CH_{3})-(=[2]\chemabove{N}{\oplus}(-[1]R_{2})-[3]R_{1})--)}\arrow(east--west){->[\chemfig{H_{3}O^{+}}][\chemfig{H_{2}O}]}\chemfig{*6(---(-[:30]CH_{3})-(=[2]O!\nobond)--)} \+\chemfig{\chemabove{N}{\oplus}(-[:35]CH_{3})(-[:145]CH_{3})(-[5]H)-[7]H}
+			\schemestop
+		\end{figure}
+		
+		\subsection{Aldol Condensation}
+		
+		\emph{An aldol condensation is when an enolate anion of one carbonyl compound reacts with the carbonyl of another compound to form a $ \beta $-hydroxycarbonyl compound.} Recall the acidity of the $ \alpha $ hydrogen and the electrophilicity of the carbonyl carbon.
+		
+		\begin{figure}[h]
+			\centering 
+			\definesubmol\nobond{-[,0.01,,,draw=none]}
+			\schemestart
+			\chemfig{(-[5]CH_{3})(-[7]H)=[2]O}\arrow{->[NaOH][\chemfig{H_{2}O}]}\chemfig{!\nobond}\arrow{->[\chemfig{H_{3}O^{+}}]}
+			\chemnameinit{}
+			\chemname{\chemfig{\chembelow{C}{\textcolor{red}{\beta}}(-[5]CH_{3})(-[2]OH)-[7]\chemabove{C}{\textcolor{red}{\alpha}}-[1](=[2]O)-[7]H}}{\textcolor{red}{$\beta$-hydroxyaldehyde}}
+			\schemestop
+		\end{figure}
+		
+		Note:
+		\begin{enumerate}
+			\item Requires a strong base
+			\item One aldehyde or ketone becomes the enolate while another becomes attacked by it
+			\item If the aldhyde or ketones are not the same then \textbf{crossed aldol condensation} may occur and you get a mixture of products. To avoid this, choose one to not have any acidic $ \alpha $ protons so it will not become the enolate
+		\end{enumerate}
+		
+		\subsection{Kinetic vs. Thermodynamic Control of the Aldol Reaction}
+		
+		Consider asymmetric ketones with more than one set of $ \alpha $ protons treated with base. Two possible enolates may form. To learn how to control such reactions, consider the following molecule:
+		
+		\begin{figure}[h]
+			\centering
+			\definesubmol\nobond{-[2,0.5,,,draw=none]}
+			\chemfig{(!\nobond\textcolor{red}{\gamma})-[1](=[2]O)-[7](!\nobond\textcolor{red}{\delta})(-[6])-[1](-[2])-[7]}
+		\end{figure}
+		
+		Under the \textbf{thermodynamic control} conditions of NaOH and $ 25^{\circ} $C the protons at $ \delta $ will be removed to form the enolate. This is due to the fact that higher order alkenes are more stable than primary.\par
+		Under the \textbf{kinetic control} conditions of low temperature and bulky base the less sterically crowded site, $ \gamma $, will be favored. The low temperature is just to insure that more of the bulky base attacks $ \gamma $.
+		
+		\subsection{Retro-Aldol Reaction and Dehydration}
+		
+		
+		
+\end{document}

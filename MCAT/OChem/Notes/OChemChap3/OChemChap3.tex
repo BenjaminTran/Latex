@@ -1,0 +1,320 @@
+% !TeX root = OChemChap3.tex
+\documentclass[../OChemReview.tex]{subfiles}
+
+\begin{document}		
+	\chapter{Lab Techniques: Separations and Spectroscopy}
+	
+	\section{Separations}
+	
+	\subsection{Extractions}
+	
+	\textbf{Liquid-liquid extraction}: have compound of interest in a mixture of substances. First, add one solvent in which the compound is highly soluble. Then add a second solvent completely immiscible with the first. Allow to separate into two distinct phases, the compound will distribute itself between the two phases based upon the solubility in the individual solvents. The ratio of the substance's solubilities in the two solvents is called the \textbf{distribution (partition) coefficient}. Two types of liquid extractions:
+	\begin{enumerate}
+		\item Water - extract highly polar or charged substances (inorganic salts, strong acids and bases, and polar, low molecular weight compounds such as amines, alcohols, and carboxylic acids.)
+		\item acidic or basic water solutions - basic compounds extracted with dilute acid b/c protonates basic functional group forming positive ion which are usually freely soluble in aqueous solution.
+	\end{enumerate}
+	Solubility depends on polarity of solute and polarity of solvent. Remember: \emph{like dissolves like}.
+	
+	\subsection{Extraction of Organic Amines}
+	Using dilute acid:
+	\begin{figure}[h]
+		\centering
+		\chemfig{R-\lewis{2:,N}H_{2}} $\xrightarrow{10\% HCl}$ \chemfig{R-N^{\oplus}([2]-H)([6]-H)-H + Cl^{-}}
+	\end{figure}
+        The resulting charged amine can now be separated from the remaining
+        organic compounds in an aqueous solution.
+	\subsection{Extraction of Carboxylic Acids}
+	Using dilute base:
+	\begin{figure}[h]
+		\centering
+		\schemestart
+		\chemfig{R-COOH}\arrow{->[\tiny 5\% $ NaHCO_{3} $]}\chemfig{R-COO^{-}Na^{+} + H_{2}O + CO_{2}} \quad $Na^{+} + H_{2}O$
+		\schemestop
+	\end{figure}
+
+	Sodium hydroxide (10\% solution) can also be used and is basic enough to convert phenols into their corresponding anionic salts for extraction.
+	\newpage
+	\subsection{Extraction of Phenols}
+	
+	\begin{figure}[h]
+		\centering
+		\schemestart
+		\chemfig{[:30]*6(-=(-OH)-=-=)}\arrow{->[NaOH]}\chemfig{[:30]*6(-=(-\lewis{0:2:6:,O}^{\ominus})-=-=)}
+		\schemestop
+	\end{figure}
+	
+	These extractions are carried out in a \textbf{separatory funnel}. For an example extraction see the figure below:
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.1]{extractionEx.jpg}
+	\end{figure}
+
+	\subsection{Chromatography}
+	
+	Usu. used for identification or purification.
+	
+	\subsection{Thin-Layer Chromatography [TLC]}
+	
+	Separation based on differing polarities. The \textbf{mobile liquid phase} ascends a thin layer of absorbant (generally silica, \chemfig{SiO_{2}}) coated on a glass plate. The absorbant acts as a \textbf{polar stationary phase} for the sample to interact with. As solvent ascends the plate via capillary action, the components of the sample are partitioned between the mobile phase and the stationary phase. Separation due to polar components interacting more strongly with the polar stationary phase (absorbant) than with the liquid solvent hence moving up the plate slower than less polar components. The "ratio to front" value ($ R_{f} $) is:
+	\begin{equation}
+		R_{f} = \dfrac{\text{distance traveled by component}}{\text{distance traveled by solvent}}
+	\end{equation}
+	
+	Technique good for small amounts of material but not for bulk.
+	
+	\subsection{Column [Flash] Chromatography}
+	
+	For bulk material. Same idea as TLC but in reverse direction. Make a column filled with silica gel, saturate it with an organic solvent, add mixture of compounds to top of column and allow to travel down. More polar travels slower and vice versa. Thus, at the end compound can be expected to leave the column in order of polarity (\emph{least polar to most polar}). Cf. below
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.1]{Column.jpg}
+	\end{figure}
+	
+	\subsection{Ion Exchange Chromatography}
+	
+	Used for separating molecules of different charge states. Column contains solid stationary phase of resin with either positive or negative moieties. Cf. below
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.1]{IonExchange.jpg}
+	\end{figure}
+	
+	Thus, in this case, negative and neutral species eluted first. Afterwards wash out positive species with high concentration sodium.
+	
+	\subsection{High Performance Liquid Chromatography [HPLC]}
+	
+	Takes advantage of the differing affinities of various compounds for either a stationary or a mobile phase. Mobile phase is pushed through by high pressure. E.g. stationary phase is silica gel bonded to nonpolar group, mobile phase is polar solvent $ \implies $ more polar elute first. Can do charged compounds as well. Mobile phase is \emph{polar, protic, or acidic solvent} to ensure solubility and suppress dissociation of the carboxyl group on aa. Elution order based on interactions of sidechains with stationary phase.
+	
+	\subsection{Size Exclusion Chromatography}
+	
+	Column of porous beads. Small particles travel through beads are slowed down relative to large molecules that travel around beads. Faster than chromatography but not effective against similar size molecules.
+	
+	\subsection{Affinity Chromatography}
+	
+	Based on highly specific interactions between macromolecules (binding of target to stationary phase). Most commonly used to purify proteins or nucleic acids from complex biochemical mixtures. Target is then washed off. Can also put solid resin in small sample then centrifuge sample thus having solid resin at the bottom, decant supernatant liquid. Can use antibodies. Precipitate antibodies via Protein A, G,or L which bind mammalian antibodies. If not antibodies exist then can use \textbf{affinity tag}. Code affinity tag to end of protein. Common is His tag which binds nickel ions in high pH conditions. Can elute with low pH solutions.
+	
+	\subsection{Gas Chromatography}
+	
+	Form of column chromatography but with mobile gas phase instead. Separates based on different volatilities. Column is composed of particles coated in liquid absorbant. Interaction based on relative volatilities. As each component exits it is burned and resulting ions are analyzed. More volatile emerge first since less volatile will dissolve into the liquid absorbant.
+	
+	\section{Physical Properties of Organic Compounds for Distillations}
+	
+	\subsection{Melting and Boiling Points}
+	
+	Governed by intermolecular interactions. Branching of hydrocarbons leads to smaller surface area for interactions (less Van der Waals forces). Thus more branching $ \implies $ lower boiling point. E.g.
+	
+	\begin{figure}[h]
+		\centering
+		\schemestart
+		\chemfig{-[1]-[7]-[1]-[7]-[1]-[7]-[1]} \hspace{5em} Vs. \hspace{5em} \chemfig{-[1](-[2]-[1])-[7]-[1](-[2])-[7]}
+		\schemestop
+	\end{figure}
+
+	Greater molecular weight leads to higher surface area thus higher weight higher mp and bp. Consider following trends of hydrocarbons at room temperature:
+	\begin{enumerate}
+		\item (1-4) C's gases
+		\item (5-16) C's liquid
+		\item ($ > $16) C's waxy solids 
+	\end{enumerate}
+	
+	\subsection{Hydrogen Bonding}
+	
+	Recall H bonds occur between hydrogens attached to O,N, or F and the non-bonding lone pairs of electrons on other O,N, or F atoms nearby. This leads to higher bp and mp. Inter and intramolecular H bonding play opposite roles. With \emph{inter} the bp and mp are \emph{increased} for obvious reasons. However, for \emph{intra} this reduces the amount of H bonding between molecules and thus \emph{decreases} the bp and mp.
+	
+	\section{Distillations}
+	
+	\subsection{Simple Distillations}
+	
+	For removing trace impurities from a relatively pure compound or mixture.
+	
+	\subsection{Fractional Distillation}
+	
+	Used when the difference in bp of the components is not large. Column is packed with glass beads or a stainless steel sponge. As vapor moves up column it continually goes through vaporization-condensation cycles so that at the condenser only the lowest boiling point component remains in the vapor.
+	
+	\section{Spectroscopy}
+	
+	\subsection{Mass Spectrometry}
+	
+	Ionize a molecule and shoot through a magnetic field. Referring to the figure below of a mass spectrum for n-nonane (MW = 128 g/mol), we see that there are multiple peaks larger and smaller than 128. The larger peaks are due to different isotopes of atoms that make up some of the molecules which makes it heavier. The smaller peaks come from fragments of n-nonane that was broken by the electron beam used to ionize it in the first place. Note: Br occurs in two isotopes of equal abundance and thus molecules with bromine may exhibit two mass peaks of equal height.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.1]{MassSpec.jpg}
+	\end{figure}
+	\newpage
+	\subsection{Ultraviolet/Visible[UV/Vis] Spectroscopy}
+	
+	Useful for complexes of transition metals and highly conjugated systems in organic chemistry. With high conjugation, orbitals form many bonding, non-bonding, and anti-bonding orbitals which have similar energies and thus can absorb UV or Vis. The wavelength of max absorption for any compound is directly related to the extent of conjugation. \emph{More extensive conjugation, larger $ \lambda_{max} $}. Recall, the color of a compound we see is the compliment of what is absorbed. Color wheel is constructed by ROYGBV in clockwise direction. If UV is absorbed then compound appears white.
+	
+	\subsection{Infrared [IR] Spectroscopy}
+	
+	Causes bonds to vibrate. Vibrational frequencies expressed in terms of \textbf{wavenumber} which is directly proportional to frequency and energy. MCAT covers spectra from 4000 to 1000 cm$ ^{-1} $. 
+	
+	\subsection*{Important Stretching Frequencies}
+	Must know common stretching frequencies below.
+	
+	\subsubsection{Double Bond Stretches}
+	VERY STRONG AND SHARP
+			
+\begin{figure}[ht]
+	\schemestart
+			  \hspace{5em}
+			  \chemname{\chemfig{C(-[5]R_{1})(-[7]R_{2})=[2]O}}{Carbonyls Centered around 1700 cm$ ^{-1} $}
+			  \hspace{20em}
+			  \chemname{\chemfig{C(-[3])(-[5])=C(-[1])-[7]}}{Alkenes centered around 1650 cm$ ^{-1} $ }
+	\schemestop
+\end{figure}
+			
+	Memorize location and look for C=O first because it can eliminate many possible functional groups such as, aldehydes, ketones, carboxylic acids, acid chlorides, esters, amides, and anhydrides.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.15]{DoubleBondStretch.jpg}
+	\end{figure}
+	
+	\subsubsection{Triple Bond Stretch}
+	
+	Characterized by this
+	
+	\begin{figure}[h]
+		\fbox{\parbox{\textwidth}{
+		\centering
+		\chemname{\chemfig{C~C} \qquad \text{ or } \qquad \chemfig{C~N}}{2260-2100 cm$ ^{-1} $}
+		}}
+	\end{figure}
+	
+	\subsubsection{O-H Stretch}
+	
+	Is \emph{STRONG} and \emph{BROAD} (large U peak) due to H bonding. Always look for this stretch as well at 3600-3200 cm$ ^{-1} $. Note: amines also have stretches in this region but with varying intensity.
+	
+	\begin{flushleft}
+		\fbox{\parbox{\textwidth}{
+		STRONG AND BROAD\\
+		\schemestart
+		\hspace{22em}
+		\chemname{\chemfig{O-H}}{3600-3200 cm$ ^{-1} $ \\ Alcohols}
+		\schemestop
+		}}
+	\end{flushleft}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.1]{OHStretch.jpg}
+	\end{figure}
+	
+	\subsubsection{C-H Stretches}
+	
+	Note that aliphatic CH bonds are a little less than 3000 while aromatic CH are a little above 3000. Summarized in pic below:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.1]{CHStretch.jpg}
+	\end{figure}
+	
+	\subsection{Summary of IR Stretches}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.1]{StretchSum.jpg}
+	\end{figure}
+	
+	\subsection{$^{1}$H Nuclear Magnetic Resonance [NMR] Spectroscopy}
+	
+	Remember to use degree of saturation formula. NMR tells us four things:
+	\begin{enumerate}
+		\item Number of sets of peaks tells the number of chemically nonequivalent sets of protons
+		\item Splitting pattern tells how many protons are interacting with the protons in that set
+		\item Integration of the sets of peaks indicates the relative numbers of protons in each set
+		\item Chemical shift values gives info about the environment of the protons in that set
+	\end{enumerate}
+	\newpage
+	\subsubsection{Chemically Equivalent Hydrogens}
+	
+	Equivalent H are those that have \emph{identical electronic environments} and will have identical locations in the spectrum. H are considered equivalent if they can be interchanged by a free rotation or a symmetry operation. E.g. below
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.1]{EquivEx.jpg}
+	\end{figure} 
+	
+	\subsubsection{Splitting}
+	
+	This occurs because magnetic field felt by a proton is influenced by surrounding protons. The degree of splitting is given by $ n + 1 $ where $ n $ is the number of nonequivalent, neighboring protons. E.g.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.15]{Split.jpg}
+	\end{figure}
+	
+	\subsubsection{n + 1 Rule}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.1]{n1rule.jpg}
+	\end{figure}
+		
+	\subsubsection{Integration}
+	
+	The area under each absorption peak is proportional to the relative number of protons giving rise to each peak.
+	
+	\subsubsection{The Chemical Shift}
+	
+	The magnetic field near a proton will \textbf{shield} the nucleus from the applied magnetic field shifting the resonance \textbf{upfield}(to the right). The more a proton is \textbf{deshielded} the further \textbf{downfield}(to the left) it will appear. Three factors affect proton deshielding:
+	\begin{enumerate}
+		\item the electronegativity of the neighboring atoms
+		\item hybridization
+		\item acidity and hydrogen bonding
+	\end{enumerate}
+	
+	\subsubsection{Electronegativity Effects on Chemical Shift Values}
+	
+	Nearby electronegative atom will pull electrons away from proton and deshield it (shifting it downfield). E.g.
+	
+	\begin{figure}[h]
+		\centering
+		\chemname{\chemfig{C(-[2]H)(-[4]H)(-[6]H)-CH_{3}}}{$ \delta = 0.26 $ ppm} \qquad
+		\chemname{\chemfig{C(-[2]H)(-[4]H)(-[6]H)-Cl}}{$ \delta = 3.06 $ ppm}
+		\qquad
+		\chemname{\chemfig{C(-[2]H)(-[4]H)(-[6]H)-O-CH_{3}}}{$ \delta = 3.25 $ ppm}
+	\end{figure}
+	
+	\subsubsection{Hybridization Effects on Chemical Shift Values}
+	
+	The greater the s-character of an orbital the more deshielded the set of protons are. E.g.
+	
+	\begin{figure}[h]
+		\centering
+		\chemname{\chemfig{-[1]-[7]-[1]-[7]H}}{$ \delta = 1 $ ppm}
+		\qquad
+		\chemname{\chemfig{H_{3}C-C~C-H}}{$ \delta = 2 $ ppm}
+	\end{figure}
+	
+	Two chemical shifts to be familiar with are
+	\begin{enumerate}
+		\item aromatic protons ($ \delta = 6.5-8 $ ppm)
+		\item alkene protons ($ \delta = 5-6 $ ppm) Note: this does not
+                  follow the s-character rule as stated above for reasons beyond
+                  the scope of the MCAT.
+	\end{enumerate}
+	
+	\subsubsection{Acidity and H Bonding Effects on Chemical Shift Values}
+	
+	Protons attached to \textbf{heteroatoms} (any atom that is not a carbon or hydrogen) are quite deshielded. H bonding can cause a wide variation of chemical shift. Be aware that chemical shifts of alcohol protons are variable depending on the particular compound but \emph{range from 2-5 ppm}
+	
+	\begin{figure}[h]
+		\centering
+		\chemname{\chemfig{H_{3}C-OH}}{$ \delta = 2-5 $ ppm}
+		\qquad
+		\chemname{\chemfig{-[7]-[1](=[2]O)-[7]OH}}{$ \delta = 10-13 $ ppm}
+	\end{figure}
+	
+	\newpage
+	\subsubsection{Summary of NMR Shifts}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.2]{NMRSum.jpg}
+	\end{figure}
+\end{document}

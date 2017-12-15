@@ -1,0 +1,49 @@
+\documentclass[10pt,a4paper]{report}
+
+\usepackage{subfiles}
+\usepackage{MCATstyle}
+\graphicspath{ {images/} }
+\makeatletter
+\let\org@subfile\subfile
+\renewcommand*{\subfile}[1]{%
+  \filename@parse{#1}% LaTeX's file name parser
+  \expandafter
+  \graphicspath\expandafter{\expandafter{\filename@area/images/}}%
+  \org@subfile{#1}%
+}
+\makeatother
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		\line(1,0){400}\\
+		[0.25in]
+		\huge{\bfseries \textsc{MCAT Psychology and Sociology Review}}\\
+		[0.10in]
+		\line(1,0){400}\\
+		\textsc{Princeton Review}\\
+		[10cm]
+	\end{center}
+	
+	\begin{flushright}
+		\textsc{Benjamin Tran}
+	\end{flushright}
+\end{titlepage}
+	
+	\tableofcontents
+	\thispagestyle{empty}
+	\cleardoublepage
+	
+	\setcounter{page}{1}
+	
+	~ % blank page so that index referencing works properly
+
+	\subfile{./PsychSociChap1/PsychSociChap1}
+	\subfile{./PsychSociChap2/PsychSociChap2}
+	\subfile{./PsychSociChap3/PsychSociChap3}
+	
+%	\clearpage
+%	\addcontentsline{toc}{chapter}{Index}
+%	\printindex
+\end{document}

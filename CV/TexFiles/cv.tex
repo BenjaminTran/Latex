@@ -1,0 +1,334 @@
+\documentclass[a4paper,10pt]{article}
+
+% USE XELATEX TO COMPILE :!xelatex cv.tex
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{microtype}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[x11names,usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{enumitem}
+\usepackage{tabularx}
+\newcolumntype{L}{>{\raggedright}X}
+\newcolumntype{R}{>{\raggedleft}X}
+\usepackage[scale=0.82]{geometry}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+%\titleformat{\section}{\color{DodgerBlue4}\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+
+%%-------------WATERMARK TEST [**not part of a CV**]---------------
+%\usepackage[absolute]{textpos}
+%
+%\setlength{\TPHorizModule}{30mm}
+%\setlength{\TPVertModule}{\TPHorizModule}
+%\textblockorigin{2mm}{0.65\paperheight}
+%\setlength{\parindent}{0pt}
+%\setlist[itemize]{leftmargin=0in,label={}}%,itemsep=2pt}
+\setlist[description]{leftmargin=0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+  {\Huge \textsc{Benjamin L.} \textsc{Tran}
+}\\\vspace{0.5cm}
+      \begin{tabular}{lll}
+          \large 2106 Webster Street Houston, Texas 77003 &
+          \large(281) 687--2924 &
+          \large\href{mailto:bltran@alumni.rice.edu}{bltran@alumni.rice.edu} 
+        \end{tabular}
+      
+      %\bigskip\par
+    }
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+      \iffalse
+\section{Personal Information}
+
+\begin{tabular}{rl}
+    \textsc{Address:}   & 2106 Webster Street\\& Houston, Texas \\
+    \textsc{Phone:}     & (281) 687--2924\\
+    \textsc{email:}     &
+    \href{mailto:bltran@alumni.rice.edu}{bltran@alumni.rice.edu}
+\end{tabular}\newline
+\fi
+
+%Section: Work Experience at the top
+\section{Education}
+Rice University -- Houston, Texas \\
+Bachelor of Science, May 2017 \vspace{0.7ex} \\
+\begin{tabular}{rl}
+  Major: & Physics \\
+  GPA: & 3.58 \\
+  MCAT: & 520 (98\textsuperscript{th} percentile)
+\end{tabular}%\newline%\\
+
+\section{Research Experience}
+\iffalse
+\begin{tabular}{r|p{12cm}}
+  {\large\textsc{Jan 2014 -- Present}} & {\large\textbf{Rice University Bonner Nuclear
+  Laboratories}} \\ Houston, Texas & \emph{Research Assistant, Wei Li Lab}\\
+  & \begin{itemize}
+     % \footnotesize
+      \small
+      \vspace{-1ex}
+      \item Worked in collaboration with the Compact Muon Solenoid experiment at
+	the Large Hadron Collider
+      \item Worked with ROOT Data Analysis Framework
+      \item Coding experience in bash, python, \LaTeX, and C++
+      \item Analysis of elliptic flow of strange and multi-strange baryons
+        leading to publication
+      \item Hired as full-time researcher (2017-2018)\vspace{-5ex} 
+    \end{itemize}\\ \bigskip \\
+\fi
+\begin{tabular}{r|p{12cm}}
+   & {\large\textbf{Rice University Bonner Nuclear
+  Laboratories}} \\ {\large\textsc{Jan 2014 -- Present}}& \emph{Research Assistant, Wei Li Lab}\\
+  Houston, Texas & \begin{itemize}
+     % \footnotesize
+      \small
+      \vspace{-1ex}
+      \item Worked in collaboration with the Compact Muon Solenoid experiment at
+	the Large Hadron Collider
+      \item Worked with ROOT Data Analysis Framework
+      \item Coding experience in bash, python, \LaTeX, and C++
+      \item Analysis of elliptic flow of strange and multi-strange baryons
+        leading to publication
+      \item Hired as full-time researcher (2017-2018)\vspace{-5ex}
+    \end{itemize}\\ \bigskip \\
+  %{\large\textsc{Sept -- Dec 2017}} & {\large\textbf{Rice University
+  %Biological Lab Work}} \\
+  %Houston, Texas &\emph{Assistant to Dr. Dereth Phillips}\\
+  %& \begin{itemize}
+  %    %\footnotesize
+  %    \small
+  %    \vspace{-1ex}
+  %    \item Utilized standard biological lab techniques to test storage
+  %      conditions for PFU-DBD polymerase.
+  %    \item Presented poster in HHMI Sustaining Excellence in Research
+  %      Symposium. Awarded second place.
+  %    \vspace{-5ex}
+  %  \end{itemize}\\ \bigskip \\
+\iffalse
+  {\large\textsc{June -- Aug 2016}} & {\large\textbf{Summer Internship in Medical
+  Physics at MD Anderson}} \\ Houston, Texas & \emph{Research Assistant, Song
+  Gao}\\
+  & \begin{itemize}
+      %\footnotesize
+      \small
+      \vspace{-1ex}
+      \item Worked alongside medical physicists on quality assurance of beam
+	steering and beam profiles
+      \item Performed comparative analysis on measurements taken by Sun
+	Nuclear's IC Profiler and 3D Scanner for beam steering and profiles
+      \item Used VBA in Excel to produce spreadsheets to model and analyze large
+	sets of data
+	\vspace{-5ex}
+    \end{itemize}\\ \bigskip \\
+\fi
+   & {\large\textbf{Summer Internship in Medical Physics at MD Anderson}} \\
+   {\large\textsc{June -- Aug 2016}} & \emph{Research Assistant, Song
+  Gao}\\
+  Houston, Texas  & \begin{itemize}
+      %\footnotesize
+      \small
+      \vspace{-1ex}
+      \item Worked alongside medical physicists on quality assurance of beam
+	steering and beam profiles
+      \item Performed comparative analysis on measurements taken by Sun
+	Nuclear's IC Profiler and 3D Scanner for beam steering and profiles
+      \item Used VBA in Excel to produce spreadsheets to model and analyze large
+	sets of data
+	\vspace{-5ex}
+    \end{itemize}\\ \bigskip \\
+   & {\large\textbf{Compact Muon Solenoid Experiment at CERN}} \\
+   {\large\textsc{May -- July 2015}} & \emph{Member of
+  Stage 1 Layer 2 Calorimeter Trigger Development Team }\\
+  {\large\textsc{Feb -- June 2018}} & \emph{Member of Online Monitoring System
+    (OMS) Development Team
+  }\\
+  Geneva, Switzerland & \begin{itemize}
+      \small
+      \vspace{-1ex}
+      \item Coded in C++ with some html, xml, and bash scripting to develop
+	the online channel monitoring system
+      \item Collaborated with team of post-docs and professors from top
+	universities
+      \item Presented to Stage 1 Layer 2 Calorimeter Trigger
+	development group
+      \item Redevelop Web-Based Monitoring system into OMS using JavaScript, SQL, and html
+        (2018) \vspace{-5ex}
+    \end{itemize}\\
+  \end{tabular}%\newline
+
+
+\section{Clinical Experience}
+\begin{tabularx}{\textwidth}{LR}
+  \hspace{-2ex} \textbf{University of Texas MD Anderson Cancer Center} &
+  \textbf{Houston, Tx}
+\end{tabularx}
+\emph{Shadowing:}\\
+\emph{\begin{tabular}{ll}
+  June -- Aug 2016\\
+  Nov 2016 -- Apr 2017
+\end{tabular}}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Shadowed Dr. Steven Lin during clinicals and consultations
+  \item Observed SBRT radiation therapy treatment and simulations under
+    Professor Song Gao
+  \item Attended radiation oncology planning clinic sessions
+\end{itemize}
+
+\section{Publications}
+``Qualification of a 2D ionization chamber array for beam steering and profile
+measurement'' (Ready for submission to Journal of Applied Clinical Medical
+Physics) with Professor Song Gao.
+
+\section{Extracurricular Activities}
+
+\textbf{Teaching Assistant for Professor Daniel Catanese} \\
+\emph{Jan 2017 -- May 2017}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Provided assistance to students in Bioc 211; a course in biological
+    laboratory methods.
+\end{itemize}
+
+\textbf{Rice Pre-Medical Society} \\
+\emph{Member: Sept 2013 -- May 2016}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Participated in BOP (Big Owls Little Owls Program) where students meet
+    in groups with physicians and medical students who discuss their
+    experience in the medical field and provide mentorship.
+\end{itemize}
+
+\textbf{Society of Physics and Astronomy Students}\\
+\emph{Member: Sept 2013 -- April 2017}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Member of the society.
+\end{itemize}
+
+\textbf{Intramural Sports}\\
+\emph{Member: Sept 2013 -- April 2017}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Participated in basketball and volleyball intramural leagues
+\end{itemize}
+
+\textbf{Funkonomics}\\
+\emph{Member: Jan-Dec 2016}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Learned and practiced choreography to current hip hop songs.
+  \item Performed dance routine in the Chinese Student Association Lunar New
+    Year Festival.
+\end{itemize}
+
+\section{Community Involvement}
+\textbf{Rice All-Stars}\\
+\emph{One-on-One Buddy:} Jan -- Feb 2016, 2017
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Partnered one-on-one with a teenager with learning disabilities to
+    play basketball.
+\end{itemize}
+
+\textbf{New Life Fellowship}\\
+\emph{Jan 2015 -- present}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Member of the Oman House Church at Rice University
+  \item In charge of budget and skit performance for Senior Appreciation night.
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{LR}
+  \hspace{-2ex} \textbf{Early Education: Foundations for our Future} &
+  \textbf{Houston, Tx}
+\end{tabularx}
+\emph{Volunteer:} Nov 2016 -- March 2017
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+  \vspace{-1ex}
+  \item Volunteered for one week during spring break working with community
+    support members to provide educational support for local Houston children
+    who are economically disadvantaged.
+  \item Attended weekly meetings leading up to the trip to learn about the
+    affects of socioeconomic disparities in accessing education.
+\end{itemize}
+\section{Awards}
+  \textbf{Shell Foundation Summer Fellowship}\\
+  \emph{Summer 2015}\\
+  Selected as a Rice University Physics and Astronomy Summer Fellow to conduct
+  particle physics research on site at CERN\vspace{1ex}.\\
+  \textbf{Claude W. Heaps Prize}\\
+  Awarded the Claude W. Heaps Prize for excellence in performing research
+  culminating in a senior thesis in the Physics and Astronomy Department\vspace{1ex}.\\
+  \textbf{Distinction in Undergraduate Research}\\
+  Awarded for exceptional research throughout one's undergraduate career in the
+  Physics and Astronomy Department.
+
+\section{Technical Skills}
+\begin{tabular}{rl}
+ Basic Knowledge:& \textsc{Linux}, Java, Batch Scripting,
+ \textsc{VBA}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
+ Intermediate Knowledge:& \textsc{ROOT}, Bash Scripting, C++, {\fb \LaTeX}, Excel\\
+\end{tabular}
+
+%\section{\color{DodgerBlue4}Interests and Activities}
+%\begin{itemize}[noitemsep]
+%  \item Fingerstyle acoustic guitar
+%  \item Hiking
+%  \item Basketball
+%\end{itemize}
+\end{document}

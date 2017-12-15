@@ -1,0 +1,435 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{color,soul}
+\usepackage[x11names]{xcolor}
+\usepackage[overload]{empheq}
+\usepackage{varwidth}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{chemfig}
+\usepackage{paralist}
+\usepackage{enumitem} % more options for enumerate
+\usepackage{scrextend}
+\usepackage{mdframed}
+\setlength{\columnseprule}{1pt}
+\colorlet{textcolor}{black}
+\usepackage{mathtools}
+\usepackage{lmodern}
+\usepackage{amssymb,amsthm}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{commath}
+\usepackage{microtype}
+\usepackage{siunitx}
+\usepackage{cool}
+
+\setlength{\parindent}{0pt}
+\renewcommand{\i}{\mathrm{i}}
+\newtheorem*{problem*}{Problem}
+\newenvironment{solution}
+{\let\oldqedsymbol=\qedsymbol
+	\renewcommand{\qedsymbol}{$\blacktriangleleft$}
+	\begin{proof}[\bfseries\upshape Solution]}
+	{\end{proof}
+	\renewcommand{\qedsymbol}{oldqedsymbol}}
+
+\usepackage{graphicx}
+\graphicspath{{../../images/}}
+\newcommand{\eqname}[1]{\tag*{\llap{#1}}}
+\newcommand{\kronecker}[2]{\delta_{#1}^{#2}}
+
+\begin{document}
+	\chapter{Biologically Important Molecules}
+	\section{Amino Acid Structure and Nomenclature}
+	
+	Generic formula of amino acid consists of four groups attached to tetrahedral carbon:
+	\begin{center}
+		\setatomsep{2.3em}
+		\setcrambond{4pt}{}{}
+		\chemfig{
+			{\color{magenta}H_{2}\lewis{6:,N}}-[1](<[:60]{{\color{blue}R}})(<:[:120]H)-[7](=[6]{{\color{red}O}})(-[1]{{\color{red}OH}})
+		}
+	\end{center}
+	All chiral amino acids in eukaryotes are L-amino acids (S configuration), so amino group is drawn on the left in a Fischer projection, (except cysteine which is still L but has R configuration since the -\chemfig{CH_{2}SH} group has priority over the carboxyl group).\\
+	\textbf{Sidechain} distinguishes each amino acid. Important properties of side chains include:
+	\begin{enumerate}
+		\item Shape
+		\item Charge
+		\item Ability to H-bond
+		\item Ability to act as acids or bases
+	\end{enumerate}
+	
+	Four categories of amino acids with structures given on the next page: \\
+	\hfill \\
+	\noindent\parbox[t]{3in}{\raggedright%
+		\textbf{\underline{Nonpolar,Hydrophobic}}
+		\begin{enumerate}
+			[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+			\item \textcolor{red}{(Gly, G)} glycine \textcolor{blue}{(Hydrogen)}
+			\item \textcolor{red}{(Ala, A)} alanine \textcolor{blue}{(alkyl)}
+			\item \textcolor{red}{(Val, V)} valine \textcolor{blue}{(alkyl)}
+			\item \textcolor{red}{(Leu, L)} leucine \textcolor{blue}{(alkyl)}
+			\item \textcolor{red}{(Ile, I)} isoleucine \textcolor{blue}{(alkyl)}
+			\item \textcolor{red}{(Phe, F)} phenylalanine \textcolor{blue}{(aromatic)}
+			\item \textcolor{red}{(Trp, W)} tryptophan \textcolor{blue}{(aromatic)}
+			\item \textcolor{red}{(Met, M)} methionine \textcolor{blue}{(sulfur)}
+			\item \textcolor{red}{(Pro, P)} proline \textcolor{blue}{(cyclic)}
+		\end{enumerate}
+	}
+	\hspace{5em}
+	\noindent\parbox[t]{3in}{\raggedright%
+		\textbf{\underline{Polar, Neutral}}
+		\begin{enumerate}
+			[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+			\item \textcolor{red}{(Ser, S)} serine \textcolor{blue}{-OH}
+			\item \textcolor{red}{(Thr, T)} threonine \textcolor{blue}{-OH}
+			\item \textcolor{red}{(Asn, N)} asparagine \textcolor{blue}{(amide)}
+			\item \textcolor{red}{(Gln, Q)} glutamine \textcolor{blue}{(amide)}
+			\item \textcolor{red}{(Cys, C)} cysteine \textcolor{blue}{(thiol)}
+			\item \textcolor{red}{(Tyr, Y)} tyrosine \textcolor{blue}{(phenylalanine with an -OH)}
+		\end{enumerate}
+	}
+	\vspace{10pt}
+	\newline
+	\noindent\parbox[t]{3in}{\raggedright%
+		\textbf{\underline{Polar, Acidic}}
+		\begin{enumerate}
+			[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+			\item \textcolor{red}{(Asp, D)} aspartic acid \textcolor{blue}{(carboxylic)}
+			\item \textcolor{red}{(Glu, E)} glutamic acid \textcolor{blue}{(carboxylic)}
+		\end{enumerate}
+	}
+	\hspace{5em}
+	\noindent\parbox[t]{3in}{\raggedright%
+		\textbf{\underline{Polar, Basic}}
+		\begin{enumerate}
+			[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+			\item \textcolor{red}{(His, H)} histidine \textcolor{blue}{(imidazole)}
+			\item \textcolor{red}{(Arg, R)} arginine \textcolor{blue}{(3 N)}
+			\item \textcolor{red}{(Lys, K)} lysine \textcolor{blue}{(terminal amine)}
+		\end{enumerate}
+	}
+	\newpage
+	\subsubsection{Hydrophobic [Nonpolar] Amino Acids}
+	\begin{enumerate}
+		[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+		\item[-] Have aliphatic or aromatic side chains
+		\item[-] Interior of folded globular proteins
+	\end{enumerate}
+	
+	\subsubsection{Polar [Neutral] A.A}
+	\begin{enumerate}
+		[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+		\item[-] R group polar enough to form H-bonds w/ water but not polar enough to act as acid/base
+		\item[-] Serine, Threonine, Tyrosine often modified (attachment of phosphate by kinase) $\implies$ change in structure $\implies$ used in regulating protein activity
+		\item[-] Amides of asparagine and glutamine do not gain or lose electrons. Remember this category is NEUTRAL
+		\item [-] Thiol of cysteine makes it prone to oxidation
+	\end{enumerate}
+	
+	\subsubsection{Polar,acidic}
+	\begin{enumerate}
+		[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+		\item[-] Have carboxylic groups instead of amides in reference to asparagine and glutamine
+		\item [-] Have negative charges on their side chains at physiological pH
+	\end{enumerate}
+	
+	\subsubsection{Basic Amino Acids}
+	\begin{enumerate}
+		[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+		\item Lysine - 10
+		\item Arginine - 12
+		\item \textcolor{red}{Histidine} - 6.5 \hfill \\ At physiological pH (7.4) proton donor/acceptor $\implies$ prevalent at protein active sites
+	\end{enumerate}
+	
+	\subsubsection{Sulfur-containing}
+	\begin{enumerate}
+		[topsep=2pt,itemsep=-2pt,leftmargin=13pt]
+		\item Cysteine - thiol group $\implies$ polar
+		\item Methionine - thioether $\implies$ non-polar
+	\end{enumerate}
+	
+	\subsubsection{Essential Amino Acids}
+	\begin{inparaenum}[1)]
+		\item Valine
+		\item Leucine
+		\item Isoleucine
+		\item Phenylalanine
+		\item Tryptophan
+		\item Methionine
+		\item Threonine
+		\item Lysine
+	\end{inparaenum}
+	
+	\section{$ \boldsymbol{\Dagger{\text{Acid-Base Chemistry of Amino Acids}}} $}
+	
+	AA are \textbf{amphoteric} such that they can act as an acid or base depending on the pH of the environment. Remember that:
+	
+	\begin{itemize}
+		\item Ionizable groups tend to gain protons under acidic conditions and lose them under basic conditions.
+		\item The p$ K_{a} $ is the pH at which half of the molecules of that species are deprotonated.
+		\[ 
+		\left\{ \begin{array}{ll}
+		\text{pH} < \text{p}K_{a}, &\text{majority protonated} \\
+		\text{pH} > \text{p}K_{a}, &\text{majority deprontonated}
+		\end{array}\right\}
+		\]
+		This is understood through Henderson-Hasselbalch
+		\begin{align}
+			\boxed{\text{pH} = \text{p}K_{a} + \log\cbr[3]{\dfrac{[A^{-}]}{[HA]}}} \\ \eqname{\textbf{Henderson-Hasselbalch}}
+		\end{align}
+	\end{itemize}
+	
+	\subsection{$ \boldsymbol{\Dagger{\text{Protonation and Deprotonation}}} $}
+	
+	All aa have at least two p$ K_{a} $ values; p$ K_{a1} $ carboxyl group (2) and p$ K_{a2} $ amino group (9-10). For ionizable side chains will have a third p$ K_{a} $.
+	
+	\subsubsection{$ \boldsymbol{\Dagger{\text{Positively Charged Under Acidic Conditions}}} $}
+	
+	At acidic pH below the p$ K_{a} $'s of the groups in the aa we expect them to be protonated and thus positively charged.
+	
+	\subsubsection{$ \boldsymbol{\Dagger{\text{Zwitterions at Intermediate pH}}} $}
+	
+	At physiological pH the carboxyl group is deprotonated but the amino group is protonated for an overall neutral charge, a state that is called a \textbf{zwitterion}.
+	
+	\subsubsection{$ \boldsymbol{\Dagger{\text{Negatively Charged Under Basic Conditions}}} $}
+	
+	At higher pH like 10.5, both carboxyl and amino groups will be deprotonated and thus the aa will carry a negative charge.
+	
+	\subsection{$ \boldsymbol{\Dagger{\text{Titration of Amino Acids}}} $}
+	
+	The titration curve of 1 M glycine is shown below:
+	
+	\begin{center}
+		\includegraphics[scale=0.1]{Gly-Tit.jpg}
+	\end{center}
+	
+	Note that at 0.5 equivalents, we have deprotonated exactly half of the carboxyl groups and thus the pH = p$ K_{a} $ of the carboxyl group i.e. p$ K_{a}  = 2.34$. At 1 equivalent we reach the \textbf{isoelectric point} which is the pH where all aa become zwitterions. For neutral amino acids it can be calculated by averaging the two p$ K_{a} $ values for the amino and carboxyl group. 
+	
+	\subsubsection{$ \boldsymbol{\Dagger{\text{Amino Acids with Charged Side Chains}}} $}
+	
+	For the acidic side chain aa (glutamic acid and aspartic acid), the deprotonation occurs in the sequence, main carboxyl, side chain carboxy, main amino. The isoelectric point is then:
+	\[ \text{pI}_{\text{acidic amino acid}} = \dfrac{\text{p}K_{a,\text{R group}} + \text{p}K_{a,\text{COOH group}}}{2} \]
+	
+	For the basic aa such as lysine the deprotonation sequence is main carboxyl, main amino, side chain amino. the isoelectric point is then:
+	\[ \text{pI}_{\text{basic amino acid}} = \dfrac{\text{p}K_{a,\text{R group}} + \text{p}K_{a,\text{amino group}}}{2} \]
+	
+	\emph{aa with acidic side chains have relatively low pI while basic aa have relatively high pI.}
+	
+	\section{Protein Structure}
+	
+	Two types \textcolor{red}{Peptide bonds} and \textcolor{red}{Disulfide bridges}
+	
+	\subsection{Peptide bonds}
+	\begin{description}
+		\item[-] Bond between carboxyl and $\alpha$-amino group (loss of water)
+		\item[-] Individual A.A. in chain called \textcolor{red}{\textbf{Residue}}
+		\item[-] Thermodynamically: chain is less favorable than individual residues
+		\item[-] In cells: chain maintained b/c activation energy of hydrolysis is too high
+		\item[-] Hydrolysis of protein by another protein - \textcolor{red}{\textbf{proteolysis/proteolytic cleavage}} cutting protein - \textcolor{red}{\textbf{proteolytic enzyme/protease}}
+		\item[-] Many enzymes only cleave peptide bond adjacent to specific amino acid. \emph{Chymotrypsin} cleaves at the carboxyl end of the aromatic aa and \emph{trypsin} cleaves at the carboxyl end of arginine and lysine.
+	\end{description}
+	
+	\subsection{Disulfide Bond}
+	\begin{description}
+		\item[-] Sulfur of cysteine bonds to another. Residue is then called \textit{cystine}
+		\item[-] Important for stabilization of tertiary protein structure (\textbf{not neccessary} for correct folding)
+		\item[-] \textcolor{red}{\textbf{Oxidation}} - loss of electrons \textcolor{red}{\textbf{Reduction}} - gain of electrons	
+		\item[-] Sulfur in cystine is more oxidized than cysteine.
+		\item[-] Inside cells = reducing environment $\implies$ disulfide bridges most likely in extracellular proteins
+	\end{description}
+	
+	\section{Protein Structure in Three Dimensions}
+	
+	\begin{description}
+		\item[-] \textcolor{red}{\textbf{Denaturation}} - disruption of a protein's shape without breaking peptide bonds.
+		\item[-] Each level dependent on a type of bond
+		\item[-] Proteins denatured by
+		\begin{enumerate}
+			\item urea (which disrupts hydrogen bonding)
+			\item extremes of pH
+			\item extremes of temperature
+			\item changes in salt-concentration (tonicity) 
+		\end{enumerate}
+	\end{description}
+	
+	\subsection{Primary Structure: The Amino Acid Sequence}
+	
+	\begin{description}
+		\item[-] Sequence of A.A. dependent on \textcolor{blue}{peptide bond}
+	\end{description}
+	
+	\subsection{Secondary Structure: Hydrogen Bonds Between Backbone Groups}
+	
+	\begin{description}
+		\item[-] Initial folding of polypeptide chain stabilized by \textcolor{blue}{hydrogen bonds} between backbone NH and CO.
+		\item[-] Certain motifs: \textcolor{red}{$\alpha$-helix} and \textcolor{red}{$\beta$-pleated sheet}
+		\item[-] Properties of $\alpha$-helices (refer to pg. 47 Figure 5) \\
+		\begin{inparaenum}[1)]
+			\item 5 angstrom width
+			\item 1.5 angstroms rise per A.A.
+			\item 3.6 A.A residues per turn
+			\item $\alpha$-carboxyl oxygen H-bonded to $\alpha$-amino proton three residues away 
+		\end{inparaenum}
+		\item[-] proline forces kink in chain $\implies$ proline residue never in $\alpha$-helix.
+		\item[-] $\alpha$-helix often found in transmembrane regions of cell membrane
+		\begin{enumerate}
+			\item all polar NH and CO are H-bonded so don't interact w/ hydrophobic membrane interior
+			\item have hydrophobic R groups radiate out from helix, interact w/ hydrophobic interior of membrane
+		\end{enumerate}
+		
+		\item[-] \textbf{$\beta$-pleated sheets} stabilized by H-bond CO and NH
+		\item[-] Two types of $\beta$-sheets:
+		\begin{enumerate}
+			\item \textcolor{red}{\textbf{parallel}} - adjacent polypeptide strands in \textit{same} direction
+			\item \textcolor{red}{\textbf{antiparallel}} - \textit{opposite} direction
+		\end{enumerate}	
+	\end{description}
+	
+	\subsection{Tertiary Structure: Hydrophobic/Hydrophilic Interactions}
+	
+	\begin{description}
+		\item[-] Folding via \textcolor{blue}{interactions between A.A. residues} located distantly from each other in chain
+		\item[-] Hydrophobic R $\rightarrow$ interior of protein \hfill \\ Hydrophilic R $\rightarrow$ exterior of protein
+		\item[-] includes disulfide bonds within a single chain
+	\end{description}
+	
+	\subsection{Quaternary Structure: Various Bonds Between Separate Chains}
+	
+	\begin{description}
+		\item[-] \textcolor{blue}{Interactions between polypeptide subunits} important for protein function
+		\item[-] \textcolor{red}{\textbf{Subunit}} - single polypeptide chain that is part of a large complex containing many subunits
+		\item[-] Arrangement of subunits in multisubunit complex
+		\item[-] Includes disulfide bonds between different chains
+	\end{description}
+	
+	\section{Carbohydrates}
+	
+	\begin{description}
+		\item[-] carbohydrate $\rightarrow \; CO_{2}$ by \textbf{oxidation} 
+	\end{description}
+	
+	\subsection{Monosaccharides and Disaccharides}
+	\begin{description}
+		\item[-] Monosaccharides have general formula $C_{n}H_{2n}O_{n}$
+		\item[-] 2 = \textbf{disaccharide} $|$ several = \textbf{oligosaccharide} $|$ many = \textbf{polysaccharide}
+		\item[-] \textbf{glycosidic linkage} - bond between sugars
+		\item[-] $\alpha$ and $\beta$ linkages (depends if anomeric carbon is $\alpha$ or $\beta$)
+		\begin{enumerate}
+			\item $\alpha$ - OH is axial/equatorial down
+			\item $\beta$ - OH is axial/equatorial up
+			\item discussion at \url{http://www.chem.ucla.edu/harding/ec_tutorials/tutorial08.pdf}
+		\end{enumerate}
+		\item[-] Common disaccharides on MCAT \\
+		\begin{inparaenum}[1)]
+			\item sucrose \item maltose \item cellobiose \item lactose 
+		\end{inparaenum}
+	\end{description}
+	
+	\subsection{Hydrolysis of Glycosidic Linkages}
+	
+	\begin{itemize}
+		\item Hydrolysis of polysaccharides thermodynamically favored
+		\item Enzymes catalyze hydrolysis of sugars (e.g. maltase for maltose)
+		\item Mammals can't break $\beta$ linkages expect lactose w/ lactase.
+	\end{itemize}
+	
+	\section{Lipids}
+	
+	\begin{itemize}
+		\item Three physiological roles
+		\begin{description}	
+			\item[adipose cells] triglycerides store energy
+			\item [cellular membranes] made of phospholipids
+			\item[Cholesterol] building block for hydrophobic steroid hormones
+		\end{description}
+	\end{itemize}
+	
+	\subsection{Fatty Acid Structure}
+	
+	\begin{itemize}
+		\item Fatty acids - long unsubstituted alkanes (14-18 C's), end in carboxylic acid.
+		\item Two types
+		\begin{description}
+			\item[Saturated] no double bonds (saturated with H)
+			\item[Unsaturated] double bonds (almost always \emph{cis})
+		\end{description}
+		\item Forms micelles
+	\end{itemize}
+	
+	\subsection{Triacylglycerols [TG]}
+	
+	\begin{itemize}
+		\item Formed by three fatty acids esterifed to a glycerol molecule (condensation rxn).
+		\item \textbf{Lipases} enzymes that hydrolyze fats.
+		\item TG better for energy storage than carbs b/c
+		\begin{description}
+			\item[Packing]: hydrophobicity $\implies$ tighter packing. Also, higher carbon density than carbohydrates which have lots of water molecules.
+			\item[Energy Content]: more energy than carbs $\because$ much more reduced and energy metabolism requires oxidation to release energy
+		\end{description}
+	\end{itemize}
+	
+	\subsection{Lipid Bilayer Membranes}
+	
+	\begin{itemize}
+		\item Membrane lipids are phospholipids
+		\item Phospholipids are \textbf{detergents} - substances that efficiently solubilize oils while remaining highly water-soluble
+		\item Membrane fluidity is affected by
+		\begin{enumerate}
+			\item Unsaturation decreases packing (higher fluidity)
+			\item Shorter fatty acid tail (higher fluidity)
+			\item Cholesterol optimizes fluidity
+		\end{enumerate}
+	\end{itemize}
+	
+	\subsection{Terpenes}
+	Terpenes built from isoprene units below
+	
+	\begin{center}
+		\setatomsep{2.3em}
+		\setcrambond{4pt}{}{}
+		\chemfig{
+			%	-[:30](-[:0]=[:-30])-[:30]
+			-[1](-[2])=[7]-[1]
+		}
+	\end{center}
+	\begin{itemize}
+		\item Terpenes may be cyclic or linear 
+	\end{itemize}
+	
+	\subsection{Steroids}
+	
+	\begin{itemize}
+		\item All have tetracyclic ring system based on structure of cholesterol
+		\item Cholesterol carried in blood via \textbf{lipoproteins}
+		\item Steroid hormones highly hydrophobic so can dissolve through membrane $\implies$ no receptors on membrane all are inside. \emph{Peptide} hormones rely on receptors on membrane.
+	\end{itemize}
+	
+	\section{Phosphorus-Containing Compounds}
+	
+	\begin{itemize}
+		\item Phosphoric acid largely anionic form at physiological pH. $K_{a,2}=7.2$
+		\item 2 phosphates bond via \textbf{anhydride linkate} to make \textbf{pyrophosphate} (contains lot of energy)
+		\item Reasons for high energy storage:
+		\begin{enumerate}
+			\item negative charges of linked phosphates repel
+			\item phosphate more resonance forms than linked phosphates $\implies$ lower free energy
+			\item phosphate more favorable interaction with biological solvent than linked phosphates
+		\end{enumerate}
+	\end{itemize}
+	
+	\subsection{Nucleotides}
+	
+	\begin{itemize}
+		\item Nucleotide composed of:
+		\begin{enumerate}
+			\item ribose sugar
+			\item purine or pyrimidine base on C1 of ribose ring
+			\item 1-3 phosphate units on C5 of ribose ring 
+		\end{enumerate}
+	\end{itemize}
+\end{document}

@@ -1,0 +1,42 @@
+\documentclass[10pt,a4paper]{report}
+
+\usepackage{subfiles}
+\usepackage{MCATstyle}
+\graphicspath{{images/}{../images/}}
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		\line(1,0){400}\\
+		[0.25in]
+		\huge{\bfseries \textsc{MCAT General Chemistry Review}}\\
+		[0.10in]
+		\line(1,0){400}\\
+		\textsc{Princeton Review}\\
+		\& \\
+		\textsc{Kaplan\textdagger}\\
+		[10cm]
+	\end{center}
+	
+	\begin{flushright}
+		\textsc{Benjamin Tran}
+	\end{flushright}
+\end{titlepage}
+	
+	
+	\tableofcontents
+	\thispagestyle{empty}
+	\cleardoublepage
+	\setcounter{page}{1}
+	\setcounter{chapter}{2}
+
+	\subfile{Chap4/GChemChap4}
+	\subfile{Chap5/GChemChap5}
+	\subfile{Chap6/GChemChap6}
+	\subfile{Chap7/GChemChap7}
+	\subfile{Chap8/GChemChap8}
+	\subfile{Chap9/GChemChap9}
+	\subfile{Chap10/GChemChap10}
+	\subfile{Chap11/GChemChap11}
+\end{document}

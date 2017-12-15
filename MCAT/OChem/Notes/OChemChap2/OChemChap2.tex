@@ -1,0 +1,410 @@
+\documentclass[../OChemReview.tex]{subfiles}
+
+\begin{document}
+\chapter{Structure and Stability}
+\section{General Tools}
+\subsection{Degree of Unsaturation}
+Gives total number of $ \pi $ bonds and/or rings.  \[ U = \dfrac{2C + 2 + N - X
+- H}{2} \]
+
+\subsection{Hybridization\supddag}
+
+Rule: Count number of bonds and lone pairs (each count as one) then fill s,p,d,f
+according to
+\[ sp^{3}d^{5}f^{7} \]
+
+Note:
+\begin{enumerate}
+  \item \emph{carbocations are $ sp^{2} $ hybridized}
+  \item double and triple bonds still count as one.
+\end{enumerate}
+
+Organic intermediates may stabilize by:\\ \textbf{inductive effects} - stabilize
+charge through $ \sigma $ bonds and \\
+\textbf{resonance effects} - stabilize by delocalization through $ \pi $ bonds.
+
+The percentage of s and p character in an \chemfig{sp^{x}} bond is determined by
+treating s and p equally so that \chemfig{sp^{2}} has 33\% s character and 67\%
+p character. Remember that the more s character there is the stronger the bond.
+
+\subsection{Inductive Effects}
+
+\vocab{Electron-withdrawing groups} - more electronegative than C and stabilize
+carbanions\\
+\vocab{Electron-donating groups} - less electronegative than C and stabilize
+carbocations\\
+E.g. Trichloroacetic acid more stable than acetic acid due to EWG chlorines.
+
+\begin{figure}[h]
+  \centering
+  \setatomsep{2em}
+  \definesubmol\nobond{-[3,0.4,,,draw=none]}
+  \schemestart
+  \chemname{\chemfig{(-[5]HO)(=[2]O)-[7](-[1]Cl)(-[5]Cl)(-[7]Cl)}}{Trichloroacetic
+  acid}\arrow(.mid east--.mid
+  west){->}\chemfig{(-[5]^{-}O)(=[2]O)-[7](-[5]Cl)(-[1]Cl)(-[7]Cl)}
+  \schemestop
+\end{figure}
+
+\subsection{Resonance Stabilization}
+
+\textbf{Conjugated systems} contain three or more atoms that each bear a p
+orbital aligned so they are parallel, creating possibility of delocalized
+electrons. C.f. \figref{Allyl}. 
+
+\begin{figure}[h]
+  \centering
+  \definesubmol\nobond{-[3,0.2,,,draw=none]}
+  \chemfig{(!\nobond\oplus)-[1]=[7]}
+  \caption{allyl cation}
+  \label{Allyl}
+\end{figure}
+\newpage
+Can push arrows to form resonance structures. Not all resonance structures
+contribute equally. Thiophene in \figref{AnilineThiophene} also has resonance
+structures but also the sulfur has a tricky hybridization. One of the lone pairs
+actually is in an unhybridized orbital. Thus, the accurate hybridization is $
+sp^{2} $ as opposed to $ sp^{3} $.
+
+Aniline in \figref{AnilineThiophene} has unshared electron pair on the nitrogen.
+Though it has resonance forms, they break the aromaticity of the ring. Since
+aromaticity greatly reduces energy, these resonances are not favorable though
+they still occur.
+\begin{figure}[h]
+  \centering
+  \setatomsep{2em}
+  \chemname{\chemfig{*6(-=-=(-\lewis{2:,N}H_{2})-=)}}{Aniline}
+  \hspace{5em}
+  \chemname{\chemfig{*5(-S-=-=)}}{Thiophene}
+  \caption{}
+  \label{AnilineThiophene}
+\end{figure}
+
+\noindent\fbox{
+  \parbox{\textwidth}{Note: to determine whether or not to count the lone pair,
+    ask if it can be used in resonance form.\\
+    Yes $ \implies $ not in hybridized orbital so \underline{don't count}\\
+    No $ \implies $ in hybridized orbital so \underline{count}.\\
+    Idealized angles:
+    \begin{enumerate}
+      \item  $ sp $ 180
+      \item $ sp^{2} $ 120 
+      \item $ sp^{3} $ 109
+    \end{enumerate}}
+  }\\
+
+  THE MORE STABLE A MOLECULE THE LESS REACTIVE. Three basic principles are:
+  \begin{enumerate}
+    \item No resonance if adjacent atom is $ sp^{3} $
+    \item Resonance usually occurs when lone electrons are adjacent to a $ \pi $
+      bond or unhybridized p orbital.
+    \item Resonance structures of lowest energy are most important. Evaluation
+      of resonance stability involves these criteria:
+      \begin{enumerate}
+        \item Octet rule is satisfied for all atoms (most important)
+        \item minimize separation of charge(formal charge)
+        \item With formal charges, resonance that have negatives on more
+          electronegative atoms and positive on less electronegative atoms.
+      \end{enumerate}
+  \end{enumerate}
+
+  \subsection{Acidity}
+
+  \textbf{Bronsted-Lowry acid} can donate a proton froming conjugate base.
+  Strength of the acid is determined by how stabilized the negative charge is on
+  the conjugate base.
+
+  \subsection{Electronegativity Effects }
+
+  Compare propanol to propane. You have alkoxide ion vs. a primary carbanion
+  which is highly unstable. Thus propanol is much more acidic than propane.
+
+  \subsection{Resonance Effects}
+
+  If the resulting conjugate base has more resonance structures than another
+  conjugate base then it is more stable and therefore is the stronger acid.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.2,frame]{acidSum.jpg}
+    \caption{General Ranking or Relative acidities of Functional Groups on MCAT}
+  \end{figure}
+  
+
+  \subsection{Inductive Effects (acidity)}
+
+  EWG substituents can help stabilize the anion of the conjugate base. This
+  effect depends on the distance from the anion however and its ability to
+  withdraw (electronegativity) so consider different halides as well F > Cl >
+  Br. C.f. Figure \ref{fig:order} for an example ordering of acidity.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.2,frame]{Order.jpg}
+    \caption{Order of Acidity}
+    \label{fig:order}
+  \end{figure}
+  
+
+  \subsection{General Rule for Organic Compound Acidity}
+
+  \fbox{\parbox{\textwidth}{Strong acids $ > $ Sulfonic acids $ > $ Carboxylic
+    acids $ > $ Phenols $ > $ Alcohols and waters $ > $ aldehydes and ketones\\
+    ($ \alpha $ hydrogens) $ > $ sp hybridized C-H bonds $ > $ $ sp^{2} $
+    hybridized C-H bonds $ > $ $ sp^{3} $ hybridized C-H bonds}}
+
+  \subsection{Effects of Substituents on Acidity}
+
+  EWG on phenols \underline{increase acidity}. Consider
+  \emph{para}-nitro-phenol. It allows for additional resonance by pulling
+  electrons onto the oxygen of the nitro group. This also works for the ortho
+  position. Note: this does not occur for meta position. C.f. figure 4 for
+  resonance structures.\\
+  EDG on phenols have the opposite effect and \underline{decrease acidity} in
+  the para and ortho positions since they can donate electrons to the ring
+  forcing a carbanion adjacent to the negative charge.	
+
+  \subsection{Nucleophiles and Electrophiles}
+
+  \textbf{Nucleophiles} are species that have unshared pairs of electrons or $
+  \pi $ bonds and, frequently, a negative (or partial negative) charge.
+  \textbf{They are electron pair donors and thus lewis bases.} Some common
+  examples are given on pg. 65. General trends for nucleophilicity:
+
+  \begin{enumerate}
+    \item increases as negative charge increases. E.g. $ NH_{2}^{-} > NH_{3}$ 
+    \item increases going down a group. E.g. $ F^{-} < Cl^{-} < Br^{-} $
+    \item increases going left in period.
+  \end{enumerate}
+
+  (2) is due to increasing polarizability of atoms down a group.\\
+  (3) is due to electronegativity of nucleophilic. Less electronegative, more
+  likely to donate the electrons.\\
+  Note: only use these for atoms within the same period or group.\\
+
+  \textbf{Electrophiles} are electron-deficient species. 
+  \begin{enumerate}
+    \item full or partial positive charge
+    \item frequently incomplete octet
+    \item electron acceptors and thus \textbf{Lewis acids}
+  \end{enumerate}
+
+  In all organic reactions nucleophiles react with electrophiles such that
+
+  \[ E^{+} + :Nu^{-} \longrightarrow E\text{--}Nu \]
+
+  \subsection{Leaving Groups}
+
+  Leaving groups are more likely to dissociate from substrate if they are more
+  stable in solution, thus resonance stabilized are the best leaving groups
+  (tosylate, mesylate, and acetate) C.f. chapter 6 for further discussion of
+  these groups. Weak bases also good (halogen ions); strong bases bad. \emph{In
+  general, basicity decreases down a group thus leaving group ability
+increases.} However, can make bad leaving group good by protonating a lone pair.
+E.g. $ -OH^{-} $ to $ -OH_{2}^{+} $ becomes a good leaving group. This is why
+many organic reactions are acid catalyzed.
+
+  \subsection{Ring Strain}
+
+  \textbf{Ring strain} occurs when bonds deviate from idealized angles.
+  Cyclopropane and cyclobutane are highly strained and thus more reactive than
+  other alkanes. E.g. may undergo hydrogenation reaction whereas
+  cyclopentane(hexane) will not.
+  \[ \text{cyclopropane(butane)} \xrightarrow[Ni]{H_{2}} \text{propane(butane)}
+\]
+
+  \section{Isomerism}
+
+  \subsection{Constitutional Isomerism}
+
+  Same molecular formula, different connections. E.g. n-pentane, isopentane,
+  neopentane.
+
+  \subsection{Conformational Isomerism}
+
+  Same molecular formula and connectivity but different rotations about their $
+  \sigma $ bonds. Can be \textbf{staggered(eclipsed)} and the $ \sigma $ bond on
+  a carbon may bisect(align) with the sigma bond on adjacent carbon. Staggered
+  vs. eclipsed conformation:
+  \begin{enumerate}
+    \item Less electronic repulsion
+    \item more stable
+    \item Less steric hinderance
+  \end{enumerate}
+
+  Recall size of substituents matter too. Put the largest ones apart from each
+  other (\textbf{anti conformation}). Largest substituents aligned (\textbf{syn
+  conformation}). In between (\textbf{gauche conformation}). \textbf{Note: anti
+  conformation is not necessarily always the lowest energy.} Must account for
+  possibility of forming intramolecular bonds such as hydrogen bonds i.e.
+  1,2-ethandiol where gauche is better.\\
+  Cyclopentane exists in puckered \textbf{envelope} form. If planar then all
+  carbons in eclipsed conformation. \\
+  Cyclohexane exists in \textbf{chair conformation}. There are two such
+  conformations that can interconvert at 11 Kcal/mol. Intermediate states
+  include half-chair (highest energy), twist boat (local minima), and boat.
+  Hydrogens either in plane of carbons (\textbf{equatorial hydrogens}) or above
+  or below plane of carbons (\textbf{axial hydrogens}). These hydrogens
+  interchange after chair flip. Substituents break degeneracy of conformations.
+  \underline{In general large substituents better in equatorial position.} In
+  axial position they have steric clashes (\textbf{1,3-diaxial interactions}) 
+
+  \subsection{Stereoisomerism}
+  \textbf{Stereoisomer} is an umbrella term encompassing enantiomers and
+  diastereomers.\\
+  Same molecular formula and connectivity; differ in spatial arrangement of
+  atoms. Any rotation cannot bring them to overlap and therefore each molecule
+  expresses chirality.
+
+  \subsection{Chirality}
+
+  \textbf{Chiral} refers to any molecule that cannot be superimposed on its
+  mirror image. An \textbf{achiral} molecule can be superimposed on its mirror
+  image and contains a plane of symmetry. Carbon \textbf{chiral centers
+  (stereocenter)} have four different groups attached to it and thus $ sp^{3} $
+  hybridized. 
+
+  \subsection{Absolute Configuration}
+
+  Chiral centers may be assigned an \textbf{absolute configuration}. The rules
+  are as follows:
+  \begin{enumerate}
+    \item Priority assigned to atoms directly attached to chiral center by
+      increasing atomic number.
+    \item If isotopes are present (deuterium) priority is assigned to heavier
+      isotope.
+    \item In the event of identical atoms, examine next connected atoms instead
+      and determine based on the above rules
+    \item Multiple bond is counted as two single bonds for both atoms involved
+    \item After assignment, rotate molecule so lowest priority points directly
+      away from viewer. Trace path from highest priority to second lowest
+      priority. \underline{Clockwise - R | CCW - S}\\
+
+  \end{enumerate}
+  \textbf{Fischer Projection} - vertical lines assumed to go into the page and
+  horizontal lines come out of the page.
+
+  \subsection{Enantiomers\supddag}
+
+  \textbf{Enantiomers} are non-superimposable mirror images, will always have
+  opposite absolute configurations (R/S), and any molecule that contains chiral
+  carbons and no internal planes of symmetry has an enantiomer. Usually
+  enantiomeric pairs have the same physical properties except optical activity. 
+
+  \subsection{Optical Activity}
+
+  A molecule is \textbf{optically active} if it rotates the plane of polarized
+  light. \textbf{Dextrorotatory}(+) rotates light clockwise.
+  \textbf{Levorotatory} (-) rotates CCW. \textbf{Specific rotation} refers to
+  magnitutde of rotation of light and is dependent upon
+  \begin{enumerate}
+    \item structure
+    \item concentration
+    \item path length of the light
+  \end{enumerate}
+
+  \emph{Enantiomeric pairs will rotate light with equal magnitude but in
+  opposite directions.} A \textbf{racemic mixture} contains equal parts of an
+  enantiomeric pair and thus does not rotate light at all.
+
+  \subsection{Diastereomers}
+
+  The possible number of stereoisomers is $ 2^{n} $ where n refers to the number
+  of chiral centers. Consider the possible isomers 3-bromobutan-2-ol:
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.1]{4molecules.jpeg}
+  \end{figure}
+
+  (I,II) and (III,IV) are enantiomers and the remaining pairs are
+  diastereomers. For two chiral centers, \emph{inverting ALL (in this case
+  both) chiral centers results in enantiomers, inverting only one chiral results
+in diastereomers}.
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.1]{diastereomersDiag.jpeg}
+  \end{figure}
+
+  Diastereomers may have dramatically different physical and chemical properties
+  including:
+  \begin{enumerate}
+    \item melting points
+    \item boiling points
+    \item solubilities
+    \item \emph{specific rotations}
+  \end{enumerate}
+
+  There is no relationship between specific rotations of diastereomers.
+
+  \subsection{Resolution of Enantiomers}
+
+  \textbf{Resolution} is the separation of a racemic mixture. Usu. done with
+  enantiomerically pure chiral probes that associate with the enantiomeric pair
+  producing two diasteromeric salts with different chemical and physical
+  properties. Subsequent work up separates the enantiomeric pair. C.f. pg. 95
+  for more details.
+
+  \subsection{Epimers\supddag}
+
+  \textbf{Epimers} are a subclass of diastereomers that differ in their absolute
+  configuration at a single chiral center (only one stereocenter is inverted).
+  Analogous to R and S configurations are the D and L configurations for
+  epimers. When the hydroxyl group is on the right(left) of the epimeric carbon
+  in the Fischer projection, the molecule is a D(L) sugar. Note: all epimers are
+  diastereomers but not all diastereomers are epimers. An example is the
+  following C-2 epimer in \figref{epimers} (D-ribose and D-arabinose):
+
+  \begin{figure}[h]
+    \centering
+    \caption{C-2 Epimers}
+    \chemname{\chemfig{(-[4]H)(-OH)(-[2](-[,1.13]OH)(-[2]CHO)(-[4]H))-[6](-[4]H)(-\textcolor{red}{OH})-[6]CH_{2}OH}}{D-ribose}
+    \hspace{5em}
+    \chemname{\chemfig{(-[4]H)(-OH)(-[2](-H)(-[2]CHO)(-[4]HO))-[6](-[4]H)(-\textcolor{red}{OH})-[6]CH_{2}OH}}{D-arabinose}
+    \label{epimers}
+  \end{figure}
+  \newpage
+  \subsection{Anomers}
+
+  \textbf{Anomers} are epimers that form from a ring closure. MCAT only focuses
+  on sugar anomers. Consider D-glucose. Open-chain glucose cyclizes when C-5
+  hydroxyl group attacks the C=O carbon of C-1. C-1 goes from three different
+  substituents to four and thus becomes a chiral center, \textbf{anomeric
+  center} in this case. It now may either have the hydroxyl group down(up) $
+  \alpha(\beta) $ Note: Leah4Sci video on going from Fischer to Haworth to
+  Chair. Rules
+  \begin{enumerate}
+    \item Right side of Fischer goes down
+    \item Left side of Fischer goes up
+    \item C-6 goes opposite of the -OH on C-5
+  \end{enumerate}
+
+  \subsection{Meso Compounds}
+
+  A \textbf{meso compound} is a pair of molecules that have chiral centers and
+  directly superimposable mirror images. \emph{They have an internal plane of
+  symmetry.} They do not contribute to the number of stereoisomers a compound 
+  has.
+
+  \subsection{Geometric Isomers}
+
+  \textbf{Geometric isomers} are diastereomers that differ in orientation of
+  substituents around a ring or double bond. Priority is assigned in a similar
+  manner. Label rules for cyclic are:
+  \begin{enumerate}
+    \item highest priority same side - \emph{cis}
+    \item on opposite side - \emph{trans}
+  \end{enumerate}
+
+  For double bonds we follow same priority assignment rules and have that:
+  \begin{enumerate}
+    \item same-side Z (cis)
+    \item opposite-side E (trans)
+  \end{enumerate}
+  \newpage
+  \subsection{Summary of Isomers}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.2]{isoSum.jpeg}
+  \end{figure}	
+\end{document}

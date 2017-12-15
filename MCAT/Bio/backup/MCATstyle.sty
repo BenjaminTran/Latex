@@ -1,0 +1,89 @@
+% Declare that this style file requires at least LaTeX version 2e.
+\NeedsTeXFormat{LaTeX2e}
+
+% Provide the name of your page, the date it was last updated, and a comment about what it's used for
+\ProvidesPackage{MCATstyle}[2016/08/02 Ben's Custom Latex Style for MCAT]
+
+% Now paste your code from the preamble here
+
+% PACKAGES
+\usepackage [utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage{color,soul}
+\usepackage[x11names]{xcolor}
+\usepackage[overload]{empheq}
+\usepackage{sectsty}
+\usepackage{varwidth}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage{chemfig}
+\usepackage{scrextend}
+\usepackage{paralist}
+\usepackage{enumitem} % more option enumerate
+\usepackage{mdframed}
+\setlength{\columnseprule}{1pt}
+\colorlet{textcolor}{black}
+\usepackage{mathtools} %for drawing boxed equations
+\usepackage{lmodern}
+\usepackage{amssymb,amsthm}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsfonts} %mathematics fonts
+\usepackage{amsmath}%words in math mode \text{} and equation names under numbers
+\usepackage{amsthm}%allow numbered and unnumbered theorems
+\usepackage{ mathrsfs }%for Lagrangian L
+\usepackage{commath}% for pd and od functions along with delimiters
+\usepackage{microtype}
+\usepackage{siunitx}
+\usepackage{cool} % math package
+%\usepackage{xparse} % for more flexbility in declaring commands e.g. multiple optional argument commands
+\usepackage{graphicx}
+\graphicspath{{../images/}{../../images/}}
+\usepackage{makeidx}
+%\makeindex
+
+%\setlength{\parindent}{0pt} %removes indentations
+% ENVIRONMENTS
+\newtheorem*{problem*}{Problem}
+
+\newenvironment{solution}
+{\let\oldqedsymbol=\qedsymbol
+	\renewcommand{\qedsymbol}{$\blacktriangleleft$}
+	\begin{proof}[\bfseries\upshape Solution]
+	\end{proof}
+	\renewcommand{\qedsymbol}{\oldqedsymbol}}
+
+\setlist[description]{leftmargin=\parindent,labelindent=\parindent} % Indents items in description environment, from enumitem package
+
+\newmdenv[
+backgroundcolor = yellow!40 ,%
+%	linecolor = blue!70! black ,%
+linecolor = Firebrick4 ,%
+linewidth=2pt
+innertopmargin = \topskip ,%
+splittopskip = \topskip
+]{infobox} % from mdframed
+
+% TYPESETTINGS
+\chapterfont{\color{blue}}  % sets colour of chapters from sectsty
+\sectionfont{\color{DodgerBlue4}}  % sets colour of sections
+\subsectionfont{\color{DodgerBlue1}}
+\subsubsectionfont{\color{cyan}}
+
+% COMMANDS
+\renewcommand{\i}{\mathrm{i}} %allows for to write imaginary i
+
+\newcommand{\eqname}[1]{\tag*{\llap{#1}}} %tag equation with name
+\newcommand{\kronecker}[2]{\delta_{#1}^{#2}}
+\newcommand{\vocab}[2][]{\textcolor{Maroon4}{\textbf{#2}}\index{#2#1}}
+\newcommand{\supdag}{\textsuperscript{\textdagger}}
+\newcommand{\supddag}{\textsuperscript{\textdaggerdbl}}
+\newcommand{\chem}[1]{\ensuremath{\mathrm{#1}}}
+
+
+% Finally, we'll use \endinput to indicate that LaTeX can stop reading this file. LaTeX will ignore anything after this line.
+\endinput

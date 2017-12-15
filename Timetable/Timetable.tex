@@ -1,0 +1,160 @@
+\documentclass[a4paper,10pt]{report}
+
+% Definitions
+\usepackage{MCATstyle}
+\usepackage{HCPRstyle}
+\usepackage{datenumber}
+\usepackage{forloop} 
+\geometry{top=0.5in, bottom=0.5in}
+
+\setlist[itemize]{label=-,leftmargin=*,topsep=0pt,itemsep=10pt}
+\newcommand{\litem}[2][]{\item[#1]
+    #2\begin{center}\vspace{-6ex}\rule{0.85\textwidth}{0.4pt}\vspace{-3ex}\end{center}}
+
+\begin{document}
+
+\newcounter{iteration}
+\newcounter{daynumber}
+
+\forloop{iteration}{3}{\value{iteration} < 100}{ 
+\thispagestyle{empty}
+\begin{center}
+  \huge\datedayname\;\datedate
+\end{center}
+
+\iffalse
+Today is \datedayname\;\today, 7 days from now it's \setdaynamebynumber{8}
+\datedayname\;\datedate
+\fi
+\begin{table}[H]
+  \fontsize{12}{11}\selectfont%adjust second argument until table fits page
+  \centering
+  \setlength{\aboverulesep}{0pt}
+  \setlength{\belowrulesep}{3pt}
+  \begin{tabularx}{\textwidth}{ZY}
+    \toprule
+    {\textbf{TIME}} &
+    \multicolumn{1}{c}{{\textbf{
+    DETAILS}}}\\
+    \midrule
+    {\huge\textbf{9}} am&
+    \begin{itemize}
+	\vspace{-1ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+      \end{itemize}\\\bottomrule\\
+
+    {\huge\textbf{10}} am&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{11}} am&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{12}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{1}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+
+    {\huge\textbf{2}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{3}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{4}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{5}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{6}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{7}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+    {\huge\textbf{8}} pm&
+    \begin{itemize}
+	\vspace{-3ex}
+	\litem[00]{\hfil}
+	\litem[15]{\hfil}
+	\litem[30]{\hfil}
+	\item[45]{\hfil}
+	  \vspace{-2ex}
+    \end{itemize}\\\bottomrule\\
+  \end{tabularx}
+\end{table}
+\newpage
+
+%\addtocounter{datenumber}{\value{daynumber}}
+\addtocounter{datenumber}{1}
+\setdatebynumber{\thedatenumber}
+\setdaynamebynumber{\value{iteration}}
+}
+
+\end{document}

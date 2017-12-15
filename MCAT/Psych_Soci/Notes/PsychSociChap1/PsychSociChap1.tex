@@ -1,0 +1,169 @@
+% !TeX root = PsychSociChap1.tex
+\documentclass[../Psych_Soci_review.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Biological Foundations of Behavior}
+
+\section{Neuronal Structure and Function}
+
+Structural components:
+\begin{enumerate}
+  \item \vocab{Soma}: The central cell body; contains nucleus and where most of
+    the biosynthetic activity of the cell takes place
+  \item \vocab{Axons and dendrites}: have only one axon(sends signals) but can
+    have many dendrites(receives signals). One(many) dendrite =
+    \emph{bipolar(multipolar)}.
+  \item \vocab{Synaptic knobs}: axons terminate here, these form connections
+    with target cells.
+  \item \vocab{Synaptic cleft}: releases chemical messengers when receives
+    action potential.
+\end{enumerate}
+Full structure shown below:
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.1,frame]{neuron.jpg}
+\end{figure}
+
+\section{The Action Potential}
+\subsection{Resting Membrane Potential}
+
+Potential of $ \approx $ -70 mV (interior negative wrt exterior). Two proteins
+to create potential: \chemfig{Na^{+}/K^{+}} ATPase and potassium leak channels.
+The ATPase pumps three sodium out for two potassium in and hydrolyzes one ATP.
+Leak channels allow for ions to flow down gradient at all times. There are very
+few sodium leak channels.\\
+Neurons are polarized. The firing of an action potential (AP) causes
+depolarization down the axon. After an action potential has fired the cell
+re-polarizes.
+
+\subsection{Depolarization}
+
+\vocab{Voltage-gated sodium channels} are important for AP propagation. Responds
+to change in membrane potential (when it becomes $ \approx $ -50 mV); allows
+sodiums to flood in causing depolarization to about +35 mV. Slightly depolarizes
+next section and process carries on.
+
+\subsection{Repolarization}
+
+To produce this effect the following occur:
+\begin{enumerate}
+  \item Voltage-gated sodium channels inactivate very quickly
+  \item Voltage-gated potassium channels open for longer and close only when
+    potential drops to $ \approx -90 $ mV
+  \item Potassium leak channels and ATPase bring potential back to resting
+\end{enumerate}
+
+\subsection{Saltatory Conduction}
+
+\vocab{Myelin} insulates axon. \vocab{Schwann cells} are glial cells that
+produce the myelin. Since no charges may flow through the myelin sheaths there
+are gaps in the covering called \vocab{nodes of Ranvier} where all of the
+channels are concentrated.
+
+\subsection{Glial Cells}
+
+Glial cells provide structural and metabolic support to neurons. Maintain
+resting membrane potential but do not generate AP. Examples below:
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.15,frame]{Glial.jpg}
+\end{figure}
+
+\subsection{Equilibrium Potentials}
+
+\vocab{Equilibrium potential} is the membrane potential at which the gradient
+driving movement of ions does not exist. It is specific for particular ions and
+can be determined via the Nernst Equation:
+\[ E_{ion} = \dfrac{RT}{zF}\ln
+  \dfrac{\left[X\right]_{outside}}{\left[X\right]_{inside}} \]
+For \chemfig{Na^{+}} it is +50 mV and \chemfig{K^{+}} it is -90 mV. Thus,
+equilbrium at -70 mV reflects the difference in equilibrium potentials and the
+relative number of leak channels for the two ions.
+
+\subsection{Refractory Period}
+
+Thousands of AP can pass per second. After an AP neuron enters refractory and
+cannot fire another. There are two phases. During \vocab{absolute refractory
+period} a neuron will not fire no matter how strong a membrane depolarization is
+induced (the voltage-gated sodium channels are inactivated). During
+\vocab{relative refractory period} neuron can fire but harder since it is
+hyperpolarized. See \figref{refractory}:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=1.7]{refractory.jpg}
+  \caption{Neuron refractory periods}
+  \label{refractory}
+\end{figure}
+
+\section{Synaptic Transmission}
+
+Two types of synapses:
+\begin{enumerate}
+  \item \vocab{Electrical synapse}\\
+    When cytoplasm of two cells are joined by gap junctions so AP will spread
+    directly from one cell to another. Not common in nervous system but
+    important for smooth and cardiac muscle.
+  \item \vocab{Chemical synapse}\\
+    Neurotransmitters. The following steps are involved (see \figref{synapse} )
+
+    \begin{enumerate}
+      \item AP reaches synaptic knob
+      \item Depolarization of presynaptic membrane opens voltage-gated calcium
+        channels
+      \item Calcium enters presynaptic cell causing release of neurotransmitters
+        via secretory vessicls.
+      \item Neurotransmitter diffuse across cleft
+      \item Neurotransmitters bind to postsynaptic membrane (ligand-gated ion
+        channels)
+      \item Opening of said channels in postsynaptic cell alters membrane
+        polarization
+      \item If membrane depolarization reaches threshold then AP is initiated
+      \item Neurotransmitter in cleft is degraded or removed
+    \end{enumerate}
+\end{enumerate}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.15,frame]{Synapse.jpg}
+  \caption{Synaptic process}
+  \label{synapse}
+\end{figure}
+
+Example of chemical synapse is the \vocab{neuromuscular junction} between
+neurons and skeletal muscles. Neurotransmitter is \vocab{Acetylcholine (ACh)}.
+Other common neurotransmitters are:
+\begin{enumerate}
+  \item Glutamate (\textbf{Excitatory})
+  \item Gamma-aminobutyric acid (GABA) (\textbf{Inhibitory})
+  \item serotonin
+  \item dopamine
+  \item norepinephrine
+\end{enumerate} 
+
+If neurotransmitter depolarizes postsynaptic membrane then it is
+\vocab{excitatory}. If it hyperpolarizes then it is \vocab{inhibitory}. This all
+depends on the action of the receptor and not the neurotransmitter. Thus, a
+neurotransmitter may be excitatory in some situations and inhibitory in others.
+
+\subsection{Summation}
+
+Action potential is initiated at the threshold depolarization of -50 mV. A
+postsynaptic neuron has many different neurons with synapses leading to it each
+releasing neurotransmitters (NT). The postsynaptic neuron sums the total stimuli
+(\vocab[]{summation}) to determine if the threshold is crossed and thus
+depolarize (this is called \vocab[]{excitatory postsynaptic potentials}, EPSP).
+Similarly, there are \vocab[]{inhibitory postsynaptic potentials} (IPSP).
+
+There are two types of summation. \vocab[!summation]{Temporal summation} occurs
+when a presynaptic neuron fires APs quickly enough to cause the excitatory
+postsynaptic potentials(inhibitory postsynaptic potentials) to pile up and cross
+threshold and depolarize(hyperpolarize). \vocab[!summation]{Spatial summation}
+occurs when all EPSPs and IPSPs are summed at a given moment in time.
+
+\section{Functional Organization of the Human Nervous System}
+
+\end{document}

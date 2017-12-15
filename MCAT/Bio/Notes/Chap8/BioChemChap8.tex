@@ -1,0 +1,584 @@
+\documentclass[../Bio_chemistryReview.tex]{subfiles}
+\definecolor{fu-blue}{RGB}{0,51,102}
+\newcommand{\shaderow}{\rowcolor{fu-blue!10}}
+\begin{document}
+\chapter{Eukaryotic Cells}
+\section{The Organelles}
+A table of the organelles and their functions is given below in Table
+\ref{tab:org}.  
+\begin{table}[htp]
+  \caption{Animal Cell Organelles}
+  \centering
+  \rowcolors{1}{fu-blue!10}{white}
+  \setlength{\aboverulesep}{0pt}
+  \setlength{\belowrulesep}{0pt}
+  \begin{tabularx}{\textwidth}{lXc}
+    \toprule
+    \rowcolor{fu-blue!20}\textcolor{Red3}{\textbf{Organelle}} & \textcolor{Red3}{\textbf{Function}} &
+    \textcolor{Red3}{\textbf{\# membranes}}\\
+    \midrule
+    nucleus  & Contain \& protect DNA, transcription, partial assembly of ribosomes  & 2 \\
+    mitochondria  & Produce ATP via the Krebs cycle and oxidative phosphorylation & 2 \\
+    ribosomes & Synthesize proteins & 0 \\
+    RER & Location of synthesis/modification of secretory, membrane-bound, \& organelle proteins & 1 \\
+    SER & Detoxification \& glycogen breakdown in liver; steroid synthesis in gonads & 1 \\
+    Golgi apparatus & Modification \& sorting of protein, some synthesis & 1 \\
+    lysosomes & Contain acid hydrolases which digest various substances & 1 \\
+    peroxisomes & Metabolize lipids \& toxins using \chem{H_{2}O_{2}} & 1\\
+    \bottomrule
+  \end{tabularx}
+  \label{tab:org}
+\end{table}
+
+\subsection{The Nucleus}
+The nucleus contains the genome in a compartment surrounded by the
+\vocab[]{nuclear envelope}, which is composed of two lipid bilayer membranes.
+The membrane of the endoplasmic reticulum is at points continuous with the outer
+nuclear membrane, making the interior of the ER (\vocab[]{lumen}) contiguous
+with the space between the two nuclear membranes.\par
+
+\vocab[]{Nuclear pores} allow the passage of material into and out of the
+nucleus. Molecules larger than 60kDa must contain a sequence of amino acids
+called a \vocab[]{nuclear localization sequence}.
+
+\subsection{The Genome}
+The genome is a linear molecule of ds-DNA. The large size of the genome requires
+it to be split into pieces called \vocab{chromosomes}. Chromosomes have a
+\vocab[]{centromere} near the middle to ensure that newly replicated chromosomes
+are sorted properly during cell division, one copy to each daughter cell. The
+ends of the chromosomes also have regions called \vocab{telomeres}.\par
+
+Genes can be mapped genetically and physically to the chromosome they reside on.
+The specific location on the chromosome is termed the \vocab[]{locus}. The locus
+of a gene may affect its expression. Regions of densely packed chromatin are
+called \vocab[]{heterochromatin} within which genes are inaccessible and turned
+off. Loosely packed regions are called \vocab[]{euchromatin} and have active
+genes.\par
+
+The nucleus is supported by a mesh of proteins called the \vocab[]{nuclear
+matrix} or \vocab[]{nuclear scaffold}. The matrix may also play a role in
+regulating gene expression.
+
+\subsection{The Nucleolus}
+The \vocab[]{nucleolus} is a region within the nucleus which produces ribosomes.
+The nucleolus is the site of transcription of rRNA by RNA pol I. The protein
+components of the ribosome are transported into the nucleus from the cytoplasm
+and the ribosome is partially assembled. Complete assembly is accomplished in
+the cytoplasm.
+
+\subsection{Mitochondria}
+\vocab[]{Mitochondria} are the site of oxidative phosphorylation. The interior
+of the mitochondria, the \vocab[]{matrix}, is bounded by the inner and outer
+mitochondrial membranes. The matrix contains pyruvate dehydrogenase and the
+enzymes of the Krebs cycle. The inner membrane is the site of the electron
+transport train and is folded into \vocab[]{cristae}. The protons are pumped
+into the matrix. There is a lengthy discussion about mitochondria's individual
+genome and inheritance.
+
+\subsection{Endoplasmic Reticulum [ER]}
+The \vocab[]{endoplasmic reticulum} (ER) is a large system of folded membrane.
+There are two types:
+\begin{description}
+  \item \vocab[endoplasmic reticulum!]{Rough ER} has a large number of ribosomes
+    bound to its surface. It is the site of protein synthesis for secreted
+    proteins.
+  \item \vocab[endoplasmic reticulum!]{Smooth ER} is not actively involved in
+    protein processing but can contain enzymes involved in steroid hormone
+    biosynthesis (gonads) or in the degradation of environmental toxins (liver).
+\end{description}
+
+\subsection{The Rough ER and the Secretory Pathway}
+Proteins translated on cytoplasmic ribosomes are headed toward peroxisomes,
+mitochondria, the nucleus, or will remain in the cytoplasm. Proteins translated
+on the RER will end up either:
+\begin{enumerate}
+  \item secreted into the extracellular environment
+  \item as integral plasma membrane proteins
+  \item in the membrane or interior of the ER, Golgi apparatus, or lysosomes.
+\end{enumerate}
+
+Whether a protein is translated on the RER is determined by the sequence of the
+protein itself. Some proteins have a sequence called a \vocab[]{signal sequence}
+at their N-terminus. The sequence is recognized by the \vocab[]{signal
+recognition particle} (SRP) which binds to the ribosome. The RER has SRP
+receptors and will pick up the complex. The protein is then translated.\par
+
+\vocab[]{Integral membrane proteins} have sections of hydrophobic amino acid
+residues called \vocab[]{transmembrane domains} that pass through lipid bilayer
+membranes. These domains can be weaved into the ER membrane after
+translation.\par
+
+Proteins that are in the secretory pathway need \vocab[]{targeting signals} to
+end up elsewhere e.g. the Golgi, ER, lysosome. Proteins that are made in the
+cytoplasm that need to be sent to an organelle such as the nucleus need
+\vocab[]{localization signals}. A table that summarizes this information is
+given below see Table \ref{tab:sumCell}
+\begin{table}[H]
+  \caption{Summary of Cellular Protein Traffic}
+  \centering
+  \setlength{\aboverulesep}{0pt}
+  \setlength{\belowrulesep}{0pt}
+  \rowcolors{1}{fu-blue!10}{white}
+  \begin{tabularx}{\textwidth}{p{5.5em}p{5em}p{6em}p{8em}Xp{9em}}
+    \toprule
+    \rowcolor{fu-blue!20}\textbf{Protein Final\newline Destination} & \textbf{Signal\newline Sequence?} & \textbf{Localization\newline Signal?} & \textbf{Transmembrane\newline Domains?} & \textbf{Targeting\newline Signal?} & \textbf{Example} \\
+    \midrule
+    Secreted & Yes & No & No & No & Antibodies,\newline Neurotransmitters,\newline Peptide hormones \\
+    Plasma Membrane & Yes & No  & Yes & No  & Receptors, channels\\
+    Lysosome        & Yes & No  & No  & Yes & Acid hydrolases\\
+    Rough ER        & Yes & No  & No  & Yes & Enzymes required for protein modification\\
+    Smooth ER       & Yes & No  & No  & Yes & Enzymes required for lipid synthesis\\
+    Golgi\newline Apparatus & Yes & No  & No  & Yes & Enzymes required for protein modification\\
+    Cytoplasm       & No  & No  & No  & No  & Glycolysis enzymes\\
+    Nucleus         & No  & Yes & No  & No  & Histones, DNA|RNA polymerase\\
+    Mitochondria    & No  & Yes & No  & No  & PDC/Krebs cycle enzymes\\
+    Peroxisome      & No  & Yes & No  & No  & Catalase\\
+    \bottomrule 
+  \end{tabularx}
+  \label{tab:sumCell}
+\end{table}
+
+\subsection{The Golgi Apparatus}
+The Golgi apparatus has the following functions
+\begin{enumerate}
+  \item Modification of proteins made in the RER (esp. oligosaccharide chains)
+  \item Sorting and sending proteins to their correct destinations
+  \item Synthesis of certain macromolecules
+\end{enumerate}
+The portion of the Golgi nearest the RER is called the \textit{cis} stack and
+the part farthest is called the \textit{trans} stack. The \textit{medial} stack
+is of course in the middle. Secreted proteins are modified in the
+\textit{cis} and \textit{medial} stacks. The route taken by a protein from the
+\textit{trans} stack is determined by signals within the protein that determine
+which vesicle a protein is sorted into.\par
+
+The vesicles are released from a cell through exocytosis. Any membrane bound
+organelles become a part of the cell membrane and any secretory proteins are
+secreted. Proteins that are sent in vesicles from the Golgi immediately to the
+cell surface follow the \vocab[]{consitutive secretory pathway}. Proteins may be
+stored and await for signals to then be secreted. These are said to follow the
+\vocab[]{regulated secretory pathway}.
+
+\subsection{Lysosomes}
+The \vocab[]{lysosome} is a membrane-bound organelle that is responsible for the
+degradation of biological macromolecules by hydrolysis. They degrade particulate
+matter through \vocab[]{phagocytosis}. \vocab[]{Crinophagy} refers to lysosomal
+digestion of unneeded excess secretory products. The enzymes of the lysosomes,
+\vocab[]{acid hydrolases}, only function properly in an acidic environment so
+that if the lysosome ruptures the enzymes are inactive in the pH 7.4 of the
+cytoplasm.
+
+\subsection{Peroxisomes}
+\vocab[]{Peroxisomes} are essential for lipid breakdown and in the liver they
+assist in detoxification of drugs and cehmicals. They produce
+\chem{H_{2}O_{2}} as a by product but also have an enzyme called
+\vocab[]{catalase} which converts it to water and oxygen.
+
+\section{The Plasma Membrane}
+\subsection{Membrane Structure}
+All membranes of the cell are composed of lipid bilayers. The three most common
+lipids in these membranes are \vocab[]{phospholipids}, \vocab[]{glycolipids},
+and \vocab[]{cholesterol}. These are empathic molecules thus naturally, the
+hydrophobic portions will face each other and the hydrophilic portions will face
+away from. This creates the lipid bilayer.\par
+
+There are several types of membrane bound proteins. Some mediate interactions
+with other cells, others called \vocab[]{cell-surface receptors} bind
+extracellular signaling molecules such as hormones and relay these signals into
+the cell. \vocab[]{Channel proteins} selectively allow ions or molecules to
+cross the membrane.\par
+
+In general, there are two types of membrane proteins. \vocab[]{Integral membrane
+proteins} are embedded into the membrane and held there by hydrophobic
+interactions. The membrane crossing regions are the \vocab[]{transmembrane
+domains} discussed earlier. \vocab[]{Peripheral membrane proteins} are not bound
+to the membrane but are hydrogen bonded to integral membrane proteins. They are
+free to move around the membrane surface from site to site.\par
+
+The \vocab[]{fluid mosaic model} seeks to describe the cell membrane. Saturated
+fatty acids have a very straight structure and pack tightly with strong van der
+Waals forces between side chains and thus decrease membrane fluidity. The
+opposite is truce of unsaturated fatty acids. Cholesterol, packed in the
+intermembrane space, also plays a role in membrane fluidity.
+
+\section{Transmembrane Transport}
+Recall concentration measurements that are discussed in the first chapter of the
+general chemistry review; molarity, molality (mass variant of molarity and good
+for temperature invariant measures), and mole fraction.
+
+\subsection{Electrolytes}
+\vocab[]{Electrolytes} are just free ions in solution.
+\vocab[Electrolytes!]{Strong electrolytes} are solutes that dissociate completely
+and \vocab[Electrolytes!]{weak electrolytes} only partially dissociate. The
+number of ions a substance will produce in a solution is called the
+\vocab[]{van't Hoff} factor and is typically denoted by i.
+
+\subsection{Colligative Properties}
+\vocab[]{Colligative properties} depend on the \textit{number} of solute
+particles in the solution rather than the \textit{type} of particle.
+Furthermore, \textit{the identity of the particle is unimportant}. One must
+therefore consider the van't Hoff factor. There are four colligative properties
+of interest discussed below.
+
+\subsubsection{Vapor-Pressure Depression}
+The more solute you add to a solvent, the more the solvent molecules attach to
+the solute particles. This increases the energy required for the solvent
+molecules to break free of the attractive forces in the liquid and hence
+evaporate. Thus, \textit{more solute means higher boiling point}.
+
+\subsubsection{Boiling-Point Elevation}
+As discussed in the previous section, the boiling point increases with more
+solute and this is given by the following equation:
+\begin{align}
+  \boxed{\Delta T_{b} = k_{b}im} \\ \eqname{Boiling-Point Elevation}
+\end{align}
+where $ k_{b} $ is the solvent's boiling-point elevation constant. For water, $
+k_{b} \approx 0.5^{\circ}C/m $.
+
+
+\subsubsection{Freezing-Point Depression}
+Physically, adding a solute to the solvent will interfere with the arrangement
+of the solvent into a crystal lattice at the solid phase transition. Thus, the
+freezing-point is decreased with more solute added. The change in the
+freezing-point is given by:
+\begin{align}
+  \boxed{\Delta T_{f} = -k_{f}im} \\ \eqname{Freezing-Point Depression}
+\end{align}
+
+\subsection{Review of Diffusion and Osmosis}
+\vocab[]{Diffusion} is the tendency for liquids and gases to fully occupy the
+available volume. A solute will diffuse \textit{down its concentration
+gradient}. \vocab[]{Osmosis} is a type of diffusion where the solvent diffuses
+rather than the solute. This occurs if there is a \vocab[]{semipermeable
+membrane} which allows for one type of particle such as water to cross but not
+another such as sucrose. So:
+\begin{description}
+  \item[Diffusion] membrane permeable to both solvent and solute \imp solute
+    moves toward equilibrium
+  \item[Osmosis] membrane permeable to solvent but not solute \imp solvent moves
+    toward equilibrium
+\end{description}
+In either case the final result is that solute concentrations are the same on
+both sides of the membrane.\par
+
+\vocab[]{Tonicity} is used to describe osmotic gradients with reference to the
+amount of dissolved solute. Thus, we have the following definitions
+\begin{description}
+  \item \vocab[Tonicity!]{Hypertonic} solutions have more total dissolved
+    solutes than the cell
+  \item \vocab[Tonicity!]{Hypotonic} solutions have less total dissolved
+    solutes than the cell
+  \item \vocab[Tonicity!]{Isotonic} solutions have the same amount of dissolved
+    solutes
+\end{description} 
+
+\subsection{Osmotic Pressure}
+\vocab[]{Osmotic pressure} can be defined as the pressure it would take to stop
+osmosis from occurring and is given by the \vocab[]{van't Hoff equation}
+\begin{align}
+  \boxed{\Pi = MiRT} \\ \eqname{van't Hoff Equation}
+\end{align}
+where $ \Pi $ is measured in atm and M is the molarity of the solution.
+
+\subsection{Passive Transport}
+\vocab[]{Passive transport} is \textit{any thermodynamically favorable movement
+of solute across a membrane}. There are two types of passive transport discussed
+below.
+
+\subsubsection{Simple Diffusion}
+\vocab[Passive transport!]{Simple diffusion} is diffusion of a solute through a
+membrane without help from a protein e.g. steroids. \vocab[Passive
+transport!]{Facilitated diffusion} is diffusion of a solute through a membrane
+that is intrinsically impermeable to that solute with the help of a protein.
+
+\subsubsection{Facilitated Diffusion: Channels}
+There are many kinds of \vocab[Passive transport!Facilitated diffusion!]{ion
+channels}. They may be \textbf{gated} which is to say that the channel is open
+in response to specific environmental stimuli. \vocab[Passive
+transport!Facilitated diffusion!ion channels!]{Voltage-gated} ion channels open
+in response to a change in the electrical potential across the membrane. One
+that opens in response to the binding of a specific molecule is called a
+\vocab[Passive transport!Facilitated diffusion!ion channels!]{ligand-gated}
+ion channel.
+
+\subsubsection{Facilitated Diffusion: Carriers}
+\vocab[Passive transport!Facilitated diffusion!]{Carrier proteins} rely on
+conformational change to move molecules across membranes. Carriers that only do
+one at a time are called 
+\vocab[Passive transport!Facilitated diffusion!Carrier
+proteins!]{uniports}, \vocab[Passive transport!Facilitated diffusion!Carrier
+proteins!]{Symports} carry two different types of particles across the membrane
+in the same direction. \vocab[Passive transport!Facilitated diffusion!Carrier
+proteins!]{Antiports} do so in the opposing directions.
+
+\subsubsection{Pores and Porins}
+A \vocab[]{pore} is large enough that it is \textit{not selective}. Pores are
+formed by polypeptides known as \vocab[]{porins}. Eukaryotic membranes do not
+have pores, because it would destroy barrier function of the membrane. Lastly,
+you would not expect pores and ion channels to be found in the same membrane as
+a pore would make the ion channel useless.
+
+\subsubsection{Kinetic Concerns}
+The kinetics of simple diffusion is limited to the surface area of the membrane
+and the size of the gradient. Facilitated diffusion, however, is dependent on a
+finite number of integral membranes so saturation of these proteins sets the
+limit.
+
+\subsection{Active Transport}
+\vocab[]{Active Transport} is the movement of molecules through the plasma
+membrane against a gradient and therefore requires energy input and proteins.
+In \vocab[Active Transport!]{primary active transport}, the transport of a
+molecule is coupled to ATP hydrolysis. In \vocab[Active Transport!]{secondary
+active transport}, the transport process is indirectly coupled to ATP
+hydrolysis. For instance, ATP hydrolysis may create the gradient that drives the
+transport. This is found in the sodium, glucose symport of the intestines where
+ATPase creates the sodium gradient used to intake the glucose. Note that in this
+type of transport, the movement of a molecule down its gradient must be coupled
+with the movement of another molecule against its gradient.
+
+\subsubsection{The \chem{Na^{+}/K^{+}} ATPase and the Resting Membrane
+Potential}
+This pumps out 3 \chem{Na^{+}} and pumps in 2 \chem{K^{+}} hydrolyzing one ATP
+to drive the pumping of these ions against their gradients thus it is a primary
+active transport protein. The sodium cannot pass back through the membrane, but
+the potassium leaks out of the cell through \vocab[]{potassium leak channels}.
+The movement of ions allows the cell to maintain osmotic balance. This leak
+creates the electric potential across the plasma membrane with a net negative
+charge on the interior of the cell. This is the \vocab[]{resting membrane
+potential}. Also, the concentration gradient of the high sodium outside of the
+cell is the driving force behind some secondary active transport as discussed in
+the previous section. To summarize:
+\begin{enumerate}
+  \item To maintain osmotic balance between cellular interior and exterior
+  \item To establish the resting membrane potential
+  \item To provide the sodium concentration gradient used to drive secondary
+    active transport
+\end{enumerate}
+
+\subsection{Endocytosis and Exocytosis}
+\vocab[]{Exocytosis} is the method used by the cell to secrete proteins out of
+the cell. \vocab[]{Endocytosis} is how the cell intakes things by invaginating
+something and forming a vesicle called an \vocab[]{endosome}. There are three
+types.\par
+
+\vocab[]{Phagocytosis} is the nonspecific uptake of large particulate matter
+where the vesicles later merges with a lysosome to break down the matter. This
+is typically done by macrophages. (\textit{Note: This is no an
+invagination}).\par
+
+\vocab[]{Pinocytosis} is the nonspecific uptake of small molecules and
+extracellular fluid via invagination. Virtually all eukaryotic cells participate
+in pinocytosis.\par
+
+\vocab[]{Receptor-mediated endocytosis} is \textit{highly} specific. The site of
+endocytosis is marked by pits coated with the molecule \vocab[]{clathrin}
+(inside the cell) and with receptors that bind to a specific molecule (outside
+of the cell)
+
+\section{Other Structural Elements of the Cell}
+\subsection{Cell-Surface Receptors}
+The binding of a ligand to a receptor on the cell surface triggers a response
+within the cell, this process is called \vocab[]{signal transduction}. There are
+three main types of signal-transducing cell-surface receptors.
+\begin{description}
+  \item \vocab[signal transduction!]{Ligand-gated ion channels} open an ion
+      channel upon binding a particular neurotransmitter. An example is the
+      ligand-gated sodium channel on the surface of the muscle cell at the
+      neuromuscular junction.
+  \item \vocab[signal transduction!]{Catalytic receptors} have an enzymatic
+      active site on the cytoplasmic side of the membrane. Enzymatic activity is
+      initiated by ligand binding at the extracellular surface. Generally, the
+      catalytic role is that of a protein \vocab[]{kinase}, which attaches
+      phosphate groups to proteins. Recall that proteins can be modified with
+      phosphate on the side chain hydroxyl of serine, threonine, or tyrosine.
+  \item \vocab[signal transduction!]{G-protein-linked receptor} does not
+      directly transduce its signal, but transmits it into the cell with the aid
+      of a \vocab[]{second messenger}. The most important of these is
+      \vocab[second messenger!]{cyclic AMP}. It is known as the ``universal
+      hunger signal'' because it is the second messenger for epinephrine and
+      glucagon, which cause glycogen and fat breakdown. The process of
+      epinephrine is explained below: (see Figure \ref{fig:cAMP})
+      \begin{enumerate}
+          \item Epinephrine binds to a specific G-protein-linked receptor
+          \item The cytoplasmic portion of the receptor activates G-proteins,
+              causing GDP to dissociate and GTP to bind in its place
+          \item Activated G-proteins diffuse through the membrane and activate
+              adenylyl cyclase
+          \item Production of cAMP
+          \item cAMP activates cAMP-dependent protein kinases (cAMP-dPK) in the
+              cytoplasm
+          \item cAMP-dPK phosphorylates certain enzymes resulting in
+              mobilization of energy
+      \end{enumerate}
+      \begin{figure}[H]
+          \centering
+          \includegraphics[scale=0.2,frame]{cAMP.jpg}
+          \caption{G-Protein Mediated Signal Transduction Stimulated by
+          Epinephrine}
+          \label{fig:cAMP}
+      \end{figure}
+      G-protein-linked receptors may be stimulatory or inhibitory. The above was
+      a stimulatory one. Another second messenger pathway involves the
+      activation of \vocab[second messenger!]{phospholipase C} which increases
+      cytoplasmic \chem{Ca^{2+}} levels. \textit{Note that G-protein-linked
+          receptors induce signal amplification as one ligand binding to the
+          cellular surface can induce a cascade of signals to enzymes throughout
+      the cell}.
+\end{description}
+
+\subsection{The Cytoskeleton}
+The \vocab[]{cytoskeleton} provides structural support and allows movement of
+the cell and its appgendages (cilia and flagella) and trasport of substances
+throughout the cell. The internal cytoskeleton is composed of 
+\begin{itemize}
+    \item \vocab[cytoskeleton!]{microtubules} (largest)
+    \item \vocab[cytoskeleton!]{intermediate filaments}
+    \item \vocab[cytoskeleton!]{microfilaments} (smallest)
+\end{itemize}
+
+\subsubsection{Microtubules}
+A \textbf{microtubule} consists of: \vocab[]{$ \alpha $-tubulin} and
+\vocab[]{$\beta$-tubulin}. These two form a dimer which noncovalently bond
+others to make a sheet, which rolls into a tube. The microtubule can elongate by
+adding dimers to one end, but the other end is attached to the
+\vocab[]{microtubule organizing center} (MTOC) so it cannot be elongated from
+this end.\par
+
+Withing the MTOC is a pair of \vocab[]{centrioles} composed of a ring of nine
+microtubule triplets. During mitosis they separate and move to become antipodal.
+then microtubules, called \vocab[]{aster}, extend out. Those that attach to
+replicated chromosomes at the \vocab{ kinetochore } are called \vocab[]{polar
+fibers}. This whole assembly is called the \vocab[]{mitotic spindle}, and
+\vocab[]{kinetochore fibers}. The tiny microtubules that attach the kinetochore
+to the spindle.
+
+\subsubsection{Eukaryotic Cilia and Flagella}
+The structure of and what drives motion in \vocab{ flagella } of eukaryotes is
+different from that of prokaryotes. \vocab{ Cilia } are short and serve to move
+fluid past the cell surface. Both flagella and cilia are build with a
+``\vocab[]{9 + 2}'' arrangement of microtubules (9 doublets surrounding two lone
+microtubules in the center) Each microtubules is bound to its neighbor by a
+contractile protein called \vocab[]{dynein}. The cilium or flagellum is anchored
+to the plasma membrane by a \vocab[]{basal body} which has the same structure as
+a centriole. 
+
+\subsubsection{Microfilaments}
+Globular protein \vocab[]{actin} forms rods in the cytoplasm called
+\vocab[]{microfilaments}. Microfilaments are dynamic and are responsible for
+gross movements of the entire cell, such as pinching the dividing parent cell
+into two daughter cells during cell division.
+
+\subsubsection{Intermediate Filaments}
+\vocab[]{Intermediate filaments} are in between the other two in terms of size.
+They are more permanent than the other two and appear to be involved in
+providing strong cell structure.
+
+\subsection{Cell Adhesion and Cell Junctions}
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \centering
+    \vspace{-24pt}
+    \includegraphics[width=0.20\textwidth,frame]{CellJunctions.jpg}
+    \caption{Cell Junctions}
+    \label{fig:junc}
+\end{wrapfigure}
+In some tissues, cells are tightly bound to each other. For example, the
+intestinal wall is lined with \vocab[]{epithelium}. The cells are connected by
+\vocab[]{tight junctions} forming a complete seal. However, epithelial cells of
+the skin are held together tightly by \vocab[]{desmosomes} but do not form a
+complete seal. In the heart the connection has holes called \vocab[]{gap
+junctions} to allow for the movement of ions (see Figure \ref{fig:junc}).\par
+
+More detail is given in the book about the different kinds of junctions
+described above on page 271. 
+\hfil \\
+\hfil \\
+\hfil \\
+
+\section{The Cell Cycle and Mitosis}
+The \vocab{ cell cycle } is separated into four phases. They are as follows:
+\begin{description}
+    \item \vocab[cell cycle!]{S phase} is when the cell actively replicates its
+        genome. By the end it has two copies of the genome.
+    \item \vocab[cell cycle!]{M phase} includes \vocab[]{mitosis}, partitioning
+        cell components, and \vocab[]{cytokinesis}, physical division.
+    \item \vocab[cell cycle!]{G\textsubscript{1} phase}
+    \item \vocab[cell cycle!]{G\textsubscript{2} phase}
+\end{description}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.2,frame]{cellcycle.jpg}
+    \caption{The Cell Cycle}
+\end{figure}
+
+The cell spends most of its time in interphase, in fact some are stuck in
+interphase (G\textsubscript{0}). The more specialized the cell the less likely
+it is to remain capability of reproducing itself e.g. neurons, blood cells, and
+skin cells. They are replenished by reproduction of \vocab[]{stem cells}.\par
+
+During interphase the genome is spread out because replication is going on.
+Sister chromatids are identical copies of a chromosome, attached to each other
+at the centromere. Homologous chromosomes are equivalent but nonidentical and do
+not come anywhere near each other during mitosis. The process of mitosis is
+described below:
+\begin{description}
+    \item \vocab[mitosis!]{ Prophase } The nucleolus disappears, the spindle and
+        kinetochore fibers appear, and the centrioles move antipodal. So now the
+        cell has two MTOCs called asters. The nuclear envelope converts itself
+        into many tiny vesicles.
+    \item \vocab[mitosis!]{Metaphase} All the chromosomes line up forming the
+        \vocab[Metaphase!]{metaphase plate}. Each sister chromatid is attached
+        to spindle fibers that attach to the MTOCs so the chromosome gets pulled
+        apart.
+    \item \vocab[mitosis!]{Anaphase} The spindle fibers shorten, and the
+        centromeres of each sister chromatid pair are pulled apart. The cell
+        elongates, and cytokinesis begins with the formation of a
+        \vocab[Anaphase!]{cleavage furrow}.
+    \item \vocab[mitosis!]{Telophase} A nuclear membrane forms around the bunch
+        of chromosomes at each end of the cell, the chromosomes decondense. Each
+        daughter nucleus has 2n chromosomes.
+\end{description}
+
+\section{Cancer, Oncogenes, and Tumor Suppressors}
+Mutated genes that induce cancer are called \vocab[]{oncogenes}. Usually these
+are genes that regulate growth of the cell and the cell cycle.
+\vocab[]{Protooncogenes} are the normal versions of the genes that allow for
+regular growth patterns, but can be converted into oncogenes under the right
+circumstances. \vocab[]{Tumor suppressor genes} produce proteins that are
+inherent defense system to prevent the conversion of cells into cancer cells.
+These genes work to detect damages to the genome and halt growth until it is
+repaired or trigger apoptosis if the damage is too severe. \vocab[Tumor
+suppressor genes!]{p53} is a example of a product of a common tumor suppressor
+gene.
+
+\subsection{Apoptosis}
+\vocab[]{Apoptosis} allows a cell to shrink and die while simultaneously
+minimizing damage to neighboring cells and limiting the exposure of other cells
+to its cytosolic contents. The process goes as:
+\begin{enumerate}
+    \item Shrinking of the cell and disassembly of the cytoskeleton
+    \item Nuclear envelope break down and genome broken into pieces
+    \item Cell surface proteins emerge signaling phagocytic cells to clear away
+        the dead cell
+\end{enumerate}
+A family of proteases called \vocab[]{caspases} is responsible for carrying out
+apoptosis. There are two types:
+\begin{description}
+    \item \vocab[]{Initiator caspases} respond to death signals by clustering
+        together and activating effector caspases in a cascade of activation
+    \item \vocab[]{Effector caspases} cleave a variety of cellular proteins to
+        trigger apoptosis
+\end{description}
+
+\subsection{Oxidative Stress}
+\vocab{ Oxidative stress } is when production of reactive oxygen species (free
+oxygen and peroxides) outstrips the cell's ability to detoxify them. These
+reactive species can damage DNA leading to cancer. Though the immune system
+cells produce these to kill pathogens as well.
+
+\subsection{Senescence}
+\vocab[]{Senescence} describes the process of biological aging which occurs at
+both the cellular and the organismal level. Telomere length is a measure of the
+age of the cell. Of course longer telomeres means a younger cell.
+
+
+\end{document}

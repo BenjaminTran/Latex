@@ -1,0 +1,51 @@
+\documentclass[10pt,letterpaper]{report}
+
+\usepackage{subfiles}
+\usepackage{MCATstyle}
+\graphicspath{ {images/} }
+\makeatletter
+\let\org@subfile\subfile
+\renewcommand*{\subfile}[1]{%
+  \filename@parse{#1}% LaTeX's file name parser
+  \expandafter
+  \graphicspath\expandafter{\expandafter{\filename@area/images/}}%
+  \org@subfile{#1}%
+}
+\makeatother
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		\line(1,0){400}\\
+		[0.25in]
+		\huge{\bfseries \textsc{MCAT Biology and Biochemistry Review}}\\
+		[0.10in]
+		\line(1,0){400}\\
+		\textsc{Princeton Review}\\
+		\& \\
+		\textsc{Kaplan\supdag}\\
+		[10cm]
+	\end{center}
+	
+	\begin{flushright}
+		\textsc{Benjamin Tran}
+	\end{flushright}
+\end{titlepage}
+	
+	\tableofcontents
+	\thispagestyle{empty}
+	\clearpage
+
+	\setcounter{page}{1}
+	\setcounter{chapter}{1}
+
+	\subfile{Chap2/BioChemChap2}
+	\subfile{Chap3/BioChemChap3}
+	\subfile{Chap4/BioChemChap4}
+	\subfile{Chap5/BioChemChap5}
+	\subfile{Chap6/BioChemChap6}
+	
+%	\clearpage
+%	\addcontentsline{toc}{chapter}{Index}
+%	\printindex
+\end{document}

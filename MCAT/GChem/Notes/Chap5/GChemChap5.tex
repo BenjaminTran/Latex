@@ -1,0 +1,191 @@
+% !TeX root = GChemChap5.tex
+\documentclass[../GChemReview.tex]{subfiles}
+
+\begin{document}
+
+  \chapter{Bonding and Intermolecular Forces}
+
+  \section{Lewis Dot Structures}
+
+  Model valence electrons. Electrons in \emph{d} subshells are not considered
+  valence electrons since valence electrons are in the highest \emph{n} level.
+
+  \subsection{Formal Charge}
+
+  To determine correct Lewis structure in degenerate cases use \vocab{formal
+  charge}. Formal charge for a given atom is 
+  \begin{equation}
+    F_{c} = V - \dfrac{1}{2}B - L
+  \end{equation}
+
+  Where
+  \begin{enumerate}
+    \item V valence electrons
+    \item B bonding electrons
+    \item L Lone paired electrons (count individual electrons)
+  \end{enumerate}
+
+  Best lewis structures have octets and zero formal charge of all the atoms. If
+  both are not possible then the one that minimizes the magnitude of the formal
+  charge is the best.
+
+  \subsection{Resonance}
+
+  If a molecule has non-equivalent resonance structures then the resonance
+  hybrid is a weighted average of them as shown with formaldehyde:
+
+        %	\begin{figure}[h]
+        %		\centering
+        %		\schemestart
+        %		\chemname{\chemfig{C(-[5]H)(-[7]H)=[2]\lewis{4:0:,O}}}{major-all atoms\\ have octets and no\\ formal charge} 
+        %		\arrow{<->}
+        %		
+        %		\chemname{\chemfig{\chembelow{C}{+}(-[5]H)(-[7]H)-[2]\lewis{2:4:0:,O}}}{a}
+        %		\schemestop
+        %	\end{figure}
+
+  \section{Bond Length and Bond Dissociation Energy}
+
+  \vocab{Bond dissociation energy} (BDE) is the energy required to break a bond
+  \emph{homolytically} (when each fragment receives a single electron whereas,
+  we are normally concerned with \emph{heterolytic} bond cleavage). We will only
+  consider homolytic vond cleavage. For similar bonds (as in compare C-C bonds
+  only to other C-C bonds), \emph{the higher the bond order, the shorter and
+  stronger the bond.}
+
+  \section{Types of Bonds}
+
+  \subsection{Covalent Bonds}
+
+  \vocab{Covalent bond} is formed between atoms when each contributes one or
+  more of its unpaired valence electrons. 
+
+  \subsection{Polarity of Covalent Bonds}
+
+  Two atoms bonded together with different electronegativities will have a polar
+  bond and thus a dipole moment. Consider HF (polar bond) and FF (nonpolar
+  bond).
+
+  \subsection{Coordinate Covalent Bonds}
+
+  When one atom donates \emph{both} of the shared electrons in a bond. E.g.
+  \chemfig{BF_{3}} and \chemfig{NH_{3}}. Note: the atom that donates the
+  electron pair is by definition a Lewis base. When the coordinate bond breaks
+  the electrons return to its original owner.
+
+  \subsection{Ionic Bonds}
+
+  Consider NaCl where sodium \emph{gives} an electron to Cl and thus the
+  molecule is held together by the electrostatic attraction of the ions. Since
+  the bond strength is dependent on the charge difference, we can compare bond
+  strengths based on this fact.
+
+  \section{VSEPR Theory}
+
+  One rule: \emph{Since electrons repel one another, electron pairs, whether
+  bonding or nonbonding, attempt to move as far apart as possible.} The total
+  number of electron groups on the central atom of a molecule determines its
+  bond angles and \emph{orbital geometry}. Note: double and triple bonds count
+  only as one electron group.\\ The \vocab{molecular geometry} refers to the
+  shape the atoms make (excluding the lone pairs).
+
+  \section{Hybridization}
+
+  The percentage of s and p character in an \chemfig{sp^{x}} bond is determined
+  by treating s and p equally so that \chemfig{sp^{2}} has 33\% s character and
+  67\% p character.
+
+  \subsection{Sigma Bonds}
+
+  A $ \sigma $ bond consists of two electrons that are localized between two
+  nuclei. \emph{Remember that an \chemfig{sp^{3}} carbon atom has 4
+  \chemfig{sp^{3}} hybrid orbitals.}
+
+  \subsection{Pi Bonds}
+
+  A $ \pi $ bond is composed of two electrons that are localized to the region
+  that lies on opposite sides of the nodal plane formed by the two bonded nuclei
+  and immediately adjacent atoms, c.f. below:
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.2]{PiBond.jpg}
+  \end{figure}
+
+  The bond is formed by the proper, parallel, side-to-side alignment of two
+  unhybridized p orbitals.
+
+  \section{Molecular Polarity}
+
+  A molecule is polar if it contains an uneven distribution of polar bonds (usu.
+  due to electron lone-pairs). It may be nonpolar if it has a symmetric
+  distribution of polar bonds.
+
+  \section{Intermolecular Forces}
+
+  Liquids and solids held together by intermolecular forces such as
+  dipole-dipole forces and London dispersion forces. A hydrogen bond is the
+  strongest dipole-dipole force. \vocab{London dispersion forces} occur when
+  an instantaneous dipole of a nonpolar molecule induces a dipole in another
+  nonpolar molecule. They are very weak and transient. Molecules larger $
+  \implies $ more electrons $ \implies $ more polarizability $ \implies
+  $stronger dispersion forces.\\
+  Recall this leads to impact on physical properties such as:
+  \begin{enumerate}
+    \item greater melting points
+    \item greater boiling points
+    \item greater viscosities
+    \item lower vapor pressures
+  \end{enumerate}	
+  than similar molecules with weaker intermolecular forces. Consider gas state
+  of \chemfig{Cl_{2}} and liquid state of \chemfig{Br_{2}}.\\ Note: \vocab{Van
+  der Waals forces} encompasses dipole forces, hydrogen bonding, and London
+  forces.
+
+  \subsection{Hydrogen Bonding}
+
+  \fbox{\parbox{\textwidth}{Two criteria to fulfill:
+
+    \begin{enumerate}
+      \item a molecule must have a covalent bond between H and N, O, or F
+      \item another molecule must have a lone pair of electrons on an N, O, or F
+        atom.  
+    \end{enumerate}
+
+  }}
+
+  can impact physical properties as mentioned above.
+
+  \subsection{Vapor Pressure}
+
+  \vocab{Vapor pressure} is the pressure exerted by the gaseuos phase of a
+  liquid that evaporated from the exposed surface of the liquid. Also
+  proportionately dependent on temperature of the substance. Thus, vapor
+  pressure is indirectly related to the boiling point of a substance.
+
+  \section{Types of Solids}
+
+  \subsection{Ionic Solids}
+
+  A solid held together by the electrostatic attraction between cations and
+  anions in a lattice structure. These bonds are strong. However, the solid is
+  brittle since a shift in the lattice can place like charges near each other.
+  Almost all are solid at room temperature.
+
+  \subsection{Network Solids}
+
+  A solid held together by covalent bonds in a lattice. These are especially
+  strong solids e.g. diamond.
+
+  \subsection{Metallic Solids}
+
+  Covalently bound lattice of metal nuclei and inner shell electrons
+  surrounded by a sea of electrons. At least one valence electron is free
+  of any one atom and is able to move throughout the lattice. These are
+  called \vocab{conduction electrons}.
+
+  \subsection{Molecular Solids}
+  Lattice in which every lattice point is a molecule. Held together by either
+  hydrogen bonds, dipole-dipole forces, or London dispersion forces. Since these
+  are weak, typically are liquid or gases at room temperature.  
+\end{document}

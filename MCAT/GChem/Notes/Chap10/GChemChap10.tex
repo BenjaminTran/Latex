@@ -1,0 +1,210 @@
+% !TeX root = GChemChap10.tex
+\documentclass[../GChemReview.tex]{subfiles}
+
+\begin{document}
+	\chapter{Equilibrium}
+	
+	\section{Equilibrium}
+	
+	\emph{When a reaction is at equilibrium the rate of the forward and reverse reactions are the same}. This can only occur for closed systems.
+	
+	\subsection{The Equilibrium Constant}
+	
+	For the generic reaction
+	\begin{center}
+		aA + bB $ \rightleftharpoons $ cC + dD
+	\end{center}
+	
+	the equilibrium expression is:
+	\begin{align}
+		\boxed{K_{eq} = \dfrac{[C]^{c}[D]^{d}}{[A]^{a}[B]^{b}}} \\ \eqname{\textbf{Mass-Action Ratio}}
+	\end{align}
+	
+	Note the following:
+	\begin{enumerate}
+		\item Solids, pure liquids, and dissolved solvents are not included.
+		\item Aqueous dissolved particles are included
+		\item For gases, partial pressures can be used instead of concentrations. Constant is then denoted by $ K_{p} $ it will have different units.
+	\end{enumerate}
+	
+		\fbox{\parbox{\textwidth}{
+			\centering
+				\emph{The value of $ K_{eq} $ for a given reaction is a constant at a given temperature}.}}
+	\hfil \\	
+	The value of $ K_{eq} $ tells which way a reaction favors (more products or more reactants at equilibrium):
+	
+	\centering
+	\hfil \\
+	\fbox{
+	\begin{varwidth}{\textwidth}
+			\begin{enumerate}
+				\item[] $ K_{eq} < 1 $ : reaction favors reactants
+				\item[] $ K_{eq} = 1 $ : reaction has equal amounts
+				\item[] $ K_{eq} > 1 $ : reaction favors products
+			\end{enumerate}
+	\end{varwidth}
+	}
+	\flushleft
+	
+	\section{Reaction Quotient}
+	
+	This is the same form as the equilibrium constant, however, the concentrations are not taken at equilibrium:
+	\begin{align}
+		\boxed{Q = \dfrac{[C]^{c}[D]^{d}}{[A]^{a}[B]^{b}}} \\ \eqname{Reaction Quotient}
+	\end{align}
+	
+	Q will tell us which side of the reaction is favored at a given time by the following logical rules:
+	
+	\centering
+	\hfil \\
+	\fbox{
+	\begin{varwidth}{\textwidth}
+		\begin{enumerate}
+			\item[] $ Q < K_{eq} $ : driven towards products
+			\item[] $ Q = K_{eq} $ : at equilibrium
+			\item[] $ Q > K_{eq} $ : driven towards reactants
+		\end{enumerate}
+	\end{varwidth}
+	}
+	\flushleft
+	\section{Le Chatelier's Principle}
+	
+	\emph{A system at equilibrium will try to neutralize any imposed change in order to reestablish equilibrium.} Consider the following:
+	
+	\fbox{\parbox{\textwidth}{
+	\textsc{Haber Process}
+	\begin{center}
+		\chemfig{N_{2} + 3H_{2} \rightleftharpoons 2NH_{3} + heat}
+	\end{center} 
+	\subsubsection{Removing or Adding Material}
+	Removing material from one side will cause a shift in reaction towards that side. Adding material to one side will cause a shift in reaction away from that side. This can be seen by comparing Q to $ K_{eq} $.
+	
+	\subsubsection{Changing the Volume}
+	This only affects reactions with gaseous species since liquids are considered to be incompressible. If the number of moles gas on both sides of the equation are the same then a change in volume does not change anything. If they are not the same then an increase in volume will decrease pressure and thus the reaction will proceed to the side with more moles of gas (the reactant side for the Haber process) and vice versa.
+	
+	\subsubsection{Changing the Temperature}
+	Recall that the reverse of an exothermic reaction is an endothermic reaction and vice versa and thus, \emph{lowering the temperature favors the exothermic reaction, while raising the temperature favors the endothermic reaction}. But keep in mind that a change in temperature causes a change in $ K_{eq} $. Overall, heating a reaction increases its rate and once its at equilibrium adding or taking away heat will affect the equilibrium.
+	
+	\subsubsection{Inert Gas and Catalysts}
+	
+	Addition of an inert gas or catalyst has no effect whatsoever on the equilibrium.
+	}}
+	
+	\section{Solutions and Solubility}
+	
+	\subsection{Solutions}
+	
+	A substance present in a relatively smaller proportion is called a \textbf{solute}, and the  substance that is in relatively greater proportion is called the \textbf{solvent}. \textbf{Solvation} is the process where molecules of solvent surround the solute molecules. If the solvent is water then it is called \textbf{hydration}. \emph{Solutes will dissolve best in solvents where the intermolecular forces being broken in the solute are being replaced by equal (or stronger) intermolecular forces between the solvent and the solute.}
+	
+	\subsection{Electrolytes}
+	
+	\textbf{Electrolytes} are free ions dissolved in a solution. Electrolytes may be strong (completely dissolve) or weak (partially dissolve). All ionic compounds are defined as strong electrolytes. The \textbf{van't Hoff factor}, $ i $, tells us how many ions are produced when a molecules is dissolved in water. Thus, for \chemfig{NaCl} $ i = 2 $. Note that for all biomolecules $ i = 1 $. Some terms:
+	\begin{enumerate}
+		\item \textbf{Saturated solution} - no more solute will dissolve
+		\item \textbf{Molar solubility} - The concentration at which the solution becomes saturated
+		\item At this point \textbf{precipitation} and dissolution occur at the same rate and the solute is said to be in \textbf{dynamic equilibrium}.
+	\end{enumerate}
+	
+	\subsection{Solubility}
+	
+	\textbf{Solubility} refers to the amount of solute that will saturate a particular solvent. Dependent upon:
+	\begin{enumerate}
+		\item type of solute
+		\item type of solvent
+		\item temperature
+	\end{enumerate}
+	There are two sets of solubility rules that one should memorize. \emph{They are correct only most of the time:} \\
+	\hfil \\
+	\fbox{\parbox{\textwidth}{
+			\bfseries Phase Solubility Rules
+			\begin{enumerate}
+				\item Solubility of solids in liquids tends to increase with increasing temperature
+				\item Solubility of gases in liquids tends to decrease with increasing temperatures
+				\item Solubility of gases in liquids tends to increase with increasing pressure
+			\end{enumerate}
+	}}
+	\\
+	\hfil \\
+	
+	Recall that solubility of a gas in a liquid is also a function of the partial pressure of the gas above the liquid and Henry's Law constant (solubility = kP). As partial pressure increases, the quantity of dissolved gas necessarily increases as the equilibrium constant remains unchanged.
+	\\
+	\hfil \\
+	\fbox{\parbox{\textwidth}{
+			\bfseries Salt Solubility Rules
+			\begin{enumerate}
+				\item All Group I (\chemfig{Li^{+}, Na^{+}, K^{+}, Rb^{+}, Cs^{+}}) and ammonium (\chemfig{NH^{+}_{4}}) salts are \emph{soluble}.
+				\item All nitrate (\chemfig{NO_{3}^{-}}), perchlorate (\chemfig{ClO_{4}^{-}}), and acetate (\chemfig{C_{2}H_{3}O_{2}^{-}}) salts are \emph{soluble.}
+				\item All silver (\chemfig{Ag^{+}}), lead (\chemfig{Pb^{2+}/Pb^{4+}}), and mercury (\chemfig{Hg_{2}^{2+}/Hg^{2+}}) salts are \emph{insoluble}, except for their nitrates, perchlorates, and acetates.
+			\end{enumerate}
+		}}
+		
+		\subsection{Solubility Product Constant}
+		
+		All salts have characteristic solubilities in water. The extent of dissolution of a salt may be determined by its \textbf{solubility product constant, }$ \boldsymbol{K_{sp}} $. It is simply another equilibrium constant where the reactants and products are just the undissolved and dissolved salts. E.g.
+		\begin{center}
+			\chemfig{Mg\del{OH}_{2}\del{s} \rightleftharpoons Mg^{2+}\del{aq} + 2OH^{-}\del{aq}}
+		\end{center}
+		has an equilibrium expression
+		\[ K_{sp} = [\text{Mg}^{2+}][\text{OH}^{-}]^{2} \]
+		
+		\subsection{Solubility Computations}
+		
+		This is all used to determine the molar solubility of a salt in a liter of water. Using the example above we suppose we have x moles of \chemfig{Mg\del{OH}_{2}} then the equilibrium expression tells us that:
+		\[ K_{sp} = x(2x)^{2} \]
+		Given the value of $ K_{sp} $, solve for x to get the molar solubility.
+		
+		\section{Ion Product}
+		
+		The \textbf{ion product} is the reaction quotient for a solubility product. Like the normal reaction quotient, it allows us to predict the direction of the reaction:
+		
+		\centering
+		\hfil \\
+		\fbox{
+		\begin{varwidth}{\textwidth}
+			\begin{enumerate}
+				\item[] $ Q_{sp} < K_{sp} $ : more salt can be dissolved
+				\item[] $ Q_{sp} = K_{sp} $ : solution is saturated
+				\item[] $ Q_{sp} > K_{sp} $ : excess salt will precipitate
+			\end{enumerate}
+		\end{varwidth}
+		}
+		\flushleft
+		Note that this is basically the same as for the reaction quotient. When mixing two solutions together containing different ion species, remember that these can combine to form new salts different from the original and so their $ K_{sp} $ must be considered.
+		
+		\section{The Common-Ion Effect}
+		
+		Taking the example above once more, adding NaOH to a solution of Mg(OH)$ _{2} $ will introduce more \chemfig{OH^{-}} ions and thus drive the reaction to precipitate more Mg(OH)$ _{2} $. This can be seen by consulting the ion product.
+		
+		\section{Complex Ion Formation and Solubility}
+		
+		Complex ions consist of metallic ions surrounded by generally two, four, or six ligands, also known as lewis bases. Complexed metal ions can have very different solubility properties than the "naked" hydrated metal ions. For instance, AgCl is insoluble as given in the solubility rules, however, the addition of ammonia forces an [Ag(NH$ _{3} $)$ _{2} $]$ ^{+} $ complex to form which is soluble per the solubility rules. This topic has application in metal-chelation therapy by using EDTA to treat lead poisoning.
+		
+		\section{Thermodynamics and Equilibrium}
+		
+		There is a relationship between $ \Delta G $ and $ Q \text{ and } K_{eq} $ given below:
+		\begin{equation}
+			\boxed{\Delta G = \Delta G^{\circ} + RT \ln Q}
+		\end{equation}
+		and setting $ Q = K_{eq} $ i.e. equilibrium, we get that
+		\begin{equation}
+			\boxed{\Delta G^{\circ} = -RT\ln K_{eq}}
+		\end{equation}
+		
+		Mathematically, we can draw the following relations from (10.4):
+		
+		\centering
+		\hfil \\
+		\fbox{
+			\begin{varwidth}{\textwidth}
+				\begin{enumerate}
+					\item[] $ \Delta G^{\circ} < 0 $ : $ K_{eq} > 1 $ Products are favored at equilibrium
+					\item[] $ \Delta G^{\circ} = 0 $ : $ K_{eq} = 1 $ Roughly equal amounts of products and reactants at equilibrium
+					\item[] $ \Delta G^{\circ} > 0 $ : $ K_{eq} < 1 $ Reactants are favored at equilibrium
+				\end{enumerate}
+			\end{varwidth}			
+			}
+		
+		\flushleft
+		
+		Recall that the difference in height between products and reactants in a reaction coordinate diagram is $ \Delta G^{\circ} $. Combine this with the statements above.
+\end{document}

@@ -1,0 +1,80 @@
+% !TeX root = GChemChap9.tex
+\documentclass[../GChemReview.tex]{subfiles}
+
+\begin{document}
+	\chapter{Kinetics}
+	
+	\section{Reaction Mechanism}
+	
+	A chemical reaction can be expressed as a sum of smaller reactions with intermediate products.
+	
+	\subsection{Rate-Determining Step}
+	
+	\emph{The slowest step is the rate determining step.} 
+	
+	\section{Reaction Rate}
+	
+	Reactants must collide and interact to break old bonds and form new ones thus the following determine reaction rates:
+	\begin{enumerate}
+		\item Frequency of collisions
+		\item Orientation of colliding molecules
+		\item Energy
+	\end{enumerate}
+	
+	\subsection{Activation Energy}
+	
+	If the reactants have enough energy to overcome the activation energy then they will proceed to form a transient transition state (don't confuse with intermediates) which is always the local energy maximum. The following effect reaction rates:
+	\begin{center}
+		\fbox{\parbox{\textwidth}{
+			\bfseries\textsc{Governance of reaction rates}
+			\begin{enumerate}
+				\item Lower activation energy, faster the reaction rate (less energy required)
+				\item Greater concentration of reactants, the faster the rate (higher frequency of collisions)
+				\item Higher the temperature the faster the rate (more energy to overcome activation energy)
+			\end{enumerate}	
+		}}
+	\end{center}
+	
+	REMEMBER THERMODYNAMIC FACTORS AND KINETIC FACTORS \emph{DO NOT AFFECT EACH OTHER} (MCAT likes this apparently).
+	
+	\section{Catalysts}
+	
+	A \textbf{catalyst} will almost always make a reaction go faster by speeding up the rate-determining step (\emph{by lowering its activation energy}) or providing an optimized route to the products. Catalysts are \emph{never} converted to a product in reactions. It does not affect equilibrium or the thermodynamics of the reaction ($ \Delta G, \Delta H, \text{ and } \Delta S $).
+	
+	\section{Rate Laws}
+	
+	The data for rate laws are determined by the \emph{initial rates} of reaction and typically are given as the \emph{rate at which the reactant disappears}. You usually only see reactants in a rate law expression. Since we are only concerned about the rate of the reaction \textbf{only those reactants that are involved in the rate-determining step are part of the rate law expression}. The rate law for the following generic reaction will have a form:
+	\begin{align*}
+		aA + bB &\rightarrow cC + dD \\
+		\text{rate} &= k\text{[A]}^{x}\text{[B]}^{y}
+	\end{align*}
+	
+	where:
+	\begin{enumerate}
+		\item x = the \textbf{order} of the reaction with respect to A
+		\item y = the order of the reaction with respect to B
+		\item (x + y) = the overall order of the reaction
+		\item k = the rate constant
+	\end{enumerate}
+	
+	The rate law may only be determined \emph{experimentally} unless the reaction is an \emph{elementary reaction} that is to say is has the form:
+	\begin{center}
+		aA + bB $ \rightarrow $ products
+	\end{center}
+	where there is only one transition state and no intermediates. In which case the orders are the coefficients of the reactants. An example of the data from an experimental determination of the rate law is given below:
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.15]{RateExp.jpg}
+	\end{figure}
+	The rate law here is:
+	\[ \text{rate} = k\text{[A][B]}^{2} \]
+	
+	\subsection{The Rate Constant}
+	
+	Once the orders have been determined the constant can be determined by solving for k and using the experimental data. The rate constant is also given by
+	\[ k = A\Exp{\dfrac{-E_{a}}{RT}} \]
+	A is the Arrhenius factor which takes into account the orientation of the colliding molecules. From this we see the effects of adjusting $ E_{a} $ and T on the rate (a rule of thumb: the rate will increase by a factor of 2 to 4 for every 10K increase in temperature). The units of k change depending on the reaction orders. The LHS always has units of M$ \text{s}^{-1} $.
+	
+	
+\end{document}

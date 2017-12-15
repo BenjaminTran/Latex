@@ -1,0 +1,141 @@
+% !TeX root = GChemChap6.tex
+\documentclass[../GChemReview.tex]{subfiles}
+
+\begin{document}
+	\chapter{Thermodynamics}
+	
+	\section{System and Surroundings}
+	\subsection{The Zeroth Law of Thermodynamics}
+	
+	\fbox{\parbox{\textwidth}{\emph{If two systems are both in thermal equilibrium with a third system, then the two initial systems are in thermal equilibrium with each other.}}}
+	\hfil \newline
+	Heat will flow from hot to cold. 
+	
+	\subsection{The First Law of Thermodynamics (Conservation of Energy)}
+	
+	\fbox{\parbox{\textwidth}{Energy cannot be created nor destroyed only transformed.}}
+	
+	\subsection{Conventions in Thermodynamics}
+	
+	Everything is defined in terms of what is happening to the system. Also, keep in mind that energy flowing into the system equals energy flowing out of the surroundings and vice versa.
+	
+	\section{Enthalpy}
+	
+	\textbf{Enthalpy} is the measure of the heat energy that is released or absorbed when bonds are broken and formed during a reaction that's run at constant pressure, denote by \textbf{H}. Two general principles:
+	\begin{enumerate}
+		\item Bond formed, energy released $ \Delta H < 0 $
+		\item Bond breaks, energy absorbed $ \Delta H > 0 $
+	\end{enumerate}
+	Here we define change in enthalpy as:
+	\begin{equation}
+		\Delta H = H_{products} - H_{reactants}
+	\end{equation}
+	Thus, $ \Delta H $ is known as the \textbf{heat of reaction}. Two energy classifications of reactions:
+	\begin{enumerate}
+		\item \textbf{Exothermic} - Energy is released $ \implies $ stronger bonds and $ \Delta H < 0 $
+		\item \textbf{Endothermic} - Energy is absorbed $ \implies $ weaker bonds and $ \Delta H > 0 $
+	\end{enumerate}
+	
+	\section{Calculation of $ \Delta H_{rxn} $}
+	
+	\subsection{Standard Conditions}
+	
+	Conditions:
+	\begin{enumerate}
+		\item T = 298 K
+		\item P = 1 atm
+		\item Concentration = 1 Molar and pure
+	\end{enumerate}
+	Note: STP is T = 273 K.
+	
+	\subsection{Heats of Formation}
+	
+	\textbf{Standard heat of formation}, $ \boldsymbol{\Delta H_{f}^{\circ}} $, is the amount of energy required to make one mole of compound \emph{from its constituent elements in their natural or standard state}. Convention to assign elements in their \emph{natural state} $ \Delta H_{f}^{\circ} = 0$. Note that diatomic molecules are assigned zero instead of their monotomic form. The $ \Delta H^{\circ} $ of a reaction is given by
+	\begin{equation}
+		\Delta H_{rxn}^{\circ} = (\sum n \times \Delta H_{f,prod}^{\circ}) - (\sum n \times \Delta H_{f,react}^{\circ})
+	\end{equation}
+	
+	\subsection{Hess's Law of Heat Summation}
+	
+	\textbf{Hess's Law}: If a reaction occurs in several steps, then the sum of the energies absorbed or given off in all the steps will be the same as that for the overall reaction. Two rules:
+	\begin{enumerate}
+		\item If a reaction is reversed, the sign of $ \Delta H $ is reversed.
+		\item If an equation is multiplied by x, then $ \Delta H $ must be multiplied by x.
+	\end{enumerate}
+	
+	\begin{problem*}
+		Find $ \Delta H $ for the combustion of carbon to carbon monoxide.
+	\end{problem*}
+	
+	We have the two step process:
+	\begin{align*}
+		&C(s) + O_{2}(g) \rightarrow CO_{2}(g) \qquad &\Delta H_{1}=-394\text{ kJ}\\
+		&CO_{2}(g) \rightarrow CO(g) + \dfrac{1}{2}O_{2}(g)  &\Delta H_{1}=-394\text{ kJ}
+	\end{align*}
+	Adding these two we get the overall reaction and therefore the overall heat of reaction.
+	
+	\subsection{Summation of Average Bond Enthalpies}
+	
+	Enthalpy can be viewed as the energy stored in the chemical bonds of a compound. The characteristic enthalpy of a bond is the energy required to break the bond \emph{homolytically} (electron pair dissociates symmetrically). If given list of bond enthalpies then
+	\begin{equation}
+		\Delta H_{rxn} = \sum (\text{BDE bonds broken}) - \sum(\text{BDE bonds formed})
+	\end{equation}
+	
+	\section{Entropy}
+	
+	\subsection{The Second Law of Thermodynamics}
+	
+	Entropy always increases. The change in entropy is
+	\begin{equation}
+		\Delta S = S_{products} - S_{reactants}
+	\end{equation}
+	By definition then
+	\begin{enumerate}
+		\item $ \Delta S > 0 $ order decreases
+		\item $ \Delta S < 0 $ order increases
+	\end{enumerate}
+	Some guidelines:
+	\begin{enumerate}
+		\item Gas $ > $ liquid $ > $ solid in terms of entropy
+		\item Particles in solution have more entropy than undissolved solids
+		\item Tow moles of a substance have more entropy than one mole
+		\item $ \Delta S $ for a reversed reaction has reversed sign
+	\end{enumerate}
+	
+	\subsection{The Third Law of Thermodynamics}
+	
+	Absolute zero is a state of zero-entropy. 
+	
+	\section{Gibbs Free Energy}
+	
+	$ \Delta G $ is the energy that's available to do useful work from a chemical reaction. It is defined as:
+	
+	\fbox{\parbox{\textwidth}{
+	\begin{equation}
+		\Delta G = \Delta H - T\Delta S
+	\end{equation}
+	And:
+	\begin{enumerate}
+		\item $ \Delta G < 0 \rightarrow $ spontaneous in forward direction
+		\item $ \Delta G = 0 \rightarrow $ reaction is at equilibrium
+		\item $ \Delta G > 0 \rightarrow $ nonspontaneous in the forward direction
+		\item  The reverse reaction has opposite sign
+	\end{enumerate}
+	}}
+	\hfil\\
+	Note: $ \Delta S $ values are usually given in J while Gibbs is determined in KJ so make sure to convert units.
+	
+	\section{Reaction Energy Diagrams}
+	
+	Usual diagrams you see back in AP chem. Just remember that 
+	\[ \Delta G_{rxn} = \Delta G_{prod} - \Delta G_{react} \]
+	
+	\subsection{Kinetics vs. Thermodynamics}
+	
+	\textbf{Do not confuse kinetics with thermodynamics} i.e. a spontaneous reaction does not imply anything about its rate. 
+	
+	\subsection{Reversibility}
+	
+	Reactions follow the principle of microscopic reversibility: The reverse reaction has the same magnitude for all thermodynamic values ($ \Delta G, \Delta Hm \Delta S $) but of the opposite sign, and the same reaction pathway, but in reverse. 
+	
+\end{document}
